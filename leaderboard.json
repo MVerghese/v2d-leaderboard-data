@@ -1,5 +1,6 @@
 {
-  "generated": "2026-09-21T12:00:00Z",
+  "generated": "2026-09-21T07:37:21Z",
+  "note": "No submissions scored yet. Written by aggregate/empty_payload.py.",
   "tracks": [
     {
       "key": "track_1",
@@ -8,74 +9,46 @@
       "metrics": [
         {
           "key": "cd_h_cm",
+          "display": "CD-H",
           "unit": "cm",
           "higher_is_better": false,
-          "available": true,
           "competition": "v2d-challenge-track1-cd-h",
-          "display": "CD-H"
+          "available": true
         },
         {
           "key": "cd_o_cm",
+          "display": "CD-O",
           "unit": "cm",
           "higher_is_better": false,
-          "available": true,
           "competition": "v2d-challenge-track1-cd-o",
-          "display": "CD-O"
+          "available": true
         },
         {
           "key": "acc_h_cm",
+          "display": "ACC-H",
           "unit": "cm",
           "higher_is_better": false,
-          "available": true,
           "competition": "v2d-challenge-track1-acc-h",
-          "display": "ACC-H"
+          "available": true
         },
         {
           "key": "acc_o_cm",
+          "display": "ACC-O",
           "unit": "cm",
           "higher_is_better": false,
-          "available": true,
           "competition": "v2d-challenge-track1-acc-o",
-          "display": "ACC-O"
+          "available": true
         },
         {
           "key": "interpenetration_cm",
+          "display": "PEN",
           "unit": "cm",
           "higher_is_better": false,
-          "available": false,
           "competition": "v2d-challenge-track1-pen",
-          "display": "PEN"
+          "available": false
         }
       ],
-      "rows": [
-        {
-          "team": "Kinetic Lab",
-          "members": [
-            "kinlab_a",
-            "kinlab_b"
-          ],
-          "scores": {
-            "cd_h_cm": 7.27264,
-            "cd_o_cm": 15.60303,
-            "acc_h_cm": 10.86278,
-            "acc_o_cm": 17.22663
-          },
-          "last_submission": "2026-10-01"
-        },
-        {
-          "team": "Tsinghua V2D",
-          "members": [
-            "thu_x"
-          ],
-          "scores": {
-            "cd_h_cm": 17.81959,
-            "cd_o_cm": 2.58238,
-            "acc_h_cm": 1.15817,
-            "acc_o_cm": 23.57916
-          },
-          "last_submission": "2026-10-02"
-        }
-      ],
+      "rows": [],
       "incomplete": []
     },
     {
@@ -85,94 +58,38 @@
       "metrics": [
         {
           "key": "add_auc",
+          "display": "AUC",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track2-tier1-auc",
-          "display": "AUC"
+          "available": true
         },
         {
           "key": "spider_sr",
+          "display": "SP-SR",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track2-tier1-sp-sr",
-          "display": "SP-SR"
+          "available": true
         },
         {
           "key": "maniptrans_sr",
+          "display": "MP-SR",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track2-tier1-mp-sr",
-          "display": "MP-SR"
+          "available": true
         },
         {
           "key": "mppe_cm",
+          "display": "MPPE",
           "unit": "cm",
           "higher_is_better": false,
-          "available": true,
           "competition": "v2d-challenge-track2-tier1-mppe",
-          "display": "MPPE"
+          "available": true
         }
       ],
-      "rows": [
-        {
-          "team": "Kinetic Lab",
-          "members": [
-            "kinlab_a",
-            "kinlab_b"
-          ],
-          "scores": {
-            "add_auc": 0.50561,
-            "spider_sr": 0.4906,
-            "maniptrans_sr": 0.94739,
-            "mppe_cm": 13.59117
-          },
-          "last_submission": "2026-10-01"
-        },
-        {
-          "team": "Tsinghua V2D",
-          "members": [
-            "thu_x"
-          ],
-          "scores": {
-            "add_auc": 0.85188,
-            "spider_sr": 0.63581,
-            "maniptrans_sr": 0.73344,
-            "mppe_cm": 4.89677
-          },
-          "last_submission": "2026-10-02"
-        },
-        {
-          "team": "Embodied AI Group",
-          "members": [
-            "eai_1",
-            "eai_2",
-            "eai_3"
-          ],
-          "scores": {
-            "add_auc": 0.73092,
-            "spider_sr": 0.87083,
-            "maniptrans_sr": 0.66391,
-            "mppe_cm": 20.96205
-          },
-          "last_submission": "2026-10-03"
-        },
-        {
-          "team": "solo-runner",
-          "members": [
-            "srunner"
-          ],
-          "scores": {
-            "add_auc": 0.75285,
-            "spider_sr": 0.38842,
-            "maniptrans_sr": 0.80494,
-            "mppe_cm": 16.87791
-          },
-          "last_submission": "2026-10-04"
-        }
-      ],
+      "rows": [],
       "incomplete": []
     },
     {
@@ -182,94 +99,38 @@
       "metrics": [
         {
           "key": "add_auc",
+          "display": "AUC",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track2-tier2-auc",
-          "display": "AUC"
+          "available": true
         },
         {
           "key": "spider_sr",
+          "display": "SP-SR",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track2-tier2-sp-sr",
-          "display": "SP-SR"
+          "available": true
         },
         {
           "key": "maniptrans_sr",
+          "display": "MP-SR",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track2-tier2-mp-sr",
-          "display": "MP-SR"
+          "available": true
         },
         {
           "key": "mppe_cm",
+          "display": "MPPE",
           "unit": "cm",
           "higher_is_better": false,
-          "available": true,
           "competition": "v2d-challenge-track2-tier2-mppe",
-          "display": "MPPE"
+          "available": true
         }
       ],
-      "rows": [
-        {
-          "team": "Kinetic Lab",
-          "members": [
-            "kinlab_a",
-            "kinlab_b"
-          ],
-          "scores": {
-            "add_auc": 0.53076,
-            "spider_sr": 0.36861,
-            "maniptrans_sr": 0.86932,
-            "mppe_cm": 13.65878
-          },
-          "last_submission": "2026-10-01"
-        },
-        {
-          "team": "Tsinghua V2D",
-          "members": [
-            "thu_x"
-          ],
-          "scores": {
-            "add_auc": 0.78129,
-            "spider_sr": 0.87729,
-            "maniptrans_sr": 0.77848,
-            "mppe_cm": 25.85388
-          },
-          "last_submission": "2026-10-02"
-        },
-        {
-          "team": "Embodied AI Group",
-          "members": [
-            "eai_1",
-            "eai_2",
-            "eai_3"
-          ],
-          "scores": {
-            "add_auc": 0.58698,
-            "spider_sr": 0.83055,
-            "maniptrans_sr": 0.61677,
-            "mppe_cm": 26.24796
-          },
-          "last_submission": "2026-10-03"
-        },
-        {
-          "team": "solo-runner",
-          "members": [
-            "srunner"
-          ],
-          "scores": {
-            "add_auc": 0.87732,
-            "spider_sr": 0.40847,
-            "maniptrans_sr": 0.43158,
-            "mppe_cm": 6.70204
-          },
-          "last_submission": "2026-10-04"
-        }
-      ],
+      "rows": [],
       "incomplete": []
     },
     {
@@ -279,94 +140,38 @@
       "metrics": [
         {
           "key": "add_auc",
+          "display": "AUC",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track2-tier3-auc",
-          "display": "AUC"
+          "available": true
         },
         {
           "key": "spider_sr",
+          "display": "SP-SR",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track2-tier3-sp-sr",
-          "display": "SP-SR"
+          "available": true
         },
         {
           "key": "maniptrans_sr",
+          "display": "MP-SR",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track2-tier3-mp-sr",
-          "display": "MP-SR"
+          "available": true
         },
         {
           "key": "mppe_cm",
+          "display": "MPPE",
           "unit": "cm",
           "higher_is_better": false,
-          "available": true,
           "competition": "v2d-challenge-track2-tier3-mppe",
-          "display": "MPPE"
+          "available": true
         }
       ],
-      "rows": [
-        {
-          "team": "Kinetic Lab",
-          "members": [
-            "kinlab_a",
-            "kinlab_b"
-          ],
-          "scores": {
-            "add_auc": 0.92929,
-            "spider_sr": 0.6117,
-            "maniptrans_sr": 0.72599,
-            "mppe_cm": 8.98791
-          },
-          "last_submission": "2026-10-01"
-        },
-        {
-          "team": "Tsinghua V2D",
-          "members": [
-            "thu_x"
-          ],
-          "scores": {
-            "add_auc": 0.65435,
-            "spider_sr": 0.58152,
-            "maniptrans_sr": 0.56055,
-            "mppe_cm": 16.71402
-          },
-          "last_submission": "2026-10-02"
-        },
-        {
-          "team": "Embodied AI Group",
-          "members": [
-            "eai_1",
-            "eai_2",
-            "eai_3"
-          ],
-          "scores": {
-            "add_auc": 0.70055,
-            "spider_sr": 0.89252,
-            "maniptrans_sr": 0.75919,
-            "mppe_cm": 26.06732
-          },
-          "last_submission": "2026-10-03"
-        },
-        {
-          "team": "solo-runner",
-          "members": [
-            "srunner"
-          ],
-          "scores": {
-            "add_auc": 0.86384,
-            "spider_sr": 0.94459,
-            "maniptrans_sr": 0.75276,
-            "mppe_cm": 5.23631
-          },
-          "last_submission": "2026-10-04"
-        }
-      ],
+      "rows": [],
       "incomplete": []
     },
     {
@@ -376,106 +181,46 @@
       "metrics": [
         {
           "key": "add_auc",
+          "display": "AUC",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track3-auc",
-          "display": "AUC"
+          "available": true
         },
         {
           "key": "spider_sr",
+          "display": "SP-SR",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track3-sp-sr",
-          "display": "SP-SR"
+          "available": true
         },
         {
           "key": "maniptrans_sr",
+          "display": "MP-SR",
           "unit": "",
           "higher_is_better": true,
-          "available": true,
           "competition": "v2d-challenge-track3-mp-sr",
-          "display": "MP-SR"
+          "available": true
         },
         {
           "key": "rpe_cm",
+          "display": "RPE",
           "unit": "cm",
           "higher_is_better": false,
-          "available": true,
           "competition": "v2d-challenge-track3-rpe",
-          "display": "RPE"
+          "available": true
         },
         {
           "key": "mppe_cm",
+          "display": "MPPE",
           "unit": "cm",
           "higher_is_better": false,
-          "available": true,
           "competition": "v2d-challenge-track3-mppe",
-          "display": "MPPE"
+          "available": true
         }
       ],
-      "rows": [
-        {
-          "team": "Kinetic Lab",
-          "members": [
-            "kinlab_a",
-            "kinlab_b"
-          ],
-          "scores": {
-            "add_auc": 0.86638,
-            "spider_sr": 0.92878,
-            "maniptrans_sr": 0.89282,
-            "rpe_cm": 16.27972,
-            "mppe_cm": 20.21582
-          },
-          "last_submission": "2026-10-01"
-        },
-        {
-          "team": "Tsinghua V2D",
-          "members": [
-            "thu_x"
-          ],
-          "scores": {
-            "add_auc": 0.47667,
-            "spider_sr": 0.84896,
-            "maniptrans_sr": 0.69412,
-            "rpe_cm": 8.55084,
-            "mppe_cm": 2.52613
-          },
-          "last_submission": "2026-10-02"
-        },
-        {
-          "team": "Embodied AI Group",
-          "members": [
-            "eai_1",
-            "eai_2",
-            "eai_3"
-          ],
-          "scores": {
-            "add_auc": 0.86237,
-            "spider_sr": 0.94388,
-            "maniptrans_sr": 0.40311,
-            "rpe_cm": 22.57619,
-            "mppe_cm": 11.96456
-          },
-          "last_submission": "2026-10-03"
-        },
-        {
-          "team": "solo-runner",
-          "members": [
-            "srunner"
-          ],
-          "scores": {
-            "add_auc": 0.44046,
-            "spider_sr": 0.52633,
-            "maniptrans_sr": 0.81128,
-            "rpe_cm": 24.53926,
-            "mppe_cm": 2.00197
-          },
-          "last_submission": "2026-10-04"
-        }
-      ],
+      "rows": [],
       "incomplete": []
     }
   ]
