@@ -4,8 +4,7 @@ name: aggregate
 # leaderboard.json if a score or a ranking changed. The challenge page fetches that file.
 #
 # Needs one repository secret, KAGGLE_API_TOKEN (a static token from
-# https://www.kaggle.com/settings/api). Without it the run fails at authentication and commits
-# nothing.
+# https://www.kaggle.com/settings/api). Without it each run logs a warning and commits nothing.
 
 on:
   schedule:
@@ -41,7 +40,14 @@ jobs:
       - name: Aggregate
         env:
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
-        run: python aggregator/v2d_aggregate.py --out leaderboard.json
+        run: |
+          # Until the secret exists, skip with a warning instead of failing (and emailing) every
+          # 15 minutes.
+          if [ -z "${KAGGLE_API_TOKEN}" ]; then
+            echo "::warning::KAGGLE_API_TOKEN secret is not set; skipping aggregation"
+            exit 0
+          fi
+          python aggregator/v2d_aggregate.py --out leaderboard.json
 
       - name: Commit if changed
         run: |

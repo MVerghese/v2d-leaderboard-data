@@ -30,7 +30,7 @@ Use a static token from https://www.kaggle.com/settings/api, not the OAuth crede
 
     gh secret set KAGGLE_API_TOKEN -R MVerghese/v2d-leaderboard-data
 
-Without it every run fails at authentication and nothing is committed.
+Without it each run skips with a warning annotation and commits nothing.
 
 ## The aggregator copy
 
