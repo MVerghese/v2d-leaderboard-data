@@ -1,227 +1,243 @@
 {
-  "generated": "2026-09-21T07:37:21Z",
-  "note": "No submissions scored yet. Written by aggregate/empty_payload.py.",
-  "tracks": [
+ "schema": 1,
+ "generated_at": "2026-09-25T22:32:06+00:00",
+ "source": "kaggle",
+ "tracks": [
+  {
+   "key": "track_1",
+   "title": "Track 1 - Reconstruction",
+   "short_title": "Track 1",
+   "metrics": [
     {
-      "key": "track_1",
-      "title": "Track 1 - Reconstruction",
-      "short_title": "Track 1",
-      "metrics": [
-        {
-          "key": "cd_h_cm",
-          "display": "CD-H",
-          "unit": "cm",
-          "higher_is_better": false,
-          "competition": "v2d-challenge-track1-cd-h",
-          "available": true
-        },
-        {
-          "key": "cd_o_cm",
-          "display": "CD-O",
-          "unit": "cm",
-          "higher_is_better": false,
-          "competition": "v2d-challenge-track1-cd-o",
-          "available": true
-        },
-        {
-          "key": "acc_h_cm",
-          "display": "ACC-H",
-          "unit": "cm",
-          "higher_is_better": false,
-          "competition": "v2d-challenge-track1-acc-h",
-          "available": true
-        },
-        {
-          "key": "acc_o_cm",
-          "display": "ACC-O",
-          "unit": "cm",
-          "higher_is_better": false,
-          "competition": "v2d-challenge-track1-acc-o",
-          "available": true
-        },
-        {
-          "key": "interpenetration_cm",
-          "display": "PEN",
-          "unit": "cm",
-          "higher_is_better": false,
-          "competition": "v2d-challenge-track1-pen",
-          "available": false
-        }
-      ],
-      "rows": [],
-      "incomplete": []
+     "key": "cd_h_cm",
+     "display": "CD-H",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v2d-challenge-track1-cd-h",
+     "available": false
     },
     {
-      "key": "track_2_tier1",
-      "title": "Track 2 - Robotic Grounding (Tier 1: clean multi-view)",
-      "short_title": "Track 2 \u00b7 Tier 1",
-      "metrics": [
-        {
-          "key": "add_auc",
-          "display": "AUC",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track2-tier1-auc",
-          "available": true
-        },
-        {
-          "key": "spider_sr",
-          "display": "SP-SR",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track2-tier1-sp-sr",
-          "available": true
-        },
-        {
-          "key": "maniptrans_sr",
-          "display": "MP-SR",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track2-tier1-mp-sr",
-          "available": true
-        },
-        {
-          "key": "mppe_cm",
-          "display": "MPPE",
-          "unit": "cm",
-          "higher_is_better": false,
-          "competition": "v2d-challenge-track2-tier1-mppe",
-          "available": true
-        }
-      ],
-      "rows": [],
-      "incomplete": []
+     "key": "cd_o_cm",
+     "display": "CD-O",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v2d-challenge-track1-cd-o",
+     "available": false
     },
     {
-      "key": "track_2_tier2",
-      "title": "Track 2 - Robotic Grounding (Tier 2: synthetic corruption)",
-      "short_title": "Track 2 \u00b7 Tier 2",
-      "metrics": [
-        {
-          "key": "add_auc",
-          "display": "AUC",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track2-tier2-auc",
-          "available": true
-        },
-        {
-          "key": "spider_sr",
-          "display": "SP-SR",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track2-tier2-sp-sr",
-          "available": true
-        },
-        {
-          "key": "maniptrans_sr",
-          "display": "MP-SR",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track2-tier2-mp-sr",
-          "available": true
-        },
-        {
-          "key": "mppe_cm",
-          "display": "MPPE",
-          "unit": "cm",
-          "higher_is_better": false,
-          "competition": "v2d-challenge-track2-tier2-mppe",
-          "available": true
-        }
-      ],
-      "rows": [],
-      "incomplete": []
+     "key": "acc_h_cm",
+     "display": "ACC-H",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v2d-challenge-track1-acc-h",
+     "available": false
     },
     {
-      "key": "track_2_tier3",
-      "title": "Track 2 - Robotic Grounding (Tier 3: off-the-shelf reconstruction)",
-      "short_title": "Track 2 \u00b7 Tier 3",
-      "metrics": [
-        {
-          "key": "add_auc",
-          "display": "AUC",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track2-tier3-auc",
-          "available": true
-        },
-        {
-          "key": "spider_sr",
-          "display": "SP-SR",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track2-tier3-sp-sr",
-          "available": true
-        },
-        {
-          "key": "maniptrans_sr",
-          "display": "MP-SR",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track2-tier3-mp-sr",
-          "available": true
-        },
-        {
-          "key": "mppe_cm",
-          "display": "MPPE",
-          "unit": "cm",
-          "higher_is_better": false,
-          "competition": "v2d-challenge-track2-tier3-mppe",
-          "available": true
-        }
-      ],
-      "rows": [],
-      "incomplete": []
+     "key": "acc_o_cm",
+     "display": "ACC-O",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v2d-challenge-track1-acc-o",
+     "available": false
     },
     {
-      "key": "track_3",
-      "title": "Track 3 - Egocentric",
-      "short_title": "Track 3",
-      "metrics": [
-        {
-          "key": "add_auc",
-          "display": "AUC",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track3-auc",
-          "available": true
-        },
-        {
-          "key": "spider_sr",
-          "display": "SP-SR",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track3-sp-sr",
-          "available": true
-        },
-        {
-          "key": "maniptrans_sr",
-          "display": "MP-SR",
-          "unit": "",
-          "higher_is_better": true,
-          "competition": "v2d-challenge-track3-mp-sr",
-          "available": true
-        },
-        {
-          "key": "rpe_cm",
-          "display": "RPE",
-          "unit": "cm",
-          "higher_is_better": false,
-          "competition": "v2d-challenge-track3-rpe",
-          "available": true
-        },
-        {
-          "key": "mppe_cm",
-          "display": "MPPE",
-          "unit": "cm",
-          "higher_is_better": false,
-          "competition": "v2d-challenge-track3-mppe",
-          "available": true
-        }
-      ],
-      "rows": [],
-      "incomplete": []
+     "key": "interpenetration_cm",
+     "display": "PEN",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v2d-challenge-track1-pen",
+     "available": false
     }
-  ]
+   ],
+   "rows": [],
+   "incomplete": [],
+   "warnings": [
+    "no leaderboard data for: cd_h_cm, cd_o_cm, acc_h_cm, acc_o_cm, interpenetration_cm"
+   ]
+  },
+  {
+   "key": "track_2_tier1",
+   "title": "Track 2 - Robotic Grounding (Tier 1: multi-view input)",
+   "short_title": "Track 2 \u00b7 Tier 1",
+   "metrics": [
+    {
+     "key": "add_auc",
+     "display": "AUC",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track2-tier1-auc",
+     "available": false
+    },
+    {
+     "key": "spider_sr",
+     "display": "SP-SR",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track2-tier1-sp-sr",
+     "available": false
+    },
+    {
+     "key": "maniptrans_sr",
+     "display": "MP-SR",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track2-tier1-mp-sr",
+     "available": false
+    },
+    {
+     "key": "mppe_cm",
+     "display": "MPPE",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v2d-challenge-track2-tier1-mppe",
+     "available": false
+    }
+   ],
+   "rows": [],
+   "incomplete": [],
+   "warnings": [
+    "no leaderboard data for: add_auc, spider_sr, maniptrans_sr, mppe_cm"
+   ]
+  },
+  {
+   "key": "track_2_tier2",
+   "title": "Track 2 - Robotic Grounding (Tier 2: synthetically corrupted input)",
+   "short_title": "Track 2 \u00b7 Tier 2",
+   "metrics": [
+    {
+     "key": "add_auc",
+     "display": "AUC",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track2-tier2-auc",
+     "available": false
+    },
+    {
+     "key": "spider_sr",
+     "display": "SP-SR",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track2-tier2-sp-sr",
+     "available": false
+    },
+    {
+     "key": "maniptrans_sr",
+     "display": "MP-SR",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track2-tier2-mp-sr",
+     "available": false
+    },
+    {
+     "key": "mppe_cm",
+     "display": "MPPE",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v2d-challenge-track2-tier2-mppe",
+     "available": false
+    }
+   ],
+   "rows": [],
+   "incomplete": [],
+   "warnings": [
+    "no leaderboard data for: add_auc, spider_sr, maniptrans_sr, mppe_cm"
+   ]
+  },
+  {
+   "key": "track_2_tier3",
+   "title": "Track 2 - Robotic Grounding (Tier 3: bring your own reconstruction)",
+   "short_title": "Track 2 \u00b7 Tier 3",
+   "metrics": [
+    {
+     "key": "add_auc",
+     "display": "AUC",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track2-tier3-auc",
+     "available": false
+    },
+    {
+     "key": "spider_sr",
+     "display": "SP-SR",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track2-tier3-sp-sr",
+     "available": false
+    },
+    {
+     "key": "maniptrans_sr",
+     "display": "MP-SR",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track2-tier3-mp-sr",
+     "available": false
+    },
+    {
+     "key": "mppe_cm",
+     "display": "MPPE",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v2d-challenge-track2-tier3-mppe",
+     "available": false
+    }
+   ],
+   "rows": [],
+   "incomplete": [],
+   "warnings": [
+    "no leaderboard data for: add_auc, spider_sr, maniptrans_sr, mppe_cm"
+   ]
+  },
+  {
+   "key": "track_3",
+   "title": "Track 3 - Egocentric",
+   "short_title": "Track 3",
+   "metrics": [
+    {
+     "key": "add_auc",
+     "display": "AUC",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track3-auc",
+     "available": false
+    },
+    {
+     "key": "spider_sr",
+     "display": "SP-SR",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track3-sp-sr",
+     "available": false
+    },
+    {
+     "key": "maniptrans_sr",
+     "display": "MP-SR",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v2d-challenge-track3-mp-sr",
+     "available": false
+    },
+    {
+     "key": "rpe_cm",
+     "display": "RPE",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v2d-challenge-track3-rpe",
+     "available": false
+    },
+    {
+     "key": "mppe_cm",
+     "display": "MPPE",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v2d-challenge-track3-mppe",
+     "available": false
+    }
+   ],
+   "rows": [],
+   "incomplete": [],
+   "warnings": [
+    "no leaderboard data for: add_auc, spider_sr, maniptrans_sr, rpe_cm, mppe_cm"
+   ]
+  }
+ ]
 }

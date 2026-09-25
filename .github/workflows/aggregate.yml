@@ -1,0 +1,59 @@
+name: aggregate
+
+# Every 15 minutes: pull every V2D Challenge Kaggle leaderboard, join them per track, and commit
+# leaderboard.json if a score or a ranking changed. The challenge page fetches that file.
+#
+# Needs one repository secret, KAGGLE_API_TOKEN (a static token from
+# https://www.kaggle.com/settings/api). Without it the run fails at authentication and commits
+# nothing.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Never let two runs race on the same commit. A queued run waits rather than being cancelled,
+# because the later run carries the fresher data.
+concurrency:
+  group: aggregate
+  cancel-in-progress: false
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the Kaggle client
+        run: pip install --disable-pip-version-check --quiet "kaggle==2.2.4"
+
+      # A competition that does not exist yet, or has no submissions, is not an error: the
+      # aggregator logs it, marks its metric available=false, and lists it in the track's
+      # warnings. Only a failed authentication or an unparseable config fails the run.
+      - name: Aggregate
+        env:
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: python aggregator/v2d_aggregate.py --out leaderboard.json
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- leaderboard.json; then
+            echo "leaderboard.json unchanged; nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add leaderboard.json
+          git commit -m "leaderboard: scores changed ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          # A human may have pushed while this ran. leaderboard.json is only ever written here,
+          # so rebasing over their commit cannot conflict.
+          git pull --rebase --quiet origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
