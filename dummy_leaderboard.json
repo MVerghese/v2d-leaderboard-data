@@ -1,1 +1,143 @@
-{"schema": 1, "source": "kaggle", "tracks": []}
+{
+ "schema": 1,
+ "generated_at": "2026-09-28T22:03:41+00:00",
+ "source": "kaggle",
+ "tracks": [
+  {
+   "key": "track_3",
+   "title": "V2D Test - Track 3 Egocentric",
+   "short_title": "Track 3",
+   "metrics": [
+    {
+     "key": "add_auc",
+     "display": "AUC",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v-2-d-test-auc",
+     "available": true
+    },
+    {
+     "key": "spider_sr",
+     "display": "SP-SR",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v-2-d-test",
+     "available": true
+    },
+    {
+     "key": "maniptrans_sr",
+     "display": "MP-SR",
+     "unit": "",
+     "higher_is_better": true,
+     "competition": "v-2-d-test-mp-sr",
+     "available": true
+    },
+    {
+     "key": "rpe_cm",
+     "display": "RPE",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v-2-d-test-rpe",
+     "available": true
+    },
+    {
+     "key": "mppe_cm",
+     "display": "MPPE",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v-2-d-test-mppe",
+     "available": true
+    },
+    {
+     "key": "cd_o_cm",
+     "display": "CD-O",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v-2-d-test-t3-cd-o",
+     "available": true
+    }
+   ],
+   "rows": [
+    {
+     "team": "Zeo Liu",
+     "members": [
+      "zeoliunvidia"
+     ],
+     "scores": {
+      "add_auc": 0.64545,
+      "spider_sr": 0.6,
+      "maniptrans_sr": 0.45,
+      "rpe_cm": 15.35351,
+      "mppe_cm": 12.55744
+     },
+     "submission_count": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "rpe_cm": 1,
+      "mppe_cm": 1
+     },
+     "last_submission": "2026-09-22 17:26:02",
+     "kaggle_rank": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "rpe_cm": 1,
+      "mppe_cm": 1
+     },
+     "missing": [
+      "cd_o_cm"
+     ],
+     "rank": 1
+    },
+    {
+     "team": "Michael Lin",
+     "members": [
+      "michaellinnv"
+     ],
+     "scores": {
+      "add_auc": 0.59371,
+      "spider_sr": 0.6,
+      "maniptrans_sr": 0.35,
+      "rpe_cm": 15.87041,
+      "mppe_cm": 13.22233
+     },
+     "submission_count": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "rpe_cm": 1,
+      "mppe_cm": 1
+     },
+     "last_submission": "2026-09-22 22:19:17",
+     "kaggle_rank": {
+      "add_auc": 2,
+      "spider_sr": 2,
+      "maniptrans_sr": 2,
+      "rpe_cm": 2,
+      "mppe_cm": 2
+     },
+     "missing": [
+      "cd_o_cm"
+     ],
+     "rank": 2
+    }
+   ],
+   "incomplete": [
+    {
+     "team": "Zeo Liu",
+     "missing": [
+      "cd_o_cm"
+     ]
+    },
+    {
+     "team": "Michael Lin",
+     "missing": [
+      "cd_o_cm"
+     ]
+    }
+   ],
+   "warnings": []
+  }
+ ]
+}
