@@ -1,14 +1,12 @@
-name: aggregate
+name: aggregate-track3-test
 
-# Every 15 minutes: pull every V2D Challenge Kaggle leaderboard, join them per track, and commit
-# leaderboard.json if a score or a ranking changed. The challenge page fetches that file.
+# On demand: pull the six Track 3 test competitions and commit
+# dummy_leaderboard.json on this branch. The challenge page reads main/leaderboard.json.
 #
 # Needs one repository secret, KAGGLE_API_TOKEN (a static token from
 # https://www.kaggle.com/settings/api). Without it each run logs a warning and commits nothing.
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -17,7 +15,7 @@ permissions:
 # Never let two runs race on the same commit. A queued run waits rather than being cancelled,
 # because the later run carries the fresher data.
 concurrency:
-  group: aggregate
+  group: aggregate-track3-test
   cancel-in-progress: false
 
 jobs:
@@ -47,19 +45,19 @@ jobs:
             echo "::warning::KAGGLE_API_TOKEN secret is not set; skipping aggregation"
             exit 0
           fi
-          python aggregator/v2d_aggregate.py --out leaderboard.json
+          python aggregator/v2d_aggregate.py --config aggregator/tracks.test.json --out dummy_leaderboard.json
 
       - name: Commit if changed
         run: |
-          if git diff --quiet -- leaderboard.json; then
-            echo "leaderboard.json unchanged; nothing to commit"
+          if git diff --quiet -- dummy_leaderboard.json; then
+            echo "dummy_leaderboard.json unchanged; nothing to commit"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add leaderboard.json
+          git add dummy_leaderboard.json
           git commit -m "leaderboard: scores changed ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
-          # A human may have pushed while this ran. leaderboard.json is only ever written here,
+          # A human may have pushed while this ran. dummy_leaderboard.json is only ever written here,
           # so rebasing over their commit cannot conflict.
           git pull --rebase --quiet origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
