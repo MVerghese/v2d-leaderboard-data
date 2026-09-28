@@ -68,7 +68,7 @@ HEADER = (
     "# Do not edit here; change the source and re-sync. See aggregator/resync.py.\n"
 )
 
-TRACK_FIELDS = ("title", "short_title", "metrics", "competitions")
+TRACK_FIELDS = ("title", "short_title", "metrics", "competitions", "leaderboard_group")
 
 
 def main() -> int:

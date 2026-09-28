@@ -338,6 +338,26 @@ def publish(repo: Path, relative: Path, message: str) -> None:
     print(f"publish: pushed {relative}")
 
 
+def leaderboard_tables(config: dict) -> dict[str, dict]:
+    """One table per site tab. An entry with ``leaderboard_group`` adds its columns to that table.
+
+    Track 3's CD-O is its own Kaggle competition, because a mesh per (episode, object) shares no
+    rows with the per-frame poses the other Track 3 metrics score, but on the site it is one more
+    column of the Track 3 table. Folding it in here keeps the renderer unaware of the split.
+    """
+    tables = {track: dict(spec, metrics=list(spec["metrics"]), competitions=dict(spec["competitions"]))
+              for track, spec in config["tracks"].items() if "leaderboard_group" not in spec}
+    for track, spec in config["tracks"].items():
+        group = spec.get("leaderboard_group")
+        if group is None:
+            continue
+        if group not in tables:
+            raise SystemExit(f"{track}: leaderboard_group {group!r} is not a track")
+        tables[group]["metrics"] += spec["metrics"]
+        tables[group]["competitions"].update(spec["competitions"])
+    return tables
+
+
 def build_api():
     """Authenticate with KAGGLE_API_TOKEN (or ~/.kaggle). Inlined from submit/v2d_submit.py."""
     from kaggle.api.kaggle_api_extended import KaggleApi
@@ -372,7 +392,7 @@ def main() -> int:
         api = build_api()
 
     tracks = []
-    for track, spec in config["tracks"].items():
+    for track, spec in leaderboard_tables(config).items():
         print(f"{track}:")
         boards: dict[str, list[dict] | None] = {}
         for metric in spec["metrics"]:

@@ -136,6 +136,17 @@
         "rpe_cm": "v2d-challenge-track3-rpe",
         "mppe_cm": "v2d-challenge-track3-mppe"
       }
+    },
+    "track_3_mesh": {
+      "title": "Track 3 - Egocentric (object reconstruction)",
+      "short_title": "Track 3",
+      "metrics": [
+        "cd_o_cm"
+      ],
+      "competitions": {
+        "cd_o_cm": "v2d-challenge-track3-cd-o"
+      },
+      "leaderboard_group": "track_3"
     }
   }
 }
