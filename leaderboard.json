@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-09-25T22:32:06+00:00",
+ "generated_at": "2026-09-29T01:26:34+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -14,7 +14,7 @@
      "unit": "cm",
      "higher_is_better": false,
      "competition": "v2d-challenge-track1-cd-h",
-     "available": false
+     "available": true
     },
     {
      "key": "cd_o_cm",
@@ -22,7 +22,7 @@
      "unit": "cm",
      "higher_is_better": false,
      "competition": "v2d-challenge-track1-cd-o",
-     "available": false
+     "available": true
     },
     {
      "key": "acc_h_cm",
@@ -30,7 +30,7 @@
      "unit": "cm",
      "higher_is_better": false,
      "competition": "v2d-challenge-track1-acc-h",
-     "available": false
+     "available": true
     },
     {
      "key": "acc_o_cm",
@@ -38,7 +38,7 @@
      "unit": "cm",
      "higher_is_better": false,
      "competition": "v2d-challenge-track1-acc-o",
-     "available": false
+     "available": true
     },
     {
      "key": "interpenetration_cm",
@@ -46,14 +46,12 @@
      "unit": "cm",
      "higher_is_better": false,
      "competition": "v2d-challenge-track1-pen",
-     "available": false
+     "available": true
     }
    ],
    "rows": [],
    "incomplete": [],
-   "warnings": [
-    "no leaderboard data for: cd_h_cm, cd_o_cm, acc_h_cm, acc_o_cm, interpenetration_cm"
-   ]
+   "warnings": []
   },
   {
    "key": "track_2_tier1",
@@ -66,7 +64,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track2-tier1-auc",
-     "available": false
+     "available": true
     },
     {
      "key": "spider_sr",
@@ -74,7 +72,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track2-tier1-sp-sr",
-     "available": false
+     "available": true
     },
     {
      "key": "maniptrans_sr",
@@ -82,7 +80,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track2-tier1-mp-sr",
-     "available": false
+     "available": true
     },
     {
      "key": "mppe_cm",
@@ -90,14 +88,12 @@
      "unit": "cm",
      "higher_is_better": false,
      "competition": "v2d-challenge-track2-tier1-mppe",
-     "available": false
+     "available": true
     }
    ],
    "rows": [],
    "incomplete": [],
-   "warnings": [
-    "no leaderboard data for: add_auc, spider_sr, maniptrans_sr, mppe_cm"
-   ]
+   "warnings": []
   },
   {
    "key": "track_2_tier2",
@@ -110,7 +106,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track2-tier2-auc",
-     "available": false
+     "available": true
     },
     {
      "key": "spider_sr",
@@ -118,7 +114,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track2-tier2-sp-sr",
-     "available": false
+     "available": true
     },
     {
      "key": "maniptrans_sr",
@@ -126,7 +122,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track2-tier2-mp-sr",
-     "available": false
+     "available": true
     },
     {
      "key": "mppe_cm",
@@ -134,14 +130,12 @@
      "unit": "cm",
      "higher_is_better": false,
      "competition": "v2d-challenge-track2-tier2-mppe",
-     "available": false
+     "available": true
     }
    ],
    "rows": [],
    "incomplete": [],
-   "warnings": [
-    "no leaderboard data for: add_auc, spider_sr, maniptrans_sr, mppe_cm"
-   ]
+   "warnings": []
   },
   {
    "key": "track_2_tier3",
@@ -154,7 +148,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track2-tier3-auc",
-     "available": false
+     "available": true
     },
     {
      "key": "spider_sr",
@@ -162,7 +156,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track2-tier3-sp-sr",
-     "available": false
+     "available": true
     },
     {
      "key": "maniptrans_sr",
@@ -170,7 +164,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track2-tier3-mp-sr",
-     "available": false
+     "available": true
     },
     {
      "key": "mppe_cm",
@@ -178,14 +172,12 @@
      "unit": "cm",
      "higher_is_better": false,
      "competition": "v2d-challenge-track2-tier3-mppe",
-     "available": false
+     "available": true
     }
    ],
    "rows": [],
    "incomplete": [],
-   "warnings": [
-    "no leaderboard data for: add_auc, spider_sr, maniptrans_sr, mppe_cm"
-   ]
+   "warnings": []
   },
   {
    "key": "track_3",
@@ -198,7 +190,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track3-auc",
-     "available": false
+     "available": true
     },
     {
      "key": "spider_sr",
@@ -206,7 +198,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track3-sp-sr",
-     "available": false
+     "available": true
     },
     {
      "key": "maniptrans_sr",
@@ -214,7 +206,7 @@
      "unit": "",
      "higher_is_better": true,
      "competition": "v2d-challenge-track3-mp-sr",
-     "available": false
+     "available": true
     },
     {
      "key": "rpe_cm",
@@ -222,7 +214,7 @@
      "unit": "cm",
      "higher_is_better": false,
      "competition": "v2d-challenge-track3-rpe",
-     "available": false
+     "available": true
     },
     {
      "key": "mppe_cm",
@@ -230,14 +222,20 @@
      "unit": "cm",
      "higher_is_better": false,
      "competition": "v2d-challenge-track3-mppe",
-     "available": false
+     "available": true
+    },
+    {
+     "key": "cd_o_cm",
+     "display": "CD-O",
+     "unit": "cm",
+     "higher_is_better": false,
+     "competition": "v2d-challenge-track3-cd-o",
+     "available": true
     }
    ],
    "rows": [],
    "incomplete": [],
-   "warnings": [
-    "no leaderboard data for: add_auc, spider_sr, maniptrans_sr, rpe_cm, mppe_cm"
-   ]
+   "warnings": []
   }
  ]
 }
