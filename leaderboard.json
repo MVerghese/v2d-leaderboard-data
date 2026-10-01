@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-01T00:20:47+00:00",
+ "generated_at": "2026-10-01T19:47:40+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -49,8 +49,46 @@
      "available": true
     }
    ],
-   "rows": [],
-   "incomplete": [],
+   "rows": [
+    {
+     "team": "Lattice Studios",
+     "members": [
+      "latticestudios"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 37.14471,
+      "cd_o_cm": 57.33119,
+      "acc_h_cm": 3.59759,
+      "acc_o_cm": 7.34373
+     },
+     "submission_count": {
+      "cd_h_cm": 1,
+      "cd_o_cm": 1,
+      "acc_h_cm": 1,
+      "acc_o_cm": 1
+     },
+     "last_submission": "2026-10-01 19:20:06",
+     "kaggle_rank": {
+      "cd_h_cm": 1,
+      "cd_o_cm": 1,
+      "acc_h_cm": 1,
+      "acc_o_cm": 1
+     },
+     "missing": [
+      "interpenetration_cm"
+     ],
+     "rank": 1
+    }
+   ],
+   "incomplete": [
+    {
+     "team": "Lattice Studios",
+     "missing": [
+      "interpenetration_cm"
+     ]
+    }
+   ],
    "warnings": []
   },
   {
