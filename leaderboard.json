@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-01T19:47:40+00:00",
+ "generated_at": "2026-10-01T21:28:23+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -50,6 +50,34 @@
     }
    ],
    "rows": [
+    {
+     "team": "CARI4D Basline",
+     "members": [],
+     "is_baseline": true,
+     "scores": {
+      "cd_h_cm": 15.57527,
+      "cd_o_cm": 23.16246,
+      "acc_h_cm": 1.97387,
+      "acc_o_cm": 0.72622,
+      "interpenetration_cm": 0.00423
+     },
+     "submission_count": {
+      "cd_h_cm": 1,
+      "cd_o_cm": 1,
+      "acc_h_cm": 1,
+      "acc_o_cm": 1,
+      "interpenetration_cm": 1
+     },
+     "last_submission": "2026-10-01 20:49:51",
+     "kaggle_rank": {
+      "cd_h_cm": 0,
+      "cd_o_cm": 0,
+      "acc_h_cm": 0,
+      "acc_o_cm": 0,
+      "interpenetration_cm": 0
+     },
+     "rank": null
+    },
     {
      "team": "Lattice Studios",
      "members": [
