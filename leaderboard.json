@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-01T00:03:40+00:00",
+ "generated_at": "2026-10-01T00:20:47+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -95,6 +95,7 @@
     {
      "team": "CHORD Baseline",
      "members": [],
+     "is_baseline": true,
      "scores": {
       "add_auc": 0.51038,
       "spider_sr": 0.7,
@@ -114,13 +115,11 @@
       "maniptrans_sr": 0,
       "mppe_cm": 0
      },
-     "rank": 1
+     "rank": null
     }
    ],
    "incomplete": [],
-   "warnings": [
-    "at least one leaderboard export had no TeamMemberUserNames column, so those rows were joined on the editable team name"
-   ]
+   "warnings": []
   },
   {
    "key": "track_2_tier2",
@@ -164,6 +163,7 @@
     {
      "team": "CHORD Baseline",
      "members": [],
+     "is_baseline": true,
      "scores": {
       "add_auc": 0.37374,
       "spider_sr": 0.53333,
@@ -183,13 +183,11 @@
       "maniptrans_sr": 0,
       "mppe_cm": 0
      },
-     "rank": 1
+     "rank": null
     }
    ],
    "incomplete": [],
-   "warnings": [
-    "at least one leaderboard export had no TeamMemberUserNames column, so those rows were joined on the editable team name"
-   ]
+   "warnings": []
   },
   {
    "key": "track_2_tier3",
@@ -233,6 +231,7 @@
     {
      "team": "CHORD Baseline (CARI4D Reconstruction)",
      "members": [],
+     "is_baseline": true,
      "scores": {
       "add_auc": 0.00226,
       "spider_sr": 0.0,
@@ -252,13 +251,11 @@
       "maniptrans_sr": 0,
       "mppe_cm": 0
      },
-     "rank": 1
+     "rank": null
     }
    ],
    "incomplete": [],
-   "warnings": [
-    "at least one leaderboard export had no TeamMemberUserNames column, so those rows were joined on the editable team name"
-   ]
+   "warnings": []
   },
   {
    "key": "track_3",
