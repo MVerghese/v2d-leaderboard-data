@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-09-29T01:26:34+00:00",
+ "generated_at": "2026-10-01T00:03:40+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -91,9 +91,36 @@
      "available": true
     }
    ],
-   "rows": [],
+   "rows": [
+    {
+     "team": "CHORD Baseline",
+     "members": [],
+     "scores": {
+      "add_auc": 0.51038,
+      "spider_sr": 0.7,
+      "maniptrans_sr": 0.2,
+      "mppe_cm": 17.73644
+     },
+     "submission_count": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "mppe_cm": 1
+     },
+     "last_submission": "2026-09-30 23:35:58",
+     "kaggle_rank": {
+      "add_auc": 0,
+      "spider_sr": 0,
+      "maniptrans_sr": 0,
+      "mppe_cm": 0
+     },
+     "rank": 1
+    }
+   ],
    "incomplete": [],
-   "warnings": []
+   "warnings": [
+    "at least one leaderboard export had no TeamMemberUserNames column, so those rows were joined on the editable team name"
+   ]
   },
   {
    "key": "track_2_tier2",
@@ -133,9 +160,36 @@
      "available": true
     }
    ],
-   "rows": [],
+   "rows": [
+    {
+     "team": "CHORD Baseline",
+     "members": [],
+     "scores": {
+      "add_auc": 0.37374,
+      "spider_sr": 0.53333,
+      "maniptrans_sr": 0.06666,
+      "mppe_cm": 20.52402
+     },
+     "submission_count": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "mppe_cm": 1
+     },
+     "last_submission": "2026-09-30 23:36:10",
+     "kaggle_rank": {
+      "add_auc": 0,
+      "spider_sr": 0,
+      "maniptrans_sr": 0,
+      "mppe_cm": 0
+     },
+     "rank": 1
+    }
+   ],
    "incomplete": [],
-   "warnings": []
+   "warnings": [
+    "at least one leaderboard export had no TeamMemberUserNames column, so those rows were joined on the editable team name"
+   ]
   },
   {
    "key": "track_2_tier3",
@@ -175,9 +229,36 @@
      "available": true
     }
    ],
-   "rows": [],
+   "rows": [
+    {
+     "team": "CHORD Baseline (CARI4D Reconstruction)",
+     "members": [],
+     "scores": {
+      "add_auc": 0.00226,
+      "spider_sr": 0.0,
+      "maniptrans_sr": 0.0,
+      "mppe_cm": 70.17205
+     },
+     "submission_count": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "mppe_cm": 1
+     },
+     "last_submission": "2026-09-30 23:36:21",
+     "kaggle_rank": {
+      "add_auc": 0,
+      "spider_sr": 0,
+      "maniptrans_sr": 0,
+      "mppe_cm": 0
+     },
+     "rank": 1
+    }
+   ],
    "incomplete": [],
-   "warnings": []
+   "warnings": [
+    "at least one leaderboard export had no TeamMemberUserNames column, so those rows were joined on the editable team name"
+   ]
   },
   {
    "key": "track_3",
