@@ -65,6 +65,7 @@ _ALIASES = {
     "score": "score",
     "submissioncount": "submission_count",
     "teammemberusernames": "members",
+    "isbenchmark": "is_benchmark",
 }
 
 
@@ -108,8 +109,19 @@ def download_leaderboard(api, slug: str) -> list[dict] | None:
 _KEY_SEP = "\x1f"
 
 
+def is_baseline(row: dict) -> bool:
+    """Read the benchmark flag, or Kaggle's unranked benchmark rank (0)."""
+    flag = row.get("is_benchmark")
+    if flag is not None and str(flag).strip():
+        return str(flag).strip().lower() in {"true", "1", "yes"}
+    return _int(row.get("rank")) == 0
+
+
 def team_key(row: dict) -> tuple[str, list[str], bool]:
-    """(join key, member usernames, whether the key is the stable one)."""
+    """Return the join key, member usernames, and identity availability."""
+    if is_baseline(row):
+        name = (row.get("team_name") or "").strip()
+        return (_KEY_SEP + "benchmark" + _KEY_SEP + name, [], True) if name else ("", [], False)
     members = (row.get("members") or "").strip()
     if members:
         parts = sorted(p.strip() for p in members.replace(";", ",").split(",") if p.strip())
@@ -150,7 +162,10 @@ def _reconcile_name_keyed(teams: dict[str, dict]) -> None:
         return {entry["team"], *entry.get("other_names", [])}
 
     for key, entry in list(unstable.items()):
-        candidates = [k for k, e in stable.items() if key in names_of(e)]
+        candidates = [
+            k for k, e in stable.items()
+            if key in names_of(e) and e.get("is_baseline", False) == entry.get("is_baseline", False)
+        ]
         if len(candidates) != 1:
             continue
         target = teams[candidates[0]]
@@ -183,6 +198,7 @@ def build_track(track: str, spec: dict, boards: dict[str, list[dict] | None], co
                 {
                     "team": row.get("team_name") or key,
                     "members": members,
+                    "is_baseline": is_baseline(row),
                     "scores": {},
                     "submission_count": {},
                     "last_submission": None,
@@ -229,8 +245,13 @@ def build_track(track: str, spec: dict, boards: dict[str, list[dict] | None], co
             e["team"].lower(),
         )
     )
-    for position, entry in enumerate(rows, 1):
-        entry["rank"] = position
+    position = 0
+    for entry in rows:
+        if entry["is_baseline"]:
+            entry["rank"] = None
+        else:
+            position += 1
+            entry["rank"] = position
 
     warnings = []
     if degraded_join:

@@ -12,7 +12,7 @@ Keeping the data here means the site changes only when a human changes it.
 `.github/workflows/aggregate.yml` runs every 15 minutes (and on demand from the Actions tab):
 
 1. Installs the `kaggle` client and runs `python aggregator/v2d_aggregate.py --out leaderboard.json`.
-2. The aggregator downloads every V2D competition leaderboard from Kaggle (22 competitions, one per metric per track entry), joins teams across competitions on their Kaggle usernames, and writes `leaderboard.json`.
+2. The aggregator downloads every V2D competition leaderboard from Kaggle (23 competitions, one per metric per track entry), joins teams across competitions on their Kaggle usernames, and writes `leaderboard.json`.
 3. If a score or a ranking changed, the workflow commits `leaderboard.json` as `github-actions[bot]` and pushes. Otherwise it commits nothing.
 
 The aggregator rewrites the file only on a material change, so `generated_at` is the time the standings last changed, not the time of the last check.
@@ -78,7 +78,7 @@ on every load and every five minutes while the page is open, with a cache-bustin
       "rows": [
         {"team": "...", "members": ["kaggle_user"], "scores": {"add_auc": 0.91234},
          "submission_count": {"add_auc": 3}, "kaggle_rank": {"add_auc": 1},
-         "last_submission": "2026-10-01", "rank": 1}
+         "last_submission": "2026-10-01", "rank": 1, "is_baseline": false}
       ],
       "incomplete": [{"team": "...", "missing": ["mppe_cm"]}],
       "warnings": ["no leaderboard data for: ..."]
@@ -95,3 +95,7 @@ A `null` score means that team has not submitted to that leaderboard; the render
 
 Each Track 2 tier is a separate set of Kaggle competitions and a separate track here.
 The aggregator never merges tiers.
+
+## Baselines
+
+Kaggle benchmark rows have rank `0` in the leaderboard CSV export. The aggregator marks them `is_baseline: true`, joins them by method name, and sets their participant rank to `null`. The website displays a Baseline badge beside the method name. Participant ranks exclude these entries.
