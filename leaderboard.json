@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-01T21:53:46+00:00",
+ "generated_at": "2026-10-02T02:27:08+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -151,6 +151,33 @@
     }
    ],
    "rows": [
+    {
+     "team": "Xueyi Wang (FF)",
+     "members": [
+      "wxy821018"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "add_auc": 0.52716,
+      "spider_sr": 0.7,
+      "maniptrans_sr": 0.5,
+      "mppe_cm": 12.47578
+     },
+     "submission_count": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "mppe_cm": 1
+     },
+     "last_submission": "2026-10-02 00:53:56",
+     "kaggle_rank": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "mppe_cm": 1
+     },
+     "rank": 1
+    },
     {
      "team": "CHORD Baseline",
      "members": [],
