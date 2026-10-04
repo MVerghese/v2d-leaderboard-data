@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-03T20:01:44+00:00",
+ "generated_at": "2026-10-04T02:11:30+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -51,6 +51,36 @@
    ],
    "rows": [
     {
+     "team": "ByeByeHelloHaHaHa",
+     "members": [
+      "byebyehellohahaha"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 14.20515,
+      "cd_o_cm": 31.40578,
+      "acc_h_cm": 0.16957,
+      "acc_o_cm": 0.2045,
+      "interpenetration_cm": 0.10952
+     },
+     "submission_count": {
+      "cd_h_cm": 1,
+      "cd_o_cm": 1,
+      "acc_h_cm": 1,
+      "acc_o_cm": 1,
+      "interpenetration_cm": 1
+     },
+     "last_submission": "2026-10-03 23:53:32",
+     "kaggle_rank": {
+      "cd_h_cm": 1,
+      "cd_o_cm": 2,
+      "acc_h_cm": 1,
+      "acc_o_cm": 2,
+      "interpenetration_cm": 3
+     },
+     "rank": 1
+    },
+    {
      "team": "Open4D",
      "members": [
       "alex0807",
@@ -73,13 +103,13 @@
      },
      "last_submission": "2026-10-03 19:13:52",
      "kaggle_rank": {
-      "cd_h_cm": 1,
+      "cd_h_cm": 2,
       "cd_o_cm": 1,
-      "acc_h_cm": 1,
+      "acc_h_cm": 2,
       "acc_o_cm": 1,
       "interpenetration_cm": 1
      },
-     "rank": 1
+     "rank": 2
     },
     {
      "team": "CARI4D Basline",
@@ -131,13 +161,13 @@
      },
      "last_submission": "2026-10-01 19:20:14",
      "kaggle_rank": {
-      "cd_h_cm": 2,
-      "cd_o_cm": 2,
-      "acc_h_cm": 2,
-      "acc_o_cm": 2,
+      "cd_h_cm": 3,
+      "cd_o_cm": 3,
+      "acc_h_cm": 3,
+      "acc_o_cm": 3,
       "interpenetration_cm": 2
      },
-     "rank": 2
+     "rank": 3
     }
    ],
    "incomplete": [],
