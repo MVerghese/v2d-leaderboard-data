@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-04T21:18:19+00:00",
+ "generated_at": "2026-10-05T12:29:58+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -458,7 +458,41 @@
      "available": true
     }
    ],
-   "rows": [],
+   "rows": [
+    {
+     "team": "Panav Raaj",
+     "members": [
+      "panavraaj"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "add_auc": 0.21199,
+      "spider_sr": 0.05,
+      "maniptrans_sr": 0.0,
+      "rpe_cm": 20.04542,
+      "mppe_cm": 15.22125,
+      "cd_o_cm": 0.11218
+     },
+     "submission_count": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "rpe_cm": 1,
+      "mppe_cm": 1,
+      "cd_o_cm": 1
+     },
+     "last_submission": "2026-10-05 06:23:31",
+     "kaggle_rank": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "rpe_cm": 1,
+      "mppe_cm": 1,
+      "cd_o_cm": 1
+     },
+     "rank": 1
+    }
+   ],
    "incomplete": [],
    "warnings": []
   }
