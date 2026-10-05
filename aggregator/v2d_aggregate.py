@@ -64,6 +64,7 @@ _ALIASES = {
     "submissiondate": "submission_date",
     "score": "score",
     "submissioncount": "submission_count",
+    "submissionid": "submission_id",
     "teammemberusernames": "members",
     "isbenchmark": "is_benchmark",
 }
@@ -329,8 +330,57 @@ def write_atomic(path: Path, payload: str) -> bool:
     return True
 
 
-def publish(repo: Path, relative: Path, message: str) -> None:
-    """Commit and push the JSON to the data repo that the challenge page fetches."""
+def history_snapshot(track: str, metric: str, competition: str, board: list[dict]) -> dict:
+    """Capture the scores and submission metadata in one competition export."""
+    rows = []
+    for row in board:
+        _, members, _ = team_key(row)
+        rows.append({
+            "team_id": _int(row.get("team_id")),
+            "team": (row.get("team_name") or "").strip(),
+            "members": members,
+            "is_baseline": is_baseline(row),
+            "leaderboard_score": _float(row.get("score")),
+            "leaderboard_rank": _int(row.get("rank")),
+            "submission_count": _int(row.get("submission_count")),
+            "last_submission_date": (row.get("submission_date") or "").strip() or None,
+            "leaderboard_submission_id": _int(row.get("submission_id")),
+        })
+    rows.sort(key=lambda row: json.dumps(row, sort_keys=True))
+    return {"schema": 1, "kind": "leaderboard_snapshot", "source": "kaggle_leaderboard_export",
+            "track": track, "metric": metric, "competition": competition, "rows": rows}
+
+
+def record_history(path: Path, snapshots: list[dict], observed_at: str) -> int:
+    """Append changed competition snapshots, preserving all previous records."""
+    existing = path.read_text() if path.exists() else ""
+    latest = {}
+    for line_number, line in enumerate(existing.splitlines(), 1):
+        try:
+            record = json.loads(line)
+            if (record.get("schema") != 1 or record.get("kind") != "leaderboard_snapshot"
+                    or not isinstance(record.get("rows"), list) or not record.get("observed_at")):
+                raise ValueError("unsupported history record")
+            competition = record["competition"]
+            latest[competition] = {key: value for key, value in record.items() if key != "observed_at"}
+        except (ValueError, KeyError, AttributeError, TypeError) as error:
+            raise SystemExit(f"{path}:{line_number}: invalid history; file preserved ({error})") from error
+    additions = []
+    for snapshot in snapshots:
+        competition = snapshot["competition"]
+        if latest.get(competition) == snapshot:
+            continue
+        additions.append(json.dumps({**snapshot, "observed_at": observed_at}, sort_keys=True, allow_nan=False))
+        latest[competition] = snapshot
+    if additions:
+        separator = "\n" if existing and not existing.endswith("\n") else ""
+        write_atomic(path, existing + separator + "\n".join(additions) + "\n")
+    return len(additions)
+
+
+def publish(repo: Path, relative: Path | list[Path], message: str) -> None:
+    """Commit and push the leaderboard and optional history files."""
+    paths = [str(path) for path in (relative if isinstance(relative, list) else [relative])]
     token = os.environ.get("GITHUB_TOKEN", "").strip()
     env = dict(os.environ)
     env.setdefault("GIT_AUTHOR_NAME", "V2D Leaderboard Bot")
@@ -341,10 +391,10 @@ def publish(repo: Path, relative: Path, message: str) -> None:
     def git(*args, check=True):
         return subprocess.run(["git", "-C", str(repo), *args], check=check, capture_output=True, text=True, env=env)
 
-    if git("status", "--porcelain", str(relative)).stdout.strip() == "":
+    if git("status", "--porcelain", "--", *paths).stdout.strip() == "":
         print("publish: nothing changed")
         return
-    git("add", str(relative))
+    git("add", "--", *paths)
     git("commit", "-m", message)
     push = ["push", "origin", "HEAD"]
     if token:
@@ -356,7 +406,7 @@ def publish(repo: Path, relative: Path, message: str) -> None:
     result = git(*push, check=False)
     if result.returncode != 0:
         raise SystemExit(f"publish: git push failed:\n{result.stderr}")
-    print(f"publish: pushed {relative}")
+    print(f"publish: pushed {', '.join(paths)}")
 
 
 def leaderboard_tables(config: dict) -> dict[str, dict]:
@@ -395,6 +445,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--out", type=Path, required=True, help="path to write leaderboard.json")
     parser.add_argument("--config", type=Path, default=CONFIG)
+    parser.add_argument("--history", type=Path, help="append changed competition snapshots to this JSONL file")
     parser.add_argument(
         "--from-dir",
         type=Path,
@@ -402,7 +453,7 @@ def main() -> int:
         "(used by the offline tests and for replaying a past pull)",
     )
     parser.add_argument("--save-raw", type=Path, help="also keep each downloaded leaderboard CSV here")
-    parser.add_argument("--publish", action="store_true", help="git commit and push --out after writing")
+    parser.add_argument("--publish", action="store_true", help="git commit and push the leaderboard and history changes")
     parser.add_argument("--publish-repo", type=Path, help="repo root for --publish (default: --out's repo)")
     parser.add_argument("--now", help="ISO timestamp to stamp into the output (default: current UTC)")
     args = parser.parse_args()
@@ -413,6 +464,7 @@ def main() -> int:
         api = build_api()
 
     tracks = []
+    snapshots = []
     for track, spec in leaderboard_tables(config).items():
         print(f"{track}:")
         boards: dict[str, list[dict] | None] = {}
@@ -433,6 +485,8 @@ def main() -> int:
             if board is not None:
                 print(f"  {metric:16s} {slug:40s} {len(board)} team(s)")
             boards[metric] = board
+            if board is not None and args.history:
+                snapshots.append(history_snapshot(track, metric, slug, board))
         tracks.append(build_track(track, spec, boards, config))
 
     generated = args.now or datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -448,18 +502,22 @@ def main() -> int:
             changed = material(json.loads(args.out.read_text())) != material(json.loads(payload))
         except json.JSONDecodeError:
             changed = True
-    if not changed:
+    history_added = record_history(args.history, snapshots, generated) if args.history else 0
+    if args.history:
+        print(f"history: appended {history_added} competition snapshot(s) to {args.history}")
+    if changed:
+        write_atomic(args.out, payload)
+        total = sum(len(t["rows"]) for t in tracks)
+        print(f"wrote {args.out} ({args.out.stat().st_size:,} B, {total} team-rows across {len(tracks)} track(s))")
+    else:
         print(f"no change; leaving {args.out} untouched")
-        return 0
 
-    write_atomic(args.out, payload)
-    total = sum(len(t["rows"]) for t in tracks)
-    print(f"wrote {args.out} ({args.out.stat().st_size:,} B, {total} team-rows across {len(tracks)} track(s))")
-
-    if args.publish:
-        repo = args.publish_repo or args.out.parent
-        relative = args.out.resolve().relative_to(Path(repo).resolve())
-        publish(Path(repo), relative, f"leaderboard: scores changed ({generated})")
+    if args.publish and (changed or history_added):
+        repo = Path(args.publish_repo or args.out.parent).resolve()
+        paths = [args.out.resolve().relative_to(repo)]
+        if args.history and args.history.exists():
+            paths.append(args.history.resolve().relative_to(repo))
+        publish(repo, paths, f"leaderboard: observations updated ({generated})")
     return 0
 
 

@@ -11,9 +11,9 @@ Keeping the data here means the site changes only when a human changes it.
 
 `.github/workflows/aggregate.yml` runs every 15 minutes (and on demand from the Actions tab):
 
-1. Installs the `kaggle` client and runs `python aggregator/v2d_aggregate.py --out leaderboard.json`.
+1. Installs the `kaggle` client and runs `python aggregator/v2d_aggregate.py --out leaderboard.json --history submission_history.jsonl`.
 2. The aggregator downloads every V2D competition leaderboard from Kaggle (23 competitions, one per metric per track entry), joins teams across competitions on their Kaggle usernames, and writes `leaderboard.json`.
-3. If a score or a ranking changed, the workflow commits `leaderboard.json` as `github-actions[bot]` and pushes. Otherwise it commits nothing.
+3. The aggregator appends changed competition exports to `submission_history.jsonl`. The workflow commits changed standings or history as `github-actions[bot]`. Unchanged runs create no commit.
 
 The aggregator rewrites the file only on a material change, so `generated_at` is the time the standings last changed, not the time of the last check.
 The Actions run history shows when it last checked.
@@ -31,6 +31,34 @@ Use a static token from https://www.kaggle.com/settings/api, not the OAuth crede
     gh secret set KAGGLE_API_TOKEN -R MVerghese/v2d-leaderboard-data
 
 Without it each run skips with a warning annotation and commits nothing.
+
+## Observed submission history
+
+`submission_history.jsonl` contains one JSON record for each changed competition export. Each record includes its observation time, track, metric, competition, and the full set of exported rows. Rows retain team IDs, names, member usernames, baseline flags, leaderboard scores and ranks, submission counts, last submission dates, and submission IDs when Kaggle includes them.
+
+A new submission count or date is recorded even when the leaderboard score stays the same. Score changes from rescoring, team renames, rank changes, and removed rows are also recorded. Failed downloads preserve previous history; successful empty exports record an empty snapshot. Identical exports create no new record.
+
+This records standings observed by the scheduled job. A leaderboard score is the score shown for that team at observation time; it is not necessarily the score of their most recent attempt. Multiple attempts between runs, unsuccessful attempts, and the scores of attempts that never reach the leaderboard cannot be recovered from these exports. `leaderboard_submission_id` is `null` when the export omits it. Observation timestamps are separate from Kaggle's last submission dates.
+
+Read a team's observed scores, for example:
+
+```python
+import json
+
+with open("submission_history.jsonl") as history:
+    for line in history:
+        snapshot = json.loads(line)
+        for row in snapshot["rows"]:
+            if row["team"] == "Your team name":
+                print(snapshot["observed_at"], snapshot["competition"],
+                      row["leaderboard_score"], row["submission_count"])
+```
+
+To verify history persistence locally:
+
+```sh
+python -m unittest discover -s tests -p "test_aggregate_history.py"
+```
 
 ## The aggregator copy
 
