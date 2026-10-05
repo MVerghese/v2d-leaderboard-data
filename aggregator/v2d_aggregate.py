@@ -40,6 +40,7 @@ import os
 import subprocess
 import sys
 import tempfile
+import time
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -95,10 +96,34 @@ def read_leaderboard_from_dir(directory: Path, slug: str) -> list[dict] | None:
     return None
 
 
+_LAST_KAGGLE_REQUEST = 0.0
+
+
+def kaggle_call(function, *args, **kwargs):
+    """Space Kaggle calls and retry HTTP 429 responses."""
+    global _LAST_KAGGLE_REQUEST
+    for attempt in range(3):
+        time.sleep(max(0.0, 2.0 - (time.monotonic() - _LAST_KAGGLE_REQUEST)))
+        _LAST_KAGGLE_REQUEST = time.monotonic()
+        try:
+            return function(*args, **kwargs)
+        except Exception as error:
+            response = getattr(error, "response", None)
+            if getattr(response, "status_code", None) != 429 or attempt == 2:
+                raise
+            retry_after = _float(response.headers.get("Retry-After"))
+            delay = max(60.0 * (attempt + 1), retry_after or 0.0)
+            print(f"Kaggle rate limit: retrying in {delay:g}s", file=sys.stderr)
+            while delay > 0:
+                pause = min(delay, 60.0)
+                time.sleep(pause)
+                delay -= pause
+
+
 def download_leaderboard(api, slug: str) -> list[dict] | None:
     with tempfile.TemporaryDirectory() as tmp:
         try:
-            api.competition_leaderboard_download(slug, tmp, quiet=True)
+            kaggle_call(api.competition_leaderboard_download, slug, tmp, quiet=True)
         except Exception as error:  # noqa: BLE001 - one dead board must not kill the run
             print(f"  {slug}: download failed ({type(error).__name__}: {error})", file=sys.stderr)
             return None
@@ -330,13 +355,47 @@ def write_atomic(path: Path, payload: str) -> bool:
     return True
 
 
-def history_snapshot(track: str, metric: str, competition: str, board: list[dict]) -> dict:
-    """Capture the scores and submission metadata in one competition export."""
+def fetch_public_submissions(api, board: list[dict], competition: str) -> dict:
+    """Fetch each team's publicly visible scored submissions."""
+    details = {}
+    for row in board:
+        team_id = _int(row.get("team_id"))
+        if team_id is None or team_id in details:
+            continue
+        try:
+            submissions = []
+            for submission in kaggle_call(api.competition_team_submissions, team_id):
+                record = submission.to_dict()
+                submission_id = _int(record.get("id"))
+                submitted_at = record.get("dateSubmitted")
+                score = _float(record.get("publicScore"))
+                if not submission_id or not submitted_at or score is None:
+                    raise ValueError("incomplete public submission metadata")
+                submissions.append({"id": submission_id, "submitted_at": submitted_at, "public_score": score})
+            details[team_id] = sorted(submissions, key=lambda submission: submission["id"])
+        except Exception as error:  # noqa: BLE001
+            print(f"  {competition}: public submissions for team {team_id} unavailable "
+                  f"({type(error).__name__}: {error})", file=sys.stderr)
+            details[team_id] = None
+    return details
+
+
+def history_snapshot(track: str, metric: str, competition: str, board: list[dict],
+                     submissions_by_team: dict | None = None) -> dict:
+    """Capture exported standings and match their publicly visible submissions."""
     rows = []
     for row in board:
         _, members, _ = team_key(row)
+        team_id = _int(row.get("team_id"))
+        submission_id = _int(row.get("submission_id"))
+        score = _float(row.get("score"))
+        public_submissions = (submissions_by_team or {}).get(team_id)
+        matches = [submission for submission in (public_submissions or [])
+                   if score is not None and submission["public_score"] == score
+                   and (submission_id is None or submission["id"] == submission_id)]
+        matched = matches[0] if len(matches) == 1 else None
         rows.append({
-            "team_id": _int(row.get("team_id")),
+            "team_id": team_id,
             "team": (row.get("team_name") or "").strip(),
             "members": members,
             "is_baseline": is_baseline(row),
@@ -344,7 +403,11 @@ def history_snapshot(track: str, metric: str, competition: str, board: list[dict
             "leaderboard_rank": _int(row.get("rank")),
             "submission_count": _int(row.get("submission_count")),
             "last_submission_date": (row.get("submission_date") or "").strip() or None,
-            "leaderboard_submission_id": _int(row.get("submission_id")),
+            "leaderboard_submission_id": matched["id"] if matched else submission_id,
+            "leaderboard_submission_date": matched["submitted_at"] if matched else None,
+            "leaderboard_submission_score": matched["public_score"] if matched else None,
+            "submission_matches_leaderboard": bool(matched) if public_submissions is not None else None,
+            "public_submissions": public_submissions,
         })
     rows.sort(key=lambda row: json.dumps(row, sort_keys=True))
     return {"schema": 1, "kind": "leaderboard_snapshot", "source": "kaggle_leaderboard_export",
@@ -486,7 +549,16 @@ def main() -> int:
                 print(f"  {metric:16s} {slug:40s} {len(board)} team(s)")
             boards[metric] = board
             if board is not None and args.history:
-                snapshots.append(history_snapshot(track, metric, slug, board))
+                details = None
+                if api is not None:
+                    details = fetch_public_submissions(api, board, slug)
+                    if args.save_raw:
+                        (args.save_raw / f"{slug}.submissions.json").write_text(json.dumps(details, indent=2) + "\n")
+                else:
+                    details_path = args.from_dir / f"{slug}.submissions.json"
+                    if details_path.exists():
+                        details = {int(key): value for key, value in json.loads(details_path.read_text()).items()}
+                snapshots.append(history_snapshot(track, metric, slug, board, details))
         tracks.append(build_track(track, spec, boards, config))
 
     generated = args.now or datetime.now(timezone.utc).isoformat(timespec="seconds")

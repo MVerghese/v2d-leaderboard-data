@@ -34,11 +34,22 @@ Without it each run skips with a warning annotation and commits nothing.
 
 ## Observed submission history
 
-`submission_history.jsonl` contains one JSON record for each changed competition export. Each record includes its observation time, track, metric, competition, and the full set of exported rows. Rows retain team IDs, names, member usernames, baseline flags, leaderboard scores and ranks, submission counts, last submission dates, and submission IDs when Kaggle includes them.
+`submission_history.jsonl` contains one JSON record for each changed competition export. Each record includes its observation time, track, metric, competition, and the full set of exported rows. Rows retain team IDs, names, member usernames, baseline flags, leaderboard scores and ranks, submission counts, last submission dates, and the scored submission metadata from Kaggle's public team-submissions API.
 
 A new submission count or date is recorded even when the leaderboard score stays the same. Score changes from rescoring, team renames, rank changes, and removed rows are also recorded. Failed downloads preserve previous history; successful empty exports record an empty snapshot. Identical exports create no new record.
 
-This records standings observed by the scheduled job. A leaderboard score is the score shown for that team at observation time; it is not necessarily the score of their most recent attempt. Multiple attempts between runs, unsuccessful attempts, and the scores of attempts that never reach the leaderboard cannot be recovered from these exports. `leaderboard_submission_id` is `null` when the export omits it. Observation timestamps are separate from Kaggle's last submission dates.
+This records standings observed by the scheduled job. A leaderboard score is the score shown for that team at observation time; it is not necessarily the score of their most recent attempt. Multiple attempts between runs, unsuccessful attempts, and the scores of attempts that never reach the leaderboard cannot be recovered from these exports. Observation timestamps are separate from Kaggle's last submission dates.
+
+The aggregator also queries the public team-submissions API for each exported team, including baselines. Kaggle operations are spaced two seconds apart, and HTTP 429 responses are retried with a cooldown. `public_submissions` records its submission IDs, exact UTC timestamps, and public scores. When exactly one record matches the exported score and any exported submission ID, these fields identify the scored attempt:
+
+- `leaderboard_submission_id`: Kaggle submission ID.
+- `leaderboard_submission_date`: that submission's exact timestamp, including milliseconds.
+- `leaderboard_submission_score`: its public score.
+- `submission_matches_leaderboard`: `true` when the association is verified.
+
+The team's `last_submission_date` can be later than `leaderboard_submission_date`. A mismatch or ambiguous result leaves the scored attempt unassociated and retains the API records for inspection. An unavailable lookup is represented by `public_submissions: null`; an available lookup with no public submission returns an empty list. Older history remains intact.
+
+Each metric competition has separate submission IDs. Use the stored IDs, timestamps, team usernames, track, and metric to inspect related uploads. Timestamps alone do not prove that uploads contain the same reconstruction or policy, and different metrics may display different attempts. Confirm the submitted files or their provenance before combining scores into one coherent result. A polling gap can still miss submissions that are superseded between runs. Raw-export replay includes these associations when the adjacent `<competition>.submissions.json` file is present.
 
 Read a team's observed scores, for example:
 
@@ -51,7 +62,8 @@ with open("submission_history.jsonl") as history:
         for row in snapshot["rows"]:
             if row["team"] == "Your team name":
                 print(snapshot["observed_at"], snapshot["competition"],
-                      row["leaderboard_score"], row["submission_count"])
+                      row["leaderboard_score"], row["leaderboard_submission_id"],
+                      row["leaderboard_submission_date"], row["submission_count"])
 ```
 
 To verify history persistence locally:
