@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-06T23:16:31+00:00",
+ "generated_at": "2026-10-07T02:24:56+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -73,7 +73,7 @@
      "last_submission": "2026-10-04 16:07:28",
      "kaggle_rank": {
       "cd_h_cm": 1,
-      "cd_o_cm": 3,
+      "cd_o_cm": 4,
       "acc_h_cm": 1,
       "acc_o_cm": 2,
       "interpenetration_cm": 1
@@ -104,12 +104,42 @@
      "last_submission": "2026-10-04 06:45:29",
      "kaggle_rank": {
       "cd_h_cm": 2,
-      "cd_o_cm": 1,
+      "cd_o_cm": 2,
       "acc_h_cm": 2,
-      "acc_o_cm": 3,
+      "acc_o_cm": 4,
       "interpenetration_cm": 3
      },
      "rank": 2
+    },
+    {
+     "team": "RoboPanda",
+     "members": [
+      "vectorwangel"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 15.43533,
+      "cd_o_cm": 22.32585,
+      "acc_h_cm": 0.28928,
+      "acc_o_cm": 0.13606,
+      "interpenetration_cm": 0.0017
+     },
+     "submission_count": {
+      "cd_h_cm": 2,
+      "cd_o_cm": 2,
+      "acc_h_cm": 2,
+      "acc_o_cm": 2,
+      "interpenetration_cm": 2
+     },
+     "last_submission": "2026-10-06 23:15:34",
+     "kaggle_rank": {
+      "cd_h_cm": 3,
+      "cd_o_cm": 1,
+      "acc_h_cm": 4,
+      "acc_o_cm": 3,
+      "interpenetration_cm": 2
+     },
+     "rank": 3
     },
     {
      "team": "Lattice Studios",
@@ -133,13 +163,13 @@
      },
      "last_submission": "2026-10-06 21:43:21",
      "kaggle_rank": {
-      "cd_h_cm": 3,
-      "cd_o_cm": 2,
+      "cd_h_cm": 4,
+      "cd_o_cm": 3,
       "acc_h_cm": 3,
       "acc_o_cm": 1,
       "interpenetration_cm": 4
      },
-     "rank": 3
+     "rank": 4
     },
     {
      "team": "CARI4D Basline",
@@ -168,36 +198,6 @@
       "interpenetration_cm": 0
      },
      "rank": null
-    },
-    {
-     "team": "RoboPanda",
-     "members": [
-      "vectorwangel"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "cd_h_cm": 16.24367,
-      "cd_o_cm": 98.59398,
-      "acc_h_cm": 0.2928,
-      "acc_o_cm": 0.19471,
-      "interpenetration_cm": 0.0017
-     },
-     "submission_count": {
-      "cd_h_cm": 1,
-      "cd_o_cm": 1,
-      "acc_h_cm": 1,
-      "acc_o_cm": 1,
-      "interpenetration_cm": 1
-     },
-     "last_submission": "2026-10-06 20:45:04",
-     "kaggle_rank": {
-      "cd_h_cm": 4,
-      "cd_o_cm": 4,
-      "acc_h_cm": 4,
-      "acc_o_cm": 4,
-      "interpenetration_cm": 2
-     },
-     "rank": 4
     }
    ],
    "incomplete": [],
