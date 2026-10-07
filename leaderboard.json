@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-07T02:24:56+00:00",
+ "generated_at": "2026-10-07T08:58:41+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -445,12 +445,12 @@
       "mppe_cm": 77.66743
      },
      "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
+      "add_auc": 2,
+      "spider_sr": 2,
+      "maniptrans_sr": 2,
+      "mppe_cm": 2
      },
-     "last_submission": "2026-10-06 05:34:46",
+     "last_submission": "2026-10-07 04:14:12",
      "kaggle_rank": {
       "add_auc": 1,
       "spider_sr": 1,
@@ -550,22 +550,22 @@
      ],
      "is_baseline": false,
      "scores": {
-      "add_auc": 0.64908,
-      "spider_sr": 0.35,
-      "maniptrans_sr": 0.25,
-      "rpe_cm": 5.13161,
-      "mppe_cm": 7.28277,
-      "cd_o_cm": 0.59074
+      "add_auc": 0.76503,
+      "spider_sr": 0.8,
+      "maniptrans_sr": 0.5,
+      "rpe_cm": 3.85312,
+      "mppe_cm": 3.00212,
+      "cd_o_cm": 0.58338
      },
      "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "rpe_cm": 1,
-      "mppe_cm": 1,
-      "cd_o_cm": 1
+      "add_auc": 2,
+      "spider_sr": 2,
+      "maniptrans_sr": 2,
+      "rpe_cm": 2,
+      "mppe_cm": 2,
+      "cd_o_cm": 2
      },
-     "last_submission": "2026-10-06 22:33:27",
+     "last_submission": "2026-10-07 06:31:21",
      "kaggle_rank": {
       "add_auc": 1,
       "spider_sr": 1,
@@ -574,9 +574,6 @@
       "mppe_cm": 1,
       "cd_o_cm": 2
      },
-     "other_names": [
-      "Zihan Gao"
-     ],
      "rank": 1
     },
     {
