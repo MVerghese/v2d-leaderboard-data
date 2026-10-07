@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-07T08:58:41+00:00",
+ "generated_at": "2026-10-07T20:53:12+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -75,10 +75,40 @@
       "cd_h_cm": 1,
       "cd_o_cm": 4,
       "acc_h_cm": 1,
-      "acc_o_cm": 2,
+      "acc_o_cm": 3,
       "interpenetration_cm": 1
      },
      "rank": 1
+    },
+    {
+     "team": "RoboPanda",
+     "members": [
+      "vectorwangel"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 15.2412,
+      "cd_o_cm": 22.2515,
+      "acc_h_cm": 0.17056,
+      "acc_o_cm": 0.10591,
+      "interpenetration_cm": 0.0017
+     },
+     "submission_count": {
+      "cd_h_cm": 4,
+      "cd_o_cm": 4,
+      "acc_h_cm": 4,
+      "acc_o_cm": 4,
+      "interpenetration_cm": 4
+     },
+     "last_submission": "2026-10-07 20:13:06",
+     "kaggle_rank": {
+      "cd_h_cm": 2,
+      "cd_o_cm": 1,
+      "acc_h_cm": 2,
+      "acc_o_cm": 1,
+      "interpenetration_cm": 2
+     },
+     "rank": 2
     },
     {
      "team": "Open4D",
@@ -103,41 +133,11 @@
      },
      "last_submission": "2026-10-04 06:45:29",
      "kaggle_rank": {
-      "cd_h_cm": 2,
+      "cd_h_cm": 3,
       "cd_o_cm": 2,
-      "acc_h_cm": 2,
+      "acc_h_cm": 3,
       "acc_o_cm": 4,
       "interpenetration_cm": 3
-     },
-     "rank": 2
-    },
-    {
-     "team": "RoboPanda",
-     "members": [
-      "vectorwangel"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "cd_h_cm": 15.43533,
-      "cd_o_cm": 22.32585,
-      "acc_h_cm": 0.28928,
-      "acc_o_cm": 0.13606,
-      "interpenetration_cm": 0.0017
-     },
-     "submission_count": {
-      "cd_h_cm": 2,
-      "cd_o_cm": 2,
-      "acc_h_cm": 2,
-      "acc_o_cm": 2,
-      "interpenetration_cm": 2
-     },
-     "last_submission": "2026-10-06 23:15:34",
-     "kaggle_rank": {
-      "cd_h_cm": 3,
-      "cd_o_cm": 1,
-      "acc_h_cm": 4,
-      "acc_o_cm": 3,
-      "interpenetration_cm": 2
      },
      "rank": 3
     },
@@ -165,8 +165,8 @@
      "kaggle_rank": {
       "cd_h_cm": 4,
       "cd_o_cm": 3,
-      "acc_h_cm": 3,
-      "acc_o_cm": 1,
+      "acc_h_cm": 4,
+      "acc_o_cm": 2,
       "interpenetration_cm": 4
      },
      "rank": 4
@@ -249,18 +249,18 @@
      ],
      "is_baseline": false,
      "scores": {
-      "add_auc": 0.55687,
+      "add_auc": 0.56422,
       "spider_sr": 0.7,
       "maniptrans_sr": 0.66666,
       "mppe_cm": 8.22045
      },
      "submission_count": {
-      "add_auc": 2,
-      "spider_sr": 2,
-      "maniptrans_sr": 2,
-      "mppe_cm": 2
+      "add_auc": 3,
+      "spider_sr": 3,
+      "maniptrans_sr": 3,
+      "mppe_cm": 3
      },
-     "last_submission": "2026-10-06 06:19:57",
+     "last_submission": "2026-10-07 17:21:27",
      "kaggle_rank": {
       "add_auc": 1,
       "spider_sr": 1,
@@ -439,18 +439,18 @@
      ],
      "is_baseline": false,
      "scores": {
-      "add_auc": 0.15315,
+      "add_auc": 0.15599,
       "spider_sr": 0.0,
       "maniptrans_sr": 0.0,
-      "mppe_cm": 77.66743
+      "mppe_cm": 70.38283
      },
      "submission_count": {
-      "add_auc": 2,
-      "spider_sr": 2,
-      "maniptrans_sr": 2,
-      "mppe_cm": 2
+      "add_auc": 3,
+      "spider_sr": 3,
+      "maniptrans_sr": 3,
+      "mppe_cm": 3
      },
-     "last_submission": "2026-10-07 04:14:12",
+     "last_submission": "2026-10-07 17:21:47",
      "kaggle_rank": {
       "add_auc": 1,
       "spider_sr": 1,
