@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-08T00:31:43+00:00",
+ "generated_at": "2026-10-08T06:29:26+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -73,8 +73,8 @@
      "last_submission": "2026-10-04 16:07:28",
      "kaggle_rank": {
       "cd_h_cm": 1,
-      "cd_o_cm": 4,
-      "acc_h_cm": 2,
+      "cd_o_cm": 5,
+      "acc_h_cm": 3,
       "acc_o_cm": 3,
       "interpenetration_cm": 1
      },
@@ -135,7 +135,7 @@
      "kaggle_rank": {
       "cd_h_cm": 3,
       "cd_o_cm": 2,
-      "acc_h_cm": 3,
+      "acc_h_cm": 4,
       "acc_o_cm": 4,
       "interpenetration_cm": 3
      },
@@ -164,10 +164,10 @@
      "last_submission": "2026-10-06 21:43:21",
      "kaggle_rank": {
       "cd_h_cm": 4,
-      "cd_o_cm": 3,
-      "acc_h_cm": 4,
+      "cd_o_cm": 4,
+      "acc_h_cm": 5,
       "acc_o_cm": 2,
-      "interpenetration_cm": 4
+      "interpenetration_cm": 5
      },
      "rank": 4
     },
@@ -198,6 +198,36 @@
       "interpenetration_cm": 0
      },
      "rank": null
+    },
+    {
+     "team": "SNU CVLAB",
+     "members": [
+      "hyeongjinnam"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 17.21332,
+      "cd_o_cm": 28.68888,
+      "acc_h_cm": 0.15118,
+      "acc_o_cm": 0.46771,
+      "interpenetration_cm": 0.01011
+     },
+     "submission_count": {
+      "cd_h_cm": 2,
+      "cd_o_cm": 2,
+      "acc_h_cm": 2,
+      "acc_o_cm": 2,
+      "interpenetration_cm": 2
+     },
+     "last_submission": "2026-10-08 04:10:16",
+     "kaggle_rank": {
+      "cd_h_cm": 5,
+      "cd_o_cm": 3,
+      "acc_h_cm": 2,
+      "acc_o_cm": 5,
+      "interpenetration_cm": 4
+     },
+     "rank": 5
     }
    ],
    "incomplete": [],
