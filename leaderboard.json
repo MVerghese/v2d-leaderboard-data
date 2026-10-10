@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-10T07:07:57+00:00",
+ "generated_at": "2026-10-10T13:39:17+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -632,7 +632,7 @@
       "maniptrans_sr": 1,
       "rpe_cm": 1,
       "mppe_cm": 1,
-      "cd_o_cm": 2
+      "cd_o_cm": 3
      },
      "rank": 1
     },
@@ -647,27 +647,60 @@
       "spider_sr": 0.1,
       "maniptrans_sr": 0.0,
       "rpe_cm": 17.13369,
-      "mppe_cm": 13.29221,
+      "mppe_cm": 13.21804,
       "cd_o_cm": 0.11218
      },
      "submission_count": {
-      "add_auc": 2,
-      "spider_sr": 2,
-      "maniptrans_sr": 2,
-      "rpe_cm": 2,
-      "mppe_cm": 2,
-      "cd_o_cm": 2
+      "add_auc": 3,
+      "spider_sr": 3,
+      "maniptrans_sr": 3,
+      "rpe_cm": 3,
+      "mppe_cm": 3,
+      "cd_o_cm": 3
      },
-     "last_submission": "2026-10-08 09:11:45",
+     "last_submission": "2026-10-10 08:39:05",
      "kaggle_rank": {
       "add_auc": 2,
-      "spider_sr": 2,
+      "spider_sr": 3,
       "maniptrans_sr": 2,
       "rpe_cm": 2,
       "mppe_cm": 2,
       "cd_o_cm": 1
      },
      "rank": 2
+    },
+    {
+     "team": "Xueyi Wang (FF)",
+     "members": [
+      "wxy821018"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "add_auc": 0.20353,
+      "spider_sr": 0.15,
+      "maniptrans_sr": 0.0,
+      "rpe_cm": 18.84145,
+      "mppe_cm": 17.5675,
+      "cd_o_cm": 0.51578
+     },
+     "submission_count": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "rpe_cm": 1,
+      "mppe_cm": 1,
+      "cd_o_cm": 1
+     },
+     "last_submission": "2026-10-10 07:22:48",
+     "kaggle_rank": {
+      "add_auc": 3,
+      "spider_sr": 2,
+      "maniptrans_sr": 3,
+      "rpe_cm": 3,
+      "mppe_cm": 3,
+      "cd_o_cm": 2
+     },
+     "rank": 3
     }
    ],
    "incomplete": [],
