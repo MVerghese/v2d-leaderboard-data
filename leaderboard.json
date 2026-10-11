@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-11T00:16:28+00:00",
+ "generated_at": "2026-10-11T05:46:29+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -632,7 +632,7 @@
       "maniptrans_sr": 1,
       "rpe_cm": 1,
       "mppe_cm": 1,
-      "cd_o_cm": 3
+      "cd_o_cm": 4
      },
      "rank": 1
     },
@@ -646,28 +646,61 @@
       "add_auc": 0.24039,
       "spider_sr": 0.1,
       "maniptrans_sr": 0.0,
-      "rpe_cm": 17.13369,
-      "mppe_cm": 13.21804,
+      "rpe_cm": 17.07516,
+      "mppe_cm": 13.13461,
       "cd_o_cm": 0.11218
      },
      "submission_count": {
-      "add_auc": 3,
-      "spider_sr": 3,
-      "maniptrans_sr": 3,
-      "rpe_cm": 3,
-      "mppe_cm": 3,
-      "cd_o_cm": 3
+      "add_auc": 4,
+      "spider_sr": 4,
+      "maniptrans_sr": 4,
+      "rpe_cm": 4,
+      "mppe_cm": 4,
+      "cd_o_cm": 4
      },
-     "last_submission": "2026-10-10 08:39:05",
+     "last_submission": "2026-10-11 04:30:44",
      "kaggle_rank": {
       "add_auc": 2,
-      "spider_sr": 3,
+      "spider_sr": 4,
       "maniptrans_sr": 2,
       "rpe_cm": 2,
       "mppe_cm": 2,
       "cd_o_cm": 1
      },
      "rank": 2
+    },
+    {
+     "team": "Zihao Guo",
+     "members": [
+      "hideinpoopoo"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "add_auc": 0.22852,
+      "spider_sr": 0.15,
+      "maniptrans_sr": 0.0,
+      "rpe_cm": 23.84835,
+      "mppe_cm": 19.21441,
+      "cd_o_cm": 0.41945
+     },
+     "submission_count": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "rpe_cm": 1,
+      "mppe_cm": 1,
+      "cd_o_cm": 1
+     },
+     "last_submission": "2026-10-11 00:35:08",
+     "kaggle_rank": {
+      "add_auc": 3,
+      "spider_sr": 3,
+      "maniptrans_sr": 4,
+      "rpe_cm": 4,
+      "mppe_cm": 4,
+      "cd_o_cm": 2
+     },
+     "rank": 3
     },
     {
      "team": "Xueyi Wang (FF)",
@@ -693,14 +726,14 @@
      },
      "last_submission": "2026-10-10 07:22:48",
      "kaggle_rank": {
-      "add_auc": 3,
+      "add_auc": 4,
       "spider_sr": 2,
       "maniptrans_sr": 3,
       "rpe_cm": 3,
       "mppe_cm": 3,
-      "cd_o_cm": 2
+      "cd_o_cm": 3
      },
-     "rank": 3
+     "rank": 4
     }
    ],
    "incomplete": [],
