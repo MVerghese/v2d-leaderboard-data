@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-11T05:46:29+00:00",
+ "generated_at": "2026-10-11T11:39:42+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -202,6 +202,36 @@
      "rank": 5
     },
     {
+     "team": "SNU CVLAB",
+     "members": [
+      "hyeongjinnam"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 15.49219,
+      "cd_o_cm": 28.68888,
+      "acc_h_cm": 0.14311,
+      "acc_o_cm": 0.46771,
+      "interpenetration_cm": 0.01011
+     },
+     "submission_count": {
+      "cd_h_cm": 3,
+      "cd_o_cm": 3,
+      "acc_h_cm": 3,
+      "acc_o_cm": 3,
+      "interpenetration_cm": 3
+     },
+     "last_submission": "2026-10-11 07:41:28",
+     "kaggle_rank": {
+      "cd_h_cm": 6,
+      "cd_o_cm": 4,
+      "acc_h_cm": 2,
+      "acc_o_cm": 5,
+      "interpenetration_cm": 5
+     },
+     "rank": 6
+    },
+    {
      "team": "CARI4D Basline",
      "members": [],
      "is_baseline": true,
@@ -228,36 +258,6 @@
       "interpenetration_cm": 0
      },
      "rank": null
-    },
-    {
-     "team": "SNU CVLAB",
-     "members": [
-      "hyeongjinnam"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "cd_h_cm": 17.21332,
-      "cd_o_cm": 28.68888,
-      "acc_h_cm": 0.15118,
-      "acc_o_cm": 0.46771,
-      "interpenetration_cm": 0.01011
-     },
-     "submission_count": {
-      "cd_h_cm": 2,
-      "cd_o_cm": 2,
-      "acc_h_cm": 2,
-      "acc_o_cm": 2,
-      "interpenetration_cm": 2
-     },
-     "last_submission": "2026-10-08 04:10:16",
-     "kaggle_rank": {
-      "cd_h_cm": 6,
-      "cd_o_cm": 4,
-      "acc_h_cm": 2,
-      "acc_o_cm": 5,
-      "interpenetration_cm": 5
-     },
-     "rank": 6
     }
    ],
    "incomplete": [],
@@ -637,6 +637,39 @@
      "rank": 1
     },
     {
+     "team": "Xueyi Wang (FF)",
+     "members": [
+      "wxy821018"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "add_auc": 0.29583,
+      "spider_sr": 0.2,
+      "maniptrans_sr": 0.0,
+      "rpe_cm": 14.05773,
+      "mppe_cm": 12.57431,
+      "cd_o_cm": 0.48273
+     },
+     "submission_count": {
+      "add_auc": 3,
+      "spider_sr": 3,
+      "maniptrans_sr": 3,
+      "rpe_cm": 3,
+      "mppe_cm": 3,
+      "cd_o_cm": 3
+     },
+     "last_submission": "2026-10-11 08:12:25",
+     "kaggle_rank": {
+      "add_auc": 2,
+      "spider_sr": 2,
+      "maniptrans_sr": 3,
+      "rpe_cm": 2,
+      "mppe_cm": 2,
+      "cd_o_cm": 3
+     },
+     "rank": 2
+    },
+    {
      "team": "Panav Raaj",
      "members": [
       "panavraaj"
@@ -660,14 +693,14 @@
      },
      "last_submission": "2026-10-11 04:30:44",
      "kaggle_rank": {
-      "add_auc": 2,
+      "add_auc": 3,
       "spider_sr": 4,
       "maniptrans_sr": 2,
-      "rpe_cm": 2,
-      "mppe_cm": 2,
+      "rpe_cm": 3,
+      "mppe_cm": 3,
       "cd_o_cm": 1
      },
-     "rank": 2
+     "rank": 3
     },
     {
      "team": "Zihao Guo",
@@ -693,45 +726,12 @@
      },
      "last_submission": "2026-10-11 00:35:08",
      "kaggle_rank": {
-      "add_auc": 3,
+      "add_auc": 4,
       "spider_sr": 3,
       "maniptrans_sr": 4,
       "rpe_cm": 4,
       "mppe_cm": 4,
       "cd_o_cm": 2
-     },
-     "rank": 3
-    },
-    {
-     "team": "Xueyi Wang (FF)",
-     "members": [
-      "wxy821018"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.20353,
-      "spider_sr": 0.15,
-      "maniptrans_sr": 0.0,
-      "rpe_cm": 18.84145,
-      "mppe_cm": 17.5675,
-      "cd_o_cm": 0.51578
-     },
-     "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "rpe_cm": 1,
-      "mppe_cm": 1,
-      "cd_o_cm": 1
-     },
-     "last_submission": "2026-10-10 07:22:48",
-     "kaggle_rank": {
-      "add_auc": 4,
-      "spider_sr": 2,
-      "maniptrans_sr": 3,
-      "rpe_cm": 3,
-      "mppe_cm": 3,
-      "cd_o_cm": 3
      },
      "rank": 4
     }
