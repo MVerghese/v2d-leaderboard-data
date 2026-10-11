@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-11T16:49:25+00:00",
+ "generated_at": "2026-10-11T20:42:47+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -106,7 +106,7 @@
       "cd_o_cm": 6,
       "acc_h_cm": 6,
       "acc_o_cm": 6,
-      "interpenetration_cm": 7
+      "interpenetration_cm": 8
      },
      "rank": 2
     },
@@ -141,6 +141,36 @@
      "rank": 3
     },
     {
+     "team": "Javier Medel, MSc.",
+     "members": [
+      "iorideepp"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 15.11851,
+      "cd_o_cm": 152.72099,
+      "acc_h_cm": 1.62217,
+      "acc_o_cm": 7.10147,
+      "interpenetration_cm": 0.00213
+     },
+     "submission_count": {
+      "cd_h_cm": 1,
+      "cd_o_cm": 1,
+      "acc_h_cm": 1,
+      "acc_o_cm": 1,
+      "interpenetration_cm": 1
+     },
+     "last_submission": "2026-10-11 19:52:42",
+     "kaggle_rank": {
+      "cd_h_cm": 4,
+      "cd_o_cm": 8,
+      "acc_h_cm": 7,
+      "acc_o_cm": 8,
+      "interpenetration_cm": 4
+     },
+     "rank": 4
+    },
+    {
      "team": "RoboPanda",
      "members": [
       "vectorwangel"
@@ -162,13 +192,13 @@
      },
      "last_submission": "2026-10-07 21:16:28",
      "kaggle_rank": {
-      "cd_h_cm": 4,
+      "cd_h_cm": 5,
       "cd_o_cm": 1,
       "acc_h_cm": 1,
       "acc_o_cm": 2,
       "interpenetration_cm": 3
      },
-     "rank": 4
+     "rank": 5
     },
     {
      "team": "Open4D",
@@ -193,13 +223,13 @@
      },
      "last_submission": "2026-10-08 21:02:52",
      "kaggle_rank": {
-      "cd_h_cm": 5,
+      "cd_h_cm": 6,
       "cd_o_cm": 2,
       "acc_h_cm": 4,
       "acc_o_cm": 4,
-      "interpenetration_cm": 4
+      "interpenetration_cm": 5
      },
-     "rank": 5
+     "rank": 6
     },
     {
      "team": "SNU CVLAB",
@@ -223,13 +253,13 @@
      },
      "last_submission": "2026-10-11 07:41:28",
      "kaggle_rank": {
-      "cd_h_cm": 6,
+      "cd_h_cm": 7,
       "cd_o_cm": 4,
       "acc_h_cm": 2,
       "acc_o_cm": 5,
-      "interpenetration_cm": 6
+      "interpenetration_cm": 7
      },
-     "rank": 6
+     "rank": 7
     },
     {
      "team": "CARI4D Basline",
@@ -281,13 +311,13 @@
      },
      "last_submission": "2026-10-11 12:05:25",
      "kaggle_rank": {
-      "cd_h_cm": 7,
+      "cd_h_cm": 8,
       "cd_o_cm": 7,
-      "acc_h_cm": 7,
+      "acc_h_cm": 8,
       "acc_o_cm": 7,
-      "interpenetration_cm": 5
+      "interpenetration_cm": 6
      },
-     "rank": 7
+     "rank": 8
     }
    ],
    "incomplete": [],
@@ -700,6 +730,39 @@
      "rank": 2
     },
     {
+     "team": "Zimo Li",
+     "members": [
+      "zimolilarry"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "add_auc": 0.26022,
+      "spider_sr": 0.2,
+      "maniptrans_sr": 0.0,
+      "rpe_cm": 21.34386,
+      "mppe_cm": 15.16918,
+      "cd_o_cm": 0.62492
+     },
+     "submission_count": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "rpe_cm": 1,
+      "mppe_cm": 1,
+      "cd_o_cm": 1
+     },
+     "last_submission": "2026-10-11 18:56:26",
+     "kaggle_rank": {
+      "add_auc": 3,
+      "spider_sr": 3,
+      "maniptrans_sr": 5,
+      "rpe_cm": 4,
+      "mppe_cm": 4,
+      "cd_o_cm": 5
+     },
+     "rank": 3
+    },
+    {
      "team": "Panav Raaj",
      "members": [
       "panavraaj"
@@ -723,14 +786,14 @@
      },
      "last_submission": "2026-10-11 04:30:44",
      "kaggle_rank": {
-      "add_auc": 3,
-      "spider_sr": 4,
+      "add_auc": 4,
+      "spider_sr": 5,
       "maniptrans_sr": 2,
       "rpe_cm": 3,
       "mppe_cm": 3,
       "cd_o_cm": 1
      },
-     "rank": 3
+     "rank": 4
     },
     {
      "team": "Zihao Guo",
@@ -756,14 +819,14 @@
      },
      "last_submission": "2026-10-11 00:35:08",
      "kaggle_rank": {
-      "add_auc": 4,
-      "spider_sr": 3,
+      "add_auc": 5,
+      "spider_sr": 4,
       "maniptrans_sr": 4,
-      "rpe_cm": 4,
-      "mppe_cm": 4,
+      "rpe_cm": 5,
+      "mppe_cm": 5,
       "cd_o_cm": 2
      },
-     "rank": 4
+     "rank": 5
     }
    ],
    "incomplete": [],
