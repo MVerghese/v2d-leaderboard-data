@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-11T20:42:47+00:00",
+ "generated_at": "2026-10-12T00:02:17+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -103,10 +103,10 @@
      "last_submission": "2026-10-08 14:25:44",
      "kaggle_rank": {
       "cd_h_cm": 2,
-      "cd_o_cm": 6,
+      "cd_o_cm": 7,
       "acc_h_cm": 6,
       "acc_o_cm": 6,
-      "interpenetration_cm": 8
+      "interpenetration_cm": 9
      },
      "rank": 2
     },
@@ -163,9 +163,9 @@
      "last_submission": "2026-10-11 19:52:42",
      "kaggle_rank": {
       "cd_h_cm": 4,
-      "cd_o_cm": 8,
-      "acc_h_cm": 7,
-      "acc_o_cm": 8,
+      "cd_o_cm": 9,
+      "acc_h_cm": 8,
+      "acc_o_cm": 9,
       "interpenetration_cm": 4
      },
      "rank": 4
@@ -201,6 +201,36 @@
      "rank": 5
     },
     {
+     "team": "Mochii",
+     "members": [
+      "brandonhsu111"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 15.35577,
+      "cd_o_cm": 32.29294,
+      "acc_h_cm": 1.29696,
+      "acc_o_cm": 1.39179,
+      "interpenetration_cm": 0.00452
+     },
+     "submission_count": {
+      "cd_h_cm": 1,
+      "cd_o_cm": 1,
+      "acc_h_cm": 1,
+      "acc_o_cm": 1,
+      "interpenetration_cm": 1
+     },
+     "last_submission": "2026-10-11 22:01:57",
+     "kaggle_rank": {
+      "cd_h_cm": 6,
+      "cd_o_cm": 6,
+      "acc_h_cm": 7,
+      "acc_o_cm": 7,
+      "interpenetration_cm": 6
+     },
+     "rank": 6
+    },
+    {
      "team": "Open4D",
      "members": [
       "alex0807",
@@ -223,13 +253,13 @@
      },
      "last_submission": "2026-10-08 21:02:52",
      "kaggle_rank": {
-      "cd_h_cm": 6,
+      "cd_h_cm": 7,
       "cd_o_cm": 2,
       "acc_h_cm": 4,
       "acc_o_cm": 4,
       "interpenetration_cm": 5
      },
-     "rank": 6
+     "rank": 7
     },
     {
      "team": "SNU CVLAB",
@@ -253,13 +283,13 @@
      },
      "last_submission": "2026-10-11 07:41:28",
      "kaggle_rank": {
-      "cd_h_cm": 7,
+      "cd_h_cm": 8,
       "cd_o_cm": 4,
       "acc_h_cm": 2,
       "acc_o_cm": 5,
-      "interpenetration_cm": 7
+      "interpenetration_cm": 8
      },
-     "rank": 7
+     "rank": 8
     },
     {
      "team": "CARI4D Basline",
@@ -311,13 +341,13 @@
      },
      "last_submission": "2026-10-11 12:05:25",
      "kaggle_rank": {
-      "cd_h_cm": 8,
-      "cd_o_cm": 7,
-      "acc_h_cm": 8,
-      "acc_o_cm": 7,
-      "interpenetration_cm": 6
+      "cd_h_cm": 9,
+      "cd_o_cm": 8,
+      "acc_h_cm": 9,
+      "acc_o_cm": 8,
+      "interpenetration_cm": 7
      },
-     "rank": 8
+     "rank": 9
     }
    ],
    "incomplete": [],
