@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-12T03:54:41+00:00",
+ "generated_at": "2026-10-12T11:26:09+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -76,7 +76,7 @@
       "cd_o_cm": 5,
       "acc_h_cm": 3,
       "acc_o_cm": 3,
-      "interpenetration_cm": 1
+      "interpenetration_cm": 2
      },
      "rank": 1
     },
@@ -111,6 +111,36 @@
      "rank": 2
     },
     {
+     "team": "RoboPanda",
+     "members": [
+      "vectorwangel"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 14.9039,
+      "cd_o_cm": 19.26042,
+      "acc_h_cm": 0.13895,
+      "acc_o_cm": 0.07147,
+      "interpenetration_cm": 0.00026
+     },
+     "submission_count": {
+      "cd_h_cm": 6,
+      "cd_o_cm": 6,
+      "acc_h_cm": 6,
+      "acc_o_cm": 6,
+      "interpenetration_cm": 6
+     },
+     "last_submission": "2026-10-12 05:16:02",
+     "kaggle_rank": {
+      "cd_h_cm": 3,
+      "cd_o_cm": 1,
+      "acc_h_cm": 1,
+      "acc_o_cm": 1,
+      "interpenetration_cm": 1
+     },
+     "rank": 3
+    },
+    {
      "team": "Lattice Studios",
      "members": [
       "latticestudios"
@@ -132,13 +162,13 @@
      },
      "last_submission": "2026-10-11 00:04:38",
      "kaggle_rank": {
-      "cd_h_cm": 3,
-      "cd_o_cm": 3,
+      "cd_h_cm": 4,
+      "cd_o_cm": 4,
       "acc_h_cm": 5,
-      "acc_o_cm": 1,
-      "interpenetration_cm": 2
+      "acc_o_cm": 2,
+      "interpenetration_cm": 3
      },
-     "rank": 3
+     "rank": 4
     },
     {
      "team": "Javier Medel, MSc.",
@@ -162,41 +192,11 @@
      },
      "last_submission": "2026-10-11 19:52:42",
      "kaggle_rank": {
-      "cd_h_cm": 4,
+      "cd_h_cm": 5,
       "cd_o_cm": 9,
       "acc_h_cm": 8,
       "acc_o_cm": 9,
       "interpenetration_cm": 4
-     },
-     "rank": 4
-    },
-    {
-     "team": "RoboPanda",
-     "members": [
-      "vectorwangel"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "cd_h_cm": 15.17548,
-      "cd_o_cm": 22.0871,
-      "acc_h_cm": 0.13902,
-      "acc_o_cm": 0.10591,
-      "interpenetration_cm": 0.0017
-     },
-     "submission_count": {
-      "cd_h_cm": 5,
-      "cd_o_cm": 5,
-      "acc_h_cm": 5,
-      "acc_o_cm": 5,
-      "interpenetration_cm": 5
-     },
-     "last_submission": "2026-10-07 21:16:28",
-     "kaggle_rank": {
-      "cd_h_cm": 5,
-      "cd_o_cm": 1,
-      "acc_h_cm": 1,
-      "acc_o_cm": 2,
-      "interpenetration_cm": 3
      },
      "rank": 5
     },
@@ -270,22 +270,22 @@
      "is_baseline": false,
      "scores": {
       "cd_h_cm": 15.49219,
-      "cd_o_cm": 28.68888,
+      "cd_o_cm": 24.93608,
       "acc_h_cm": 0.14311,
       "acc_o_cm": 0.46771,
       "interpenetration_cm": 0.01011
      },
      "submission_count": {
-      "cd_h_cm": 3,
-      "cd_o_cm": 3,
-      "acc_h_cm": 3,
-      "acc_o_cm": 3,
-      "interpenetration_cm": 3
+      "cd_h_cm": 4,
+      "cd_o_cm": 4,
+      "acc_h_cm": 4,
+      "acc_o_cm": 4,
+      "interpenetration_cm": 4
      },
-     "last_submission": "2026-10-11 07:41:28",
+     "last_submission": "2026-10-12 03:56:26",
      "kaggle_rank": {
       "cd_h_cm": 8,
-      "cd_o_cm": 4,
+      "cd_o_cm": 3,
       "acc_h_cm": 2,
       "acc_o_cm": 5,
       "interpenetration_cm": 8
@@ -734,28 +734,28 @@
      ],
      "is_baseline": false,
      "scores": {
-      "add_auc": 0.36806,
-      "spider_sr": 0.2,
+      "add_auc": 0.38705,
+      "spider_sr": 0.25,
       "maniptrans_sr": 0.05,
-      "rpe_cm": 14.22178,
-      "mppe_cm": 12.35996,
+      "rpe_cm": 11.49731,
+      "mppe_cm": 10.69837,
       "cd_o_cm": 0.56452
      },
      "submission_count": {
-      "add_auc": 3,
-      "spider_sr": 3,
-      "maniptrans_sr": 3,
-      "rpe_cm": 3,
-      "mppe_cm": 3,
-      "cd_o_cm": 3
+      "add_auc": 4,
+      "spider_sr": 4,
+      "maniptrans_sr": 4,
+      "rpe_cm": 4,
+      "mppe_cm": 4,
+      "cd_o_cm": 4
      },
-     "last_submission": "2026-10-12 02:41:29",
+     "last_submission": "2026-10-12 05:27:56",
      "kaggle_rank": {
       "add_auc": 2,
-      "spider_sr": 3,
+      "spider_sr": 2,
       "maniptrans_sr": 2,
-      "rpe_cm": 3,
-      "mppe_cm": 3,
+      "rpe_cm": 2,
+      "mppe_cm": 2,
       "cd_o_cm": 4
      },
      "rank": 2
@@ -767,27 +767,27 @@
      ],
      "is_baseline": false,
      "scores": {
-      "add_auc": 0.29583,
+      "add_auc": 0.30737,
       "spider_sr": 0.2,
       "maniptrans_sr": 0.0,
-      "rpe_cm": 14.05773,
-      "mppe_cm": 12.57431,
+      "rpe_cm": 13.83143,
+      "mppe_cm": 12.14925,
       "cd_o_cm": 0.48273
      },
      "submission_count": {
-      "add_auc": 3,
-      "spider_sr": 3,
-      "maniptrans_sr": 3,
-      "rpe_cm": 3,
-      "mppe_cm": 3,
-      "cd_o_cm": 3
+      "add_auc": 4,
+      "spider_sr": 4,
+      "maniptrans_sr": 4,
+      "rpe_cm": 4,
+      "mppe_cm": 4,
+      "cd_o_cm": 4
      },
-     "last_submission": "2026-10-11 08:12:25",
+     "last_submission": "2026-10-12 09:32:15",
      "kaggle_rank": {
       "add_auc": 3,
-      "spider_sr": 2,
+      "spider_sr": 3,
       "maniptrans_sr": 4,
-      "rpe_cm": 2,
+      "rpe_cm": 3,
       "mppe_cm": 4,
       "cd_o_cm": 3
      },
@@ -821,7 +821,7 @@
       "spider_sr": 5,
       "maniptrans_sr": 3,
       "rpe_cm": 4,
-      "mppe_cm": 2,
+      "mppe_cm": 3,
       "cd_o_cm": 1
      },
      "rank": 4
