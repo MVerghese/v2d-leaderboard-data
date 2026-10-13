@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-12T20:25:00+00:00",
+ "generated_at": "2026-10-13T02:12:10+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -51,6 +51,36 @@
    ],
    "rows": [
     {
+     "team": "EviisKitson",
+     "members": [
+      "eviiskitson"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 14.01594,
+      "cd_o_cm": 25.05404,
+      "acc_h_cm": 0.24071,
+      "acc_o_cm": 0.20244,
+      "interpenetration_cm": 0.00355
+     },
+     "submission_count": {
+      "cd_h_cm": 1,
+      "cd_o_cm": 1,
+      "acc_h_cm": 1,
+      "acc_o_cm": 1,
+      "interpenetration_cm": 1
+     },
+     "last_submission": "2026-10-13 01:39:48",
+     "kaggle_rank": {
+      "cd_h_cm": 1,
+      "cd_o_cm": 5,
+      "acc_h_cm": 6,
+      "acc_o_cm": 5,
+      "interpenetration_cm": 7
+     },
+     "rank": 1
+    },
+    {
      "team": "ByeByeHelloHaHaHa",
      "members": [
       "byebyehellohahaha"
@@ -72,13 +102,13 @@
      },
      "last_submission": "2026-10-11 16:31:54",
      "kaggle_rank": {
-      "cd_h_cm": 1,
-      "cd_o_cm": 5,
-      "acc_h_cm": 3,
+      "cd_h_cm": 2,
+      "cd_o_cm": 6,
+      "acc_h_cm": 4,
       "acc_o_cm": 3,
       "interpenetration_cm": 2
      },
-     "rank": 1
+     "rank": 2
     },
     {
      "team": "um",
@@ -102,17 +132,18 @@
      },
      "last_submission": "2026-10-08 14:25:44",
      "kaggle_rank": {
-      "cd_h_cm": 2,
-      "cd_o_cm": 7,
-      "acc_h_cm": 6,
-      "acc_o_cm": 6,
-      "interpenetration_cm": 9
+      "cd_h_cm": 3,
+      "cd_o_cm": 10,
+      "acc_h_cm": 8,
+      "acc_o_cm": 8,
+      "interpenetration_cm": 11
      },
-     "rank": 2
+     "rank": 3
     },
     {
      "team": "RoboPanda",
      "members": [
+      "pchanrung",
       "vectorwangel"
      ],
      "is_baseline": false,
@@ -132,13 +163,13 @@
      },
      "last_submission": "2026-10-12 05:16:02",
      "kaggle_rank": {
-      "cd_h_cm": 3,
+      "cd_h_cm": 4,
       "cd_o_cm": 1,
       "acc_h_cm": 1,
       "acc_o_cm": 1,
       "interpenetration_cm": 1
      },
-     "rank": 3
+     "rank": 4
     },
     {
      "team": "Lattice Studios",
@@ -147,28 +178,28 @@
      ],
      "is_baseline": false,
      "scores": {
-      "cd_h_cm": 15.0859,
-      "cd_o_cm": 25.1119,
-      "acc_h_cm": 0.17837,
-      "acc_o_cm": 0.0782,
+      "cd_h_cm": 14.98258,
+      "cd_o_cm": 25.03212,
+      "acc_h_cm": 0.14174,
+      "acc_o_cm": 0.07156,
       "interpenetration_cm": 0.00151
      },
      "submission_count": {
-      "cd_h_cm": 6,
-      "cd_o_cm": 6,
-      "acc_h_cm": 6,
-      "acc_o_cm": 6,
-      "interpenetration_cm": 6
+      "cd_h_cm": 7,
+      "cd_o_cm": 7,
+      "acc_h_cm": 7,
+      "acc_o_cm": 7,
+      "interpenetration_cm": 7
      },
-     "last_submission": "2026-10-11 00:04:38",
+     "last_submission": "2026-10-12 22:20:01",
      "kaggle_rank": {
-      "cd_h_cm": 4,
+      "cd_h_cm": 5,
       "cd_o_cm": 4,
-      "acc_h_cm": 5,
+      "acc_h_cm": 2,
       "acc_o_cm": 2,
       "interpenetration_cm": 3
      },
-     "rank": 4
+     "rank": 5
     },
     {
      "team": "Javier Medel, MSc.",
@@ -177,28 +208,58 @@
      ],
      "is_baseline": false,
      "scores": {
-      "cd_h_cm": 15.11851,
-      "cd_o_cm": 152.72099,
-      "acc_h_cm": 1.62217,
-      "acc_o_cm": 7.10147,
+      "cd_h_cm": 14.99887,
+      "cd_o_cm": 75.4825,
+      "acc_h_cm": 1.55253,
+      "acc_o_cm": 5.4341,
       "interpenetration_cm": 0.00213
      },
      "submission_count": {
-      "cd_h_cm": 1,
-      "cd_o_cm": 1,
-      "acc_h_cm": 1,
-      "acc_o_cm": 1,
-      "interpenetration_cm": 1
+      "cd_h_cm": 2,
+      "cd_o_cm": 2,
+      "acc_h_cm": 2,
+      "acc_o_cm": 2,
+      "interpenetration_cm": 2
      },
-     "last_submission": "2026-10-11 19:52:42",
+     "last_submission": "2026-10-12 20:22:33",
      "kaggle_rank": {
-      "cd_h_cm": 5,
+      "cd_h_cm": 6,
       "cd_o_cm": 9,
-      "acc_h_cm": 8,
-      "acc_o_cm": 9,
+      "acc_h_cm": 10,
+      "acc_o_cm": 11,
       "interpenetration_cm": 4
      },
-     "rank": 5
+     "rank": 6
+    },
+    {
+     "team": "Chivatam",
+     "members": [
+      "chvsthop"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 15.11194,
+      "cd_o_cm": 38.43505,
+      "acc_h_cm": 0.25584,
+      "acc_o_cm": 0.22094,
+      "interpenetration_cm": 0.00239
+     },
+     "submission_count": {
+      "cd_h_cm": 2,
+      "cd_o_cm": 4,
+      "acc_h_cm": 2,
+      "acc_o_cm": 4,
+      "interpenetration_cm": 2
+     },
+     "last_submission": "2026-10-13 00:36:05",
+     "kaggle_rank": {
+      "cd_h_cm": 7,
+      "cd_o_cm": 8,
+      "acc_h_cm": 7,
+      "acc_o_cm": 6,
+      "interpenetration_cm": 5
+     },
+     "rank": 7
     },
     {
      "team": "Mochii",
@@ -224,13 +285,13 @@
      },
      "last_submission": "2026-10-11 22:01:57",
      "kaggle_rank": {
-      "cd_h_cm": 6,
-      "cd_o_cm": 6,
-      "acc_h_cm": 7,
-      "acc_o_cm": 7,
-      "interpenetration_cm": 6
+      "cd_h_cm": 8,
+      "cd_o_cm": 7,
+      "acc_h_cm": 9,
+      "acc_o_cm": 9,
+      "interpenetration_cm": 8
      },
-     "rank": 6
+     "rank": 8
     },
     {
      "team": "Open4D",
@@ -255,13 +316,13 @@
      },
      "last_submission": "2026-10-08 21:02:52",
      "kaggle_rank": {
-      "cd_h_cm": 7,
+      "cd_h_cm": 9,
       "cd_o_cm": 2,
-      "acc_h_cm": 4,
+      "acc_h_cm": 5,
       "acc_o_cm": 4,
-      "interpenetration_cm": 5
+      "interpenetration_cm": 6
      },
-     "rank": 7
+     "rank": 9
     },
     {
      "team": "SNU CVLAB",
@@ -285,13 +346,13 @@
      },
      "last_submission": "2026-10-12 03:56:26",
      "kaggle_rank": {
-      "cd_h_cm": 8,
+      "cd_h_cm": 10,
       "cd_o_cm": 3,
-      "acc_h_cm": 2,
-      "acc_o_cm": 5,
-      "interpenetration_cm": 8
+      "acc_h_cm": 3,
+      "acc_o_cm": 7,
+      "interpenetration_cm": 10
      },
-     "rank": 8
+     "rank": 10
     },
     {
      "team": "CARI4D Basline",
@@ -343,13 +404,13 @@
      },
      "last_submission": "2026-10-11 12:05:25",
      "kaggle_rank": {
-      "cd_h_cm": 9,
-      "cd_o_cm": 8,
-      "acc_h_cm": 9,
-      "acc_o_cm": 8,
-      "interpenetration_cm": 7
+      "cd_h_cm": 11,
+      "cd_o_cm": 11,
+      "acc_h_cm": 11,
+      "acc_o_cm": 10,
+      "interpenetration_cm": 9
      },
-     "rank": 9
+     "rank": 11
     }
    ],
    "incomplete": [],
