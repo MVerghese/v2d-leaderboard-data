@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-14T22:42:59+00:00",
+ "generated_at": "2026-10-15T00:56:58+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -239,19 +239,19 @@
      "is_baseline": false,
      "scores": {
       "cd_h_cm": 14.99887,
-      "cd_o_cm": 28.45924,
+      "cd_o_cm": 28.14623,
       "acc_h_cm": 1.15894,
-      "acc_o_cm": 0.88239,
+      "acc_o_cm": 0.86183,
       "interpenetration_cm": 0.00213
      },
      "submission_count": {
-      "cd_h_cm": 4,
-      "cd_o_cm": 4,
-      "acc_h_cm": 4,
-      "acc_o_cm": 4,
-      "interpenetration_cm": 4
+      "cd_h_cm": 5,
+      "cd_o_cm": 5,
+      "acc_h_cm": 5,
+      "acc_o_cm": 5,
+      "interpenetration_cm": 5
      },
-     "last_submission": "2026-10-14 21:56:40",
+     "last_submission": "2026-10-14 23:19:52",
      "kaggle_rank": {
       "cd_h_cm": 7,
       "cd_o_cm": 9,
@@ -877,20 +877,20 @@
       "add_auc": 0.51379,
       "spider_sr": 0.73333,
       "maniptrans_sr": 0.53333,
-      "mppe_cm": 16.54028
+      "mppe_cm": 15.32195
      },
      "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
+      "add_auc": 2,
+      "spider_sr": 2,
+      "maniptrans_sr": 2,
+      "mppe_cm": 2
      },
-     "last_submission": "2026-10-14 06:05:55",
+     "last_submission": "2026-10-14 22:47:16",
      "kaggle_rank": {
       "add_auc": 1,
       "spider_sr": 1,
       "maniptrans_sr": 1,
-      "mppe_cm": 2
+      "mppe_cm": 1
      },
      "rank": 1
     },
@@ -917,7 +917,7 @@
       "add_auc": 2,
       "spider_sr": 2,
       "maniptrans_sr": 2,
-      "mppe_cm": 1
+      "mppe_cm": 2
      },
      "rank": 2
     },
