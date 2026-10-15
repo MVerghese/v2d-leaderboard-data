@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-15T00:56:58+00:00",
+ "generated_at": "2026-10-15T05:27:44+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -104,7 +104,7 @@
      "kaggle_rank": {
       "cd_h_cm": 2,
       "cd_o_cm": 10,
-      "acc_h_cm": 8,
+      "acc_h_cm": 9,
       "acc_o_cm": 7,
       "interpenetration_cm": 6
      },
@@ -136,7 +136,7 @@
       "cd_o_cm": 3,
       "acc_h_cm": 5,
       "acc_o_cm": 5,
-      "interpenetration_cm": 17
+      "interpenetration_cm": 18
      },
      "rank": 3
     },
@@ -194,10 +194,10 @@
      "last_submission": "2026-10-08 14:25:44",
      "kaggle_rank": {
       "cd_h_cm": 5,
-      "cd_o_cm": 16,
-      "acc_h_cm": 13,
-      "acc_o_cm": 17,
-      "interpenetration_cm": 16
+      "cd_o_cm": 17,
+      "acc_h_cm": 14,
+      "acc_o_cm": 18,
+      "interpenetration_cm": 17
      },
      "rank": 5
     },
@@ -224,10 +224,10 @@
      "last_submission": "2026-10-12 22:20:01",
      "kaggle_rank": {
       "cd_h_cm": 6,
-      "cd_o_cm": 7,
+      "cd_o_cm": 8,
       "acc_h_cm": 3,
       "acc_o_cm": 2,
-      "interpenetration_cm": 7
+      "interpenetration_cm": 8
      },
      "rank": 6
     },
@@ -239,25 +239,25 @@
      "is_baseline": false,
      "scores": {
       "cd_h_cm": 14.99887,
-      "cd_o_cm": 28.14623,
+      "cd_o_cm": 23.48489,
       "acc_h_cm": 1.15894,
-      "acc_o_cm": 0.86183,
+      "acc_o_cm": 0.77219,
       "interpenetration_cm": 0.00213
      },
      "submission_count": {
-      "cd_h_cm": 5,
-      "cd_o_cm": 5,
-      "acc_h_cm": 5,
-      "acc_o_cm": 5,
-      "interpenetration_cm": 5
+      "cd_h_cm": 7,
+      "cd_o_cm": 7,
+      "acc_h_cm": 7,
+      "acc_o_cm": 7,
+      "interpenetration_cm": 7
      },
-     "last_submission": "2026-10-14 23:19:52",
+     "last_submission": "2026-10-15 03:58:47",
      "kaggle_rank": {
       "cd_h_cm": 7,
-      "cd_o_cm": 9,
-      "acc_h_cm": 16,
-      "acc_o_cm": 15,
-      "interpenetration_cm": 9
+      "cd_o_cm": 4,
+      "acc_h_cm": 17,
+      "acc_o_cm": 16,
+      "interpenetration_cm": 10
      },
      "rank": 7
     },
@@ -285,11 +285,41 @@
      "kaggle_rank": {
       "cd_h_cm": 8,
       "cd_o_cm": 13,
-      "acc_h_cm": 12,
-      "acc_o_cm": 10,
-      "interpenetration_cm": 10
+      "acc_h_cm": 13,
+      "acc_o_cm": 11,
+      "interpenetration_cm": 11
      },
      "rank": 8
+    },
+    {
+     "team": "QY Lin",
+     "members": [
+      "doreen071"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 15.12774,
+      "cd_o_cm": 32.30175,
+      "acc_h_cm": 0.15089,
+      "acc_o_cm": 0.14036,
+      "interpenetration_cm": 0.0
+     },
+     "submission_count": {
+      "cd_h_cm": 4,
+      "cd_o_cm": 4,
+      "acc_h_cm": 4,
+      "acc_o_cm": 4,
+      "interpenetration_cm": 4
+     },
+     "last_submission": "2026-10-15 02:01:05",
+     "kaggle_rank": {
+      "cd_h_cm": 9,
+      "cd_o_cm": 12,
+      "acc_h_cm": 7,
+      "acc_o_cm": 8,
+      "interpenetration_cm": 1
+     },
+     "rank": 9
     },
     {
      "team": "Xueyi Wang (FF)",
@@ -313,13 +343,13 @@
      },
      "last_submission": "2026-10-13 08:17:02",
      "kaggle_rank": {
-      "cd_h_cm": 9,
-      "cd_o_cm": 8,
+      "cd_h_cm": 10,
+      "cd_o_cm": 9,
       "acc_h_cm": 6,
       "acc_o_cm": 4,
-      "interpenetration_cm": 8
+      "interpenetration_cm": 9
      },
-     "rank": 9
+     "rank": 10
     },
     {
      "team": "Mochii",
@@ -345,41 +375,11 @@
      },
      "last_submission": "2026-10-14 03:57:40",
      "kaggle_rank": {
-      "cd_h_cm": 10,
-      "cd_o_cm": 11,
-      "acc_h_cm": 11,
-      "acc_o_cm": 11,
-      "interpenetration_cm": 12
-     },
-     "rank": 10
-    },
-    {
-     "team": "QY Lin",
-     "members": [
-      "doreen071"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "cd_h_cm": 15.22084,
-      "cd_o_cm": 32.30175,
-      "acc_h_cm": 0.18742,
-      "acc_o_cm": 0.14036,
-      "interpenetration_cm": 0.0
-     },
-     "submission_count": {
-      "cd_h_cm": 2,
-      "cd_o_cm": 2,
-      "acc_h_cm": 2,
-      "acc_o_cm": 2,
-      "interpenetration_cm": 2
-     },
-     "last_submission": "2026-10-14 15:40:17",
-     "kaggle_rank": {
       "cd_h_cm": 11,
-      "cd_o_cm": 12,
-      "acc_h_cm": 10,
-      "acc_o_cm": 8,
-      "interpenetration_cm": 1
+      "cd_o_cm": 11,
+      "acc_h_cm": 12,
+      "acc_o_cm": 12,
+      "interpenetration_cm": 13
      },
      "rank": 11
     },
@@ -407,10 +407,10 @@
      "last_submission": "2026-10-08 21:02:52",
      "kaggle_rank": {
       "cd_h_cm": 12,
-      "cd_o_cm": 5,
-      "acc_h_cm": 9,
-      "acc_o_cm": 9,
-      "interpenetration_cm": 11
+      "cd_o_cm": 6,
+      "acc_h_cm": 10,
+      "acc_o_cm": 10,
+      "interpenetration_cm": 12
      },
      "rank": 12
     },
@@ -437,9 +437,9 @@
      "last_submission": "2026-10-14 12:57:30",
      "kaggle_rank": {
       "cd_h_cm": 13,
-      "cd_o_cm": 15,
-      "acc_h_cm": 15,
-      "acc_o_cm": 14,
+      "cd_o_cm": 16,
+      "acc_h_cm": 16,
+      "acc_o_cm": 15,
       "interpenetration_cm": 4
      },
      "rank": 13
@@ -467,10 +467,10 @@
      "last_submission": "2026-10-13 04:20:10",
      "kaggle_rank": {
       "cd_h_cm": 14,
-      "cd_o_cm": 6,
+      "cd_o_cm": 7,
       "acc_h_cm": 4,
-      "acc_o_cm": 12,
-      "interpenetration_cm": 14
+      "acc_o_cm": 13,
+      "interpenetration_cm": 15
      },
      "rank": 14
     },
@@ -525,10 +525,10 @@
      "last_submission": "2026-10-14 04:20:08",
      "kaggle_rank": {
       "cd_h_cm": 15,
-      "cd_o_cm": 4,
-      "acc_h_cm": 14,
-      "acc_o_cm": 16,
-      "interpenetration_cm": 15
+      "cd_o_cm": 5,
+      "acc_h_cm": 15,
+      "acc_o_cm": 17,
+      "interpenetration_cm": 16
      },
      "rank": 15
     },
@@ -556,9 +556,9 @@
      "kaggle_rank": {
       "cd_h_cm": 16,
       "cd_o_cm": 14,
-      "acc_h_cm": 17,
-      "acc_o_cm": 13,
-      "interpenetration_cm": 13
+      "acc_h_cm": 18,
+      "acc_o_cm": 14,
+      "interpenetration_cm": 14
      },
      "rank": 16
     },
@@ -585,12 +585,42 @@
      "last_submission": "2026-10-13 12:18:02",
      "kaggle_rank": {
       "cd_h_cm": 17,
-      "cd_o_cm": 17,
-      "acc_h_cm": 7,
+      "cd_o_cm": 18,
+      "acc_h_cm": 8,
       "acc_o_cm": 3,
       "interpenetration_cm": 5
      },
      "rank": 17
+    },
+    {
+     "team": "Punya Malaiya",
+     "members": [
+      "punyamalaiya"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 43.73273,
+      "cd_o_cm": 78.69475,
+      "acc_h_cm": 0.21159,
+      "acc_o_cm": 0.18698,
+      "interpenetration_cm": 0.00149
+     },
+     "submission_count": {
+      "cd_h_cm": 2,
+      "cd_o_cm": 2,
+      "acc_h_cm": 2,
+      "acc_o_cm": 2,
+      "interpenetration_cm": 2
+     },
+     "last_submission": "2026-10-15 04:51:33",
+     "kaggle_rank": {
+      "cd_h_cm": 18,
+      "cd_o_cm": 15,
+      "acc_h_cm": 11,
+      "acc_o_cm": 9,
+      "interpenetration_cm": 7
+     },
+     "rank": 18
     }
    ],
    "incomplete": [],
