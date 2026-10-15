@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-15T18:56:23+00:00",
+ "generated_at": "2026-10-15T21:58:45+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -81,7 +81,7 @@
      "rank": 1
     },
     {
-     "team": "RoboPanda",
+     "team": "RobotPI Lab",
      "members": [
       "pchanrung",
       "vectorwangel"
@@ -109,6 +109,9 @@
       "acc_o_cm": 1,
       "interpenetration_cm": 3
      },
+     "other_names": [
+      "RoboPI Lab"
+     ],
      "rank": 2
     },
     {
@@ -211,17 +214,17 @@
       "cd_h_cm": 14.98258,
       "cd_o_cm": 25.03212,
       "acc_h_cm": 0.14174,
-      "acc_o_cm": 0.07156,
+      "acc_o_cm": 0.07136,
       "interpenetration_cm": 0.00151
      },
      "submission_count": {
-      "cd_h_cm": 7,
-      "cd_o_cm": 7,
-      "acc_h_cm": 7,
-      "acc_o_cm": 7,
-      "interpenetration_cm": 7
+      "cd_h_cm": 8,
+      "cd_o_cm": 8,
+      "acc_h_cm": 8,
+      "acc_o_cm": 8,
+      "interpenetration_cm": 8
      },
-     "last_submission": "2026-10-12 22:20:01",
+     "last_submission": "2026-10-15 19:23:29",
      "kaggle_rank": {
       "cd_h_cm": 6,
       "cd_o_cm": 8,
