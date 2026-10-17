@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-16T22:21:42+00:00",
+ "generated_at": "2026-10-17T00:35:38+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -109,9 +109,6 @@
       "acc_o_cm": 1,
       "interpenetration_cm": 6
      },
-     "other_names": [
-      "RoboPI Lab"
-     ],
      "rank": 2
     },
     {
@@ -755,20 +752,20 @@
      ],
      "is_baseline": false,
      "scores": {
-      "cd_h_cm": 67.09885,
+      "cd_h_cm": 61.26967,
       "cd_o_cm": 422.2238,
       "acc_h_cm": 0.17963,
       "acc_o_cm": 0.08356,
       "interpenetration_cm": 0.0
      },
      "submission_count": {
-      "cd_h_cm": 1,
-      "cd_o_cm": 1,
-      "acc_h_cm": 1,
-      "acc_o_cm": 1,
-      "interpenetration_cm": 1
+      "cd_h_cm": 2,
+      "cd_o_cm": 2,
+      "acc_h_cm": 2,
+      "acc_o_cm": 2,
+      "interpenetration_cm": 2
      },
-     "last_submission": "2026-10-16 20:07:42",
+     "last_submission": "2026-10-17 00:19:03",
      "kaggle_rank": {
       "cd_h_cm": 23,
       "cd_o_cm": 24,
