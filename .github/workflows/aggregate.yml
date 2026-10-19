@@ -20,7 +20,10 @@ concurrency:
 jobs:
   aggregate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # A run normally takes a minute or two, because unchanged teams reuse their recorded
+    # submissions. The first run after a long outage refetches every team at one Kaggle call
+    # per 2 s, which passes 10 minutes once the field is ~300 team entries.
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -40,6 +43,8 @@ jobs:
       - name: Aggregate
         env:
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          # Without this a run killed at the timeout leaves an empty log.
+          PYTHONUNBUFFERED: "1"
         run: |
           # Until the secret exists, skip with a warning instead of failing (and emailing) every
           # 15 minutes.

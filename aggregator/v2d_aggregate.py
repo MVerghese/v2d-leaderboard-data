@@ -355,12 +355,32 @@ def write_atomic(path: Path, payload: str) -> bool:
     return True
 
 
-def fetch_public_submissions(api, board: list[dict], competition: str) -> dict:
-    """Fetch each team's publicly visible scored submissions."""
+def _row_unchanged(recorded: dict, row: dict) -> bool:
+    """True when a leaderboard export row matches the history row last recorded for its team."""
+    return (recorded.get("leaderboard_score") == _float(row.get("score"))
+            and recorded.get("submission_count") == _int(row.get("submission_count"))
+            and recorded.get("last_submission_date") == ((row.get("submission_date") or "").strip() or None))
+
+
+def fetch_public_submissions(api, board: list[dict], competition: str, previous: dict | None = None) -> dict:
+    """Fetch each team's publicly visible scored submissions.
+
+    A team whose leaderboard row is unchanged since ``previous`` (the last recorded snapshot of
+    this competition) reuses that snapshot's submissions rather than asking Kaggle again. Kaggle
+    calls are spaced 2 s apart, so asking for every team on every run takes about 10 minutes at
+    ~300 team entries, which is the workflow's time limit.
+    """
+    recorded = {row["team_id"]: row for row in (previous or {}).get("rows", [])
+                if row.get("team_id") is not None and row.get("public_submissions") is not None}
     details = {}
+    reused = 0
     for row in board:
         team_id = _int(row.get("team_id"))
         if team_id is None or team_id in details:
+            continue
+        if team_id in recorded and _row_unchanged(recorded[team_id], row):
+            details[team_id] = recorded[team_id]["public_submissions"]
+            reused += 1
             continue
         try:
             submissions = []
@@ -377,6 +397,8 @@ def fetch_public_submissions(api, board: list[dict], competition: str) -> dict:
             print(f"  {competition}: public submissions for team {team_id} unavailable "
                   f"({type(error).__name__}: {error})", file=sys.stderr)
             details[team_id] = None
+    if previous is not None:
+        print(f"  {competition}: fetched {len(details) - reused} team(s), reused {reused} unchanged")
     return details
 
 
@@ -414,8 +436,8 @@ def history_snapshot(track: str, metric: str, competition: str, board: list[dict
             "track": track, "metric": metric, "competition": competition, "rows": rows}
 
 
-def record_history(path: Path, snapshots: list[dict], observed_at: str) -> int:
-    """Append changed competition snapshots, preserving all previous records."""
+def read_history(path: Path) -> tuple[str, dict[str, dict]]:
+    """Return the history file's text and the latest snapshot per competition, without ``observed_at``."""
     existing = path.read_text() if path.exists() else ""
     latest = {}
     for line_number, line in enumerate(existing.splitlines(), 1):
@@ -428,6 +450,12 @@ def record_history(path: Path, snapshots: list[dict], observed_at: str) -> int:
             latest[competition] = {key: value for key, value in record.items() if key != "observed_at"}
         except (ValueError, KeyError, AttributeError, TypeError) as error:
             raise SystemExit(f"{path}:{line_number}: invalid history; file preserved ({error})") from error
+    return existing, latest
+
+
+def record_history(path: Path, snapshots: list[dict], observed_at: str) -> int:
+    """Append changed competition snapshots, preserving all previous records."""
+    existing, latest = read_history(path)
     additions = []
     for snapshot in snapshots:
         competition = snapshot["competition"]
@@ -528,6 +556,7 @@ def main() -> int:
 
     tracks = []
     snapshots = []
+    _, previous = read_history(args.history) if args.history else ("", {})
     for track, spec in leaderboard_tables(config).items():
         print(f"{track}:")
         boards: dict[str, list[dict] | None] = {}
@@ -551,7 +580,7 @@ def main() -> int:
             if board is not None and args.history:
                 details = None
                 if api is not None:
-                    details = fetch_public_submissions(api, board, slug)
+                    details = fetch_public_submissions(api, board, slug, previous.get(slug))
                     if args.save_raw:
                         (args.save_raw / f"{slug}.submissions.json").write_text(json.dumps(details, indent=2) + "\n")
                 else:

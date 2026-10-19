@@ -185,6 +185,35 @@ class HistoryTests(unittest.TestCase):
         self.assertEqual(details[123], [{"id": 456, "submitted_at": "2026-10-04T10:00:00.123Z", "public_score": 0.8}])
         self.assertIsNone(details[234])
 
+    def test_fetch_reuses_unchanged_teams_and_refetches_changed_ones(self):
+        known = [{"id": 456, "submitted_at": "2026-10-04T10:00:00.123Z", "public_score": 0.8}]
+        rows = {name: {**self.row, "team_id": str(team_id)}
+                for name, team_id in (("same", 1), ("rescored", 2), ("resubmitted", 3), ("failed", 4), ("new", 5))}
+        previous = self.snapshot([rows[name] for name in ("same", "rescored", "resubmitted", "failed")],
+                                 competition="example")
+        for recorded in previous["rows"]:
+            recorded["public_submissions"] = None if recorded["team_id"] == 4 else known
+        rows["rescored"]["score"] = "0.9"
+        rows["resubmitted"].update(submission_count="3", submission_date="2026-10-05 13:00:00")
+        api = Mock()
+        record = Mock()
+        record.to_dict.return_value = {"id": 789, "dateSubmitted": "2026-10-05T13:00:00.000Z", "publicScore": "0.9"}
+        api.competition_team_submissions.return_value = [record]
+        with contextlib.redirect_stdout(io.StringIO()), patch.object(aggregate.time, "sleep"):
+            details = aggregate.fetch_public_submissions(api, list(rows.values()), "example", previous)
+        self.assertEqual(sorted(call.args[0] for call in api.competition_team_submissions.call_args_list), [2, 3, 4, 5])
+        self.assertEqual(details[1], known)
+        self.assertEqual(details[2][0]["id"], 789)
+
+    def test_reused_submissions_leave_an_unchanged_snapshot(self):
+        details = {123: [{"id": 456, "submitted_at": "2026-10-04T10:00:00.123Z", "public_score": 0.8}]}
+        first = aggregate.history_snapshot("track", "metric", "example", [self.row], details)
+        self.record(first)
+        _, latest = aggregate.read_history(self.history)
+        with contextlib.redirect_stdout(io.StringIO()):
+            reused = aggregate.fetch_public_submissions(Mock(), [self.row], "example", latest["example"])
+        self.assertEqual(self.record(aggregate.history_snapshot("track", "metric", "example", [self.row], reused)), 0)
+
     def test_rate_limit_retries_and_preserves_requested_arguments(self):
         class RateLimitError(Exception):
             response = Mock(status_code=429, headers={"Retry-After": "75"})
