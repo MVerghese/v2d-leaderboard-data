@@ -205,14 +205,30 @@ def _reconcile_name_keyed(teams: dict[str, dict]) -> None:
         del teams[key]
 
 
+def _fold_entry(target: dict, entry: dict) -> None:
+    """Merge one team entry's scores, members, dates and names into another, in place."""
+    for field in ("scores", "submission_count", "kaggle_rank"):
+        target[field].update(entry[field])
+    target["members"] = sorted(set(target["members"]) | set(entry["members"]))
+    if entry["last_submission"] and (
+        target["last_submission"] is None or entry["last_submission"] > target["last_submission"]
+    ):
+        target["last_submission"] = entry["last_submission"]
+    for name in (entry["team"], *entry.get("other_names", [])):
+        if name != target["team"] and name not in target.get("other_names", []):
+            target.setdefault("other_names", []).append(name)
+
+
 def _merge_shared_members(teams: dict[str, dict]) -> None:
     """Fold entries that share a member into one row, in place.
 
     A team that adds or drops a member on some of a track's competitions keys differently on
     those boards and would otherwise show as two rows, each blank where the other is scored.
-    Entries are grouped by shared usernames and merged only when no competition appears twice in
-    the group. A user can be on one team per competition, so two scores for the same competition
-    mean the group really did enter as separate teams there, and it is left alone.
+    Entries are grouped by shared usernames and the whole group is merged when no competition
+    appears twice in it. A user can be on one team per competition, so two scores for the same
+    competition mean some of the group entered it as separate teams. Then only entries that
+    also carry the same team name are merged, as long as they score different competitions:
+    that is one Kaggle team whose roster changed, next to a separate team one member entered.
     """
     entries = [k for k, e in teams.items() if e.get("_stable") and e["members"] and not e["is_baseline"]]
     parent = {key: key for key in entries}
@@ -236,23 +252,23 @@ def _merge_shared_members(teams: dict[str, dict]) -> None:
     for keys in groups.values():
         if len(keys) < 2:
             continue
-        metrics = [metric for key in keys for metric in teams[key]["scores"]]
-        if len(metrics) != len(set(metrics)):
-            continue
         keys.sort(key=lambda key: -len(teams[key]["members"]))
-        target = teams[keys[0]]
-        for key in keys[1:]:
-            entry = teams.pop(key)
-            for field in ("scores", "submission_count", "kaggle_rank"):
-                target[field].update(entry[field])
-            target["members"] = sorted(set(target["members"]) | set(entry["members"]))
-            if entry["last_submission"] and (
-                target["last_submission"] is None or entry["last_submission"] > target["last_submission"]
-            ):
-                target["last_submission"] = entry["last_submission"]
-            for name in (entry["team"], *entry.get("other_names", [])):
-                if name != target["team"] and name not in target.get("other_names", []):
-                    target.setdefault("other_names", []).append(name)
+        metrics = [metric for key in keys for metric in teams[key]["scores"]]
+        if len(metrics) == len(set(metrics)):
+            for key in keys[1:]:
+                _fold_entry(teams[keys[0]], teams.pop(key))
+            continue
+        for index, key in enumerate(keys):
+            if key not in teams:
+                continue
+            for other in keys[index + 1:]:
+                if other not in teams:
+                    continue
+                target, entry = teams[key], teams[other]
+                if (target["team"] == entry["team"]
+                        and set(target["members"]) & set(entry["members"])
+                        and not set(target["scores"]) & set(entry["scores"])):
+                    _fold_entry(target, teams.pop(other))
 
 
 def build_track(track: str, spec: dict, boards: dict[str, list[dict] | None], config: dict | None = None) -> dict:
