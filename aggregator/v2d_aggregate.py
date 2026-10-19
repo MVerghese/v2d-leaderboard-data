@@ -205,6 +205,56 @@ def _reconcile_name_keyed(teams: dict[str, dict]) -> None:
         del teams[key]
 
 
+def _merge_shared_members(teams: dict[str, dict]) -> None:
+    """Fold entries that share a member into one row, in place.
+
+    A team that adds or drops a member on some of a track's competitions keys differently on
+    those boards and would otherwise show as two rows, each blank where the other is scored.
+    Entries are grouped by shared usernames and merged only when no competition appears twice in
+    the group. A user can be on one team per competition, so two scores for the same competition
+    mean the group really did enter as separate teams there, and it is left alone.
+    """
+    entries = [k for k, e in teams.items() if e.get("_stable") and e["members"] and not e["is_baseline"]]
+    parent = {key: key for key in entries}
+
+    def find(key: str) -> str:
+        while parent[key] != key:
+            key = parent[key]
+        return key
+
+    owner: dict[str, str] = {}
+    for key in entries:
+        for member in teams[key]["members"]:
+            if member in owner:
+                parent[find(key)] = find(owner[member])
+            else:
+                owner[member] = key
+    groups: dict[str, list[str]] = {}
+    for key in entries:
+        groups.setdefault(find(key), []).append(key)
+
+    for keys in groups.values():
+        if len(keys) < 2:
+            continue
+        metrics = [metric for key in keys for metric in teams[key]["scores"]]
+        if len(metrics) != len(set(metrics)):
+            continue
+        keys.sort(key=lambda key: -len(teams[key]["members"]))
+        target = teams[keys[0]]
+        for key in keys[1:]:
+            entry = teams.pop(key)
+            for field in ("scores", "submission_count", "kaggle_rank"):
+                target[field].update(entry[field])
+            target["members"] = sorted(set(target["members"]) | set(entry["members"]))
+            if entry["last_submission"] and (
+                target["last_submission"] is None or entry["last_submission"] > target["last_submission"]
+            ):
+                target["last_submission"] = entry["last_submission"]
+            for name in (entry["team"], *entry.get("other_names", [])):
+                if name != target["team"] and name not in target.get("other_names", []):
+                    target.setdefault("other_names", []).append(name)
+
+
 def build_track(track: str, spec: dict, boards: dict[str, list[dict] | None], config: dict | None = None) -> dict:
     config = config or {}
     meta = {m: _metric_meta(config, m) for m in spec["metrics"]}
@@ -247,6 +297,7 @@ def build_track(track: str, spec: dict, boards: dict[str, list[dict] | None], co
                     entry["other_names"].append(name)
 
     _reconcile_name_keyed(teams)
+    _merge_shared_members(teams)
 
     rows = []
     incomplete = []
