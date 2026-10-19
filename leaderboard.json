@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-19T22:48:22+00:00",
+ "generated_at": "2026-10-19T22:52:29+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -1984,24 +1984,28 @@
      "scores": {
       "add_auc": 0.82309,
       "mppe_cm": 2.62042,
-      "cd_o_cm": 0.06523
+      "cd_o_cm": 0.06523,
+      "spider_sr": 0.8,
+      "maniptrans_sr": 0.5,
+      "rpe_cm": 3.85312
      },
      "submission_count": {
       "add_auc": 3,
       "mppe_cm": 3,
-      "cd_o_cm": 4
+      "cd_o_cm": 4,
+      "spider_sr": 2,
+      "maniptrans_sr": 2,
+      "rpe_cm": 2
      },
      "last_submission": "2026-10-19 18:41:41",
      "kaggle_rank": {
       "add_auc": 1,
       "mppe_cm": 1,
-      "cd_o_cm": 1
+      "cd_o_cm": 1,
+      "spider_sr": 3,
+      "maniptrans_sr": 3,
+      "rpe_cm": 2
      },
-     "missing": [
-      "spider_sr",
-      "maniptrans_sr",
-      "rpe_cm"
-     ],
      "rank": 1
     },
     {
@@ -2511,35 +2515,6 @@
      "rank": 16
     },
     {
-     "team": "SoySauceChicken",
-     "members": [
-      "zihangao2001"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "spider_sr": 0.8,
-      "maniptrans_sr": 0.5,
-      "rpe_cm": 3.85312
-     },
-     "submission_count": {
-      "spider_sr": 2,
-      "maniptrans_sr": 2,
-      "rpe_cm": 2
-     },
-     "last_submission": "2026-10-07 06:31:15",
-     "kaggle_rank": {
-      "spider_sr": 3,
-      "maniptrans_sr": 3,
-      "rpe_cm": 2
-     },
-     "missing": [
-      "add_auc",
-      "mppe_cm",
-      "cd_o_cm"
-     ],
-     "rank": 17
-    },
-    {
      "team": "Zeraol",
      "members": [
       "zeraol"
@@ -2566,28 +2541,12 @@
       "mppe_cm",
       "cd_o_cm"
      ],
-     "rank": 18
+     "rank": 17
     }
    ],
    "incomplete": [
     {
-     "team": "SoySauceChicken",
-     "missing": [
-      "spider_sr",
-      "maniptrans_sr",
-      "rpe_cm"
-     ]
-    },
-    {
      "team": "Zeraol",
-     "missing": [
-      "add_auc",
-      "mppe_cm",
-      "cd_o_cm"
-     ]
-    },
-    {
-     "team": "SoySauceChicken",
      "missing": [
       "add_auc",
       "mppe_cm",
