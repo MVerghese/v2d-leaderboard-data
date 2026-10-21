@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T21:49:07+00:00",
+ "generated_at": "2026-10-21T21:54:53+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -1295,7 +1295,7 @@
      "kaggle_rank": {
       "add_auc": 1,
       "spider_sr": 1,
-      "maniptrans_sr": 1,
+      "maniptrans_sr": 2,
       "mppe_cm": 2
      },
      "other_names": [
@@ -1327,7 +1327,7 @@
      "kaggle_rank": {
       "add_auc": 2,
       "spider_sr": 4,
-      "maniptrans_sr": 2,
+      "maniptrans_sr": 3,
       "mppe_cm": 5
      },
      "rank": 2
@@ -1341,22 +1341,22 @@
      "scores": {
       "add_auc": 0.5953,
       "spider_sr": 0.86666,
+      "maniptrans_sr": 0.83333,
       "mppe_cm": 7.44319
      },
      "submission_count": {
       "add_auc": 7,
       "spider_sr": 7,
+      "maniptrans_sr": 7,
       "mppe_cm": 7
      },
      "last_submission": "2026-10-19 05:50:38",
      "kaggle_rank": {
       "add_auc": 3,
       "spider_sr": 2,
+      "maniptrans_sr": 1,
       "mppe_cm": 1
      },
-     "missing": [
-      "maniptrans_sr"
-     ],
      "rank": 3
     },
     {
@@ -1381,7 +1381,7 @@
      "kaggle_rank": {
       "add_auc": 4,
       "spider_sr": 3,
-      "maniptrans_sr": 3,
+      "maniptrans_sr": 4,
       "mppe_cm": 4
      },
      "rank": 4
@@ -1408,7 +1408,7 @@
      "kaggle_rank": {
       "add_auc": 5,
       "spider_sr": 5,
-      "maniptrans_sr": 4,
+      "maniptrans_sr": 5,
       "mppe_cm": 3
      },
      "rank": 5
@@ -1460,7 +1460,7 @@
      "kaggle_rank": {
       "add_auc": 6,
       "spider_sr": 7,
-      "maniptrans_sr": 5,
+      "maniptrans_sr": 6,
       "mppe_cm": 6
      },
      "rank": 6
@@ -1487,7 +1487,7 @@
      "kaggle_rank": {
       "add_auc": 7,
       "spider_sr": 6,
-      "maniptrans_sr": 9,
+      "maniptrans_sr": 10,
       "mppe_cm": 7
      },
      "rank": 7
@@ -1514,7 +1514,7 @@
      "kaggle_rank": {
       "add_auc": 8,
       "spider_sr": 9,
-      "maniptrans_sr": 7,
+      "maniptrans_sr": 8,
       "mppe_cm": 8
      },
      "rank": 8
@@ -1543,7 +1543,7 @@
      "kaggle_rank": {
       "add_auc": 9,
       "spider_sr": 8,
-      "maniptrans_sr": 6,
+      "maniptrans_sr": 7,
       "mppe_cm": 9
      },
      "rank": 9
@@ -1570,7 +1570,7 @@
      "kaggle_rank": {
       "add_auc": 10,
       "spider_sr": 10,
-      "maniptrans_sr": 10,
+      "maniptrans_sr": 11,
       "mppe_cm": 11
      },
      "rank": 10
@@ -1597,7 +1597,7 @@
      "kaggle_rank": {
       "add_auc": 11,
       "spider_sr": 11,
-      "maniptrans_sr": 8,
+      "maniptrans_sr": 9,
       "mppe_cm": 12
      },
      "rank": 11
@@ -1624,7 +1624,7 @@
      "kaggle_rank": {
       "add_auc": 12,
       "spider_sr": 12,
-      "maniptrans_sr": 11,
+      "maniptrans_sr": 12,
       "mppe_cm": 10
      },
      "rank": 12
@@ -1651,7 +1651,7 @@
      "kaggle_rank": {
       "add_auc": 13,
       "spider_sr": 13,
-      "maniptrans_sr": 12,
+      "maniptrans_sr": 13,
       "mppe_cm": 13
      },
      "rank": 13
@@ -1678,7 +1678,7 @@
      "kaggle_rank": {
       "add_auc": 14,
       "spider_sr": 14,
-      "maniptrans_sr": 13,
+      "maniptrans_sr": 14,
       "mppe_cm": 14
      },
      "rank": 14
@@ -1705,20 +1705,13 @@
      "kaggle_rank": {
       "add_auc": 15,
       "spider_sr": 15,
-      "maniptrans_sr": 14,
+      "maniptrans_sr": 15,
       "mppe_cm": 15
      },
      "rank": 15
     }
    ],
-   "incomplete": [
-    {
-     "team": "Xueyi Wang (FF)",
-     "missing": [
-      "maniptrans_sr"
-     ]
-    }
-   ],
+   "incomplete": [],
    "warnings": []
   },
   {
