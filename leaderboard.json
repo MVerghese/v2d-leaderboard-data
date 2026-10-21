@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21T21:37:10+00:00",
+ "generated_at": "2026-10-21T21:49:07+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -1271,83 +1271,6 @@
    ],
    "rows": [
     {
-     "team": "solidSF.com",
-     "members": [
-      "goatedscripts"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.99998,
-      "spider_sr": 1.0,
-      "mppe_cm": 0.07244
-     },
-     "submission_count": {
-      "add_auc": 2,
-      "spider_sr": 1,
-      "mppe_cm": 1
-     },
-     "last_submission": "2026-10-21 19:14:05",
-     "kaggle_rank": {
-      "add_auc": 1,
-      "spider_sr": 2,
-      "mppe_cm": 1
-     },
-     "missing": [
-      "maniptrans_sr"
-     ],
-     "rank": 1
-    },
-    {
-     "team": "Vi Nguy\u1ec5n V\u0103n",
-     "members": [
-      "vinguynvn"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.96908
-     },
-     "submission_count": {
-      "add_auc": 2
-     },
-     "last_submission": "2026-10-18 03:20:09",
-     "kaggle_rank": {
-      "add_auc": 2
-     },
-     "missing": [
-      "spider_sr",
-      "maniptrans_sr",
-      "mppe_cm"
-     ],
-     "rank": 2
-    },
-    {
-     "team": "NVSimranPatil",
-     "members": [
-      "nvsimranpatil"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.87916,
-      "spider_sr": 1.0,
-      "maniptrans_sr": 0.93333,
-      "mppe_cm": 0.98418
-     },
-     "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "last_submission": "2026-10-21 17:13:36",
-     "kaggle_rank": {
-      "add_auc": 3,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 2
-     },
-     "rank": 3
-    },
-    {
      "team": "MBZUAI-RCL Group",
      "members": [
       "ditang0125",
@@ -1370,15 +1293,15 @@
      },
      "last_submission": "2026-10-21 19:17:41",
      "kaggle_rank": {
-      "add_auc": 4,
-      "spider_sr": 3,
-      "maniptrans_sr": 3,
-      "mppe_cm": 4
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "mppe_cm": 2
      },
      "other_names": [
       "Haoran Zhang233"
      ],
-     "rank": 4
+     "rank": 1
     },
     {
      "team": "DAP",
@@ -1402,12 +1325,12 @@
      },
      "last_submission": "2026-10-21 01:00:56",
      "kaggle_rank": {
-      "add_auc": 5,
-      "spider_sr": 6,
-      "maniptrans_sr": 4,
-      "mppe_cm": 7
+      "add_auc": 2,
+      "spider_sr": 4,
+      "maniptrans_sr": 2,
+      "mppe_cm": 5
      },
-     "rank": 5
+     "rank": 2
     },
     {
      "team": "Xueyi Wang (FF)",
@@ -1418,23 +1341,23 @@
      "scores": {
       "add_auc": 0.5953,
       "spider_sr": 0.86666,
-      "maniptrans_sr": 0.83333,
       "mppe_cm": 7.44319
      },
      "submission_count": {
       "add_auc": 7,
       "spider_sr": 7,
-      "maniptrans_sr": 7,
       "mppe_cm": 7
      },
      "last_submission": "2026-10-19 05:50:38",
      "kaggle_rank": {
-      "add_auc": 6,
-      "spider_sr": 4,
-      "maniptrans_sr": 2,
-      "mppe_cm": 3
+      "add_auc": 3,
+      "spider_sr": 2,
+      "mppe_cm": 1
      },
-     "rank": 6
+     "missing": [
+      "maniptrans_sr"
+     ],
+     "rank": 3
     },
     {
      "team": "maniphys.ai",
@@ -1456,12 +1379,12 @@
      },
      "last_submission": "2026-10-18 16:54:58",
      "kaggle_rank": {
-      "add_auc": 7,
-      "spider_sr": 5,
-      "maniptrans_sr": 5,
-      "mppe_cm": 6
+      "add_auc": 4,
+      "spider_sr": 3,
+      "maniptrans_sr": 3,
+      "mppe_cm": 4
      },
-     "rank": 7
+     "rank": 4
     },
     {
      "team": "nima arki",
@@ -1483,12 +1406,12 @@
      },
      "last_submission": "2026-10-21 14:41:09",
      "kaggle_rank": {
-      "add_auc": 8,
-      "spider_sr": 7,
-      "maniptrans_sr": 6,
-      "mppe_cm": 5
+      "add_auc": 5,
+      "spider_sr": 5,
+      "maniptrans_sr": 4,
+      "mppe_cm": 3
      },
-     "rank": 8
+     "rank": 5
     },
     {
      "team": "CHORD Baseline",
@@ -1535,12 +1458,12 @@
      },
      "last_submission": "2026-10-19 19:23:13",
      "kaggle_rank": {
-      "add_auc": 9,
-      "spider_sr": 9,
-      "maniptrans_sr": 7,
-      "mppe_cm": 8
+      "add_auc": 6,
+      "spider_sr": 7,
+      "maniptrans_sr": 5,
+      "mppe_cm": 6
      },
-     "rank": 9
+     "rank": 6
     },
     {
      "team": "Chivatam",
@@ -1562,12 +1485,12 @@
      },
      "last_submission": "2026-10-21 06:28:48",
      "kaggle_rank": {
-      "add_auc": 10,
-      "spider_sr": 8,
-      "maniptrans_sr": 11,
-      "mppe_cm": 9
+      "add_auc": 7,
+      "spider_sr": 6,
+      "maniptrans_sr": 9,
+      "mppe_cm": 7
      },
-     "rank": 10
+     "rank": 7
     },
     {
      "team": "Team OPS",
@@ -1589,12 +1512,12 @@
      },
      "last_submission": "2026-10-20 16:27:26",
      "kaggle_rank": {
-      "add_auc": 11,
-      "spider_sr": 11,
-      "maniptrans_sr": 9,
-      "mppe_cm": 10
+      "add_auc": 8,
+      "spider_sr": 9,
+      "maniptrans_sr": 7,
+      "mppe_cm": 8
      },
-     "rank": 11
+     "rank": 8
     },
     {
      "team": "domoarigato",
@@ -1618,12 +1541,12 @@
      },
      "last_submission": "2026-10-14 17:29:42",
      "kaggle_rank": {
-      "add_auc": 12,
-      "spider_sr": 10,
-      "maniptrans_sr": 8,
-      "mppe_cm": 11
+      "add_auc": 9,
+      "spider_sr": 8,
+      "maniptrans_sr": 6,
+      "mppe_cm": 9
      },
-     "rank": 12
+     "rank": 9
     },
     {
      "team": "Open4D",
@@ -1645,12 +1568,12 @@
      },
      "last_submission": "2026-10-16 01:30:35",
      "kaggle_rank": {
-      "add_auc": 13,
-      "spider_sr": 12,
-      "maniptrans_sr": 12,
-      "mppe_cm": 13
+      "add_auc": 10,
+      "spider_sr": 10,
+      "maniptrans_sr": 10,
+      "mppe_cm": 11
      },
-     "rank": 13
+     "rank": 10
     },
     {
      "team": "Null Walker",
@@ -1672,12 +1595,12 @@
      },
      "last_submission": "2026-10-18 02:09:19",
      "kaggle_rank": {
-      "add_auc": 14,
-      "spider_sr": 13,
-      "maniptrans_sr": 10,
-      "mppe_cm": 14
+      "add_auc": 11,
+      "spider_sr": 11,
+      "maniptrans_sr": 8,
+      "mppe_cm": 12
      },
-     "rank": 14
+     "rank": 11
     },
     {
      "team": "Rohit Pardeshi",
@@ -1699,66 +1622,12 @@
      },
      "last_submission": "2026-10-21 10:20:04",
      "kaggle_rank": {
-      "add_auc": 15,
-      "spider_sr": 14,
-      "maniptrans_sr": 13,
-      "mppe_cm": 12
+      "add_auc": 12,
+      "spider_sr": 12,
+      "maniptrans_sr": 11,
+      "mppe_cm": 10
      },
-     "rank": 15
-    },
-    {
-     "team": "Kelly To the H",
-     "members": [
-      "kellytotheh"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.26633,
-      "spider_sr": 0.0,
-      "maniptrans_sr": 0.0,
-      "mppe_cm": 49.12326
-     },
-     "submission_count": {
-      "add_auc": 2,
-      "spider_sr": 2,
-      "maniptrans_sr": 2,
-      "mppe_cm": 2
-     },
-     "last_submission": "2026-10-18 19:55:43",
-     "kaggle_rank": {
-      "add_auc": 17,
-      "spider_sr": 18,
-      "maniptrans_sr": 17,
-      "mppe_cm": 15
-     },
-     "rank": 16
-    },
-    {
-     "team": "Vincent_WANG_541",
-     "members": [
-      "vincentwang541"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.26633,
-      "spider_sr": 0.0,
-      "maniptrans_sr": 0.0,
-      "mppe_cm": 49.12326
-     },
-     "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "last_submission": "2026-10-16 09:51:37",
-     "kaggle_rank": {
-      "add_auc": 16,
-      "spider_sr": 17,
-      "maniptrans_sr": 16,
-      "mppe_cm": 16
-     },
-     "rank": 17
+     "rank": 12
     },
     {
      "team": "Javier Medel, MSc.",
@@ -1780,12 +1649,12 @@
      },
      "last_submission": "2026-10-20 15:32:13",
      "kaggle_rank": {
-      "add_auc": 18,
-      "spider_sr": 15,
-      "maniptrans_sr": 14,
-      "mppe_cm": 17
+      "add_auc": 13,
+      "spider_sr": 13,
+      "maniptrans_sr": 12,
+      "mppe_cm": 13
      },
-     "rank": 18
+     "rank": 13
     },
     {
      "team": "TheTensorGeek",
@@ -1807,12 +1676,12 @@
      },
      "last_submission": "2026-10-14 17:08:47",
      "kaggle_rank": {
-      "add_auc": 19,
-      "spider_sr": 16,
-      "maniptrans_sr": 15,
-      "mppe_cm": 18
+      "add_auc": 14,
+      "spider_sr": 14,
+      "maniptrans_sr": 13,
+      "mppe_cm": 14
      },
-     "rank": 19
+     "rank": 14
     },
     {
      "team": "Izus_systems",
@@ -1834,27 +1703,19 @@
      },
      "last_submission": "2026-10-21 01:06:23",
      "kaggle_rank": {
-      "add_auc": 20,
-      "spider_sr": 19,
-      "maniptrans_sr": 18,
-      "mppe_cm": 19
+      "add_auc": 15,
+      "spider_sr": 15,
+      "maniptrans_sr": 14,
+      "mppe_cm": 15
      },
-     "rank": 20
+     "rank": 15
     }
    ],
    "incomplete": [
     {
-     "team": "solidSF.com",
+     "team": "Xueyi Wang (FF)",
      "missing": [
       "maniptrans_sr"
-     ]
-    },
-    {
-     "team": "Vi Nguy\u1ec5n V\u0103n",
-     "missing": [
-      "spider_sr",
-      "maniptrans_sr",
-      "mppe_cm"
      ]
     }
    ],
@@ -1900,33 +1761,6 @@
    ],
    "rows": [
     {
-     "team": "solidSF.com",
-     "members": [
-      "goatedscripts"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.99998,
-      "spider_sr": 1.0,
-      "maniptrans_sr": 1.0,
-      "mppe_cm": 0.07628
-     },
-     "submission_count": {
-      "add_auc": 2,
-      "spider_sr": 2,
-      "maniptrans_sr": 1,
-      "mppe_cm": 2
-     },
-     "last_submission": "2026-10-21 19:25:49",
-     "kaggle_rank": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "rank": 1
-    },
-    {
      "team": "Xueyi Wang (FF)",
      "members": [
       "wxy821018"
@@ -1946,12 +1780,12 @@
      },
      "last_submission": "2026-10-18 19:52:02",
      "kaggle_rank": {
-      "add_auc": 2,
-      "spider_sr": 4,
-      "maniptrans_sr": 3,
-      "mppe_cm": 3
+      "add_auc": 1,
+      "spider_sr": 2,
+      "maniptrans_sr": 1,
+      "mppe_cm": 1
      },
-     "rank": 2
+     "rank": 1
     },
     {
      "team": "maniphys.ai",
@@ -1973,39 +1807,12 @@
      },
      "last_submission": "2026-10-20 23:06:05",
      "kaggle_rank": {
-      "add_auc": 3,
-      "spider_sr": 3,
-      "maniptrans_sr": 4,
-      "mppe_cm": 4
-     },
-     "rank": 3
-    },
-    {
-     "team": "NVSimranPatil",
-     "members": [
-      "nvsimranpatil"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.49505,
-      "spider_sr": 0.93333,
-      "maniptrans_sr": 0.76666,
-      "mppe_cm": 2.76526
-     },
-     "submission_count": {
-      "add_auc": 1,
+      "add_auc": 2,
       "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "last_submission": "2026-10-21 03:12:54",
-     "kaggle_rank": {
-      "add_auc": 4,
-      "spider_sr": 2,
       "maniptrans_sr": 2,
       "mppe_cm": 2
      },
-     "rank": 4
+     "rank": 2
     },
     {
      "team": "DAP",
@@ -2027,12 +1834,12 @@
      },
      "last_submission": "2026-10-21 13:31:28",
      "kaggle_rank": {
-      "add_auc": 5,
-      "spider_sr": 7,
-      "maniptrans_sr": 6,
-      "mppe_cm": 9
+      "add_auc": 3,
+      "spider_sr": 5,
+      "maniptrans_sr": 4,
+      "mppe_cm": 7
      },
-     "rank": 5
+     "rank": 3
     },
     {
      "team": "domoarigato",
@@ -2056,12 +1863,12 @@
      },
      "last_submission": "2026-10-18 04:48:16",
      "kaggle_rank": {
-      "spider_sr": 6,
-      "mppe_cm": 7,
-      "add_auc": 6,
-      "maniptrans_sr": 5
+      "spider_sr": 4,
+      "mppe_cm": 5,
+      "add_auc": 4,
+      "maniptrans_sr": 3
      },
-     "rank": 6
+     "rank": 4
     },
     {
      "team": "wte09fl",
@@ -2083,12 +1890,12 @@
      },
      "last_submission": "2026-10-19 19:24:16",
      "kaggle_rank": {
-      "add_auc": 7,
-      "spider_sr": 8,
-      "maniptrans_sr": 7,
-      "mppe_cm": 6
+      "add_auc": 5,
+      "spider_sr": 6,
+      "maniptrans_sr": 5,
+      "mppe_cm": 4
      },
-     "rank": 7
+     "rank": 5
     },
     {
      "team": "CHORD Baseline",
@@ -2135,12 +1942,12 @@
      },
      "last_submission": "2026-10-21 14:42:25",
      "kaggle_rank": {
-      "add_auc": 8,
-      "spider_sr": 5,
-      "maniptrans_sr": 8,
-      "mppe_cm": 5
+      "add_auc": 6,
+      "spider_sr": 3,
+      "maniptrans_sr": 6,
+      "mppe_cm": 3
      },
-     "rank": 8
+     "rank": 6
     },
     {
      "team": "Team OPS",
@@ -2162,12 +1969,12 @@
      },
      "last_submission": "2026-10-20 17:40:54",
      "kaggle_rank": {
-      "add_auc": 9,
-      "spider_sr": 9,
-      "maniptrans_sr": 9,
-      "mppe_cm": 8
+      "add_auc": 7,
+      "spider_sr": 7,
+      "maniptrans_sr": 7,
+      "mppe_cm": 6
      },
-     "rank": 9
+     "rank": 7
     },
     {
      "team": "Open4D",
@@ -2189,39 +1996,12 @@
      },
      "last_submission": "2026-10-19 00:43:11",
      "kaggle_rank": {
-      "add_auc": 10,
-      "spider_sr": 10,
-      "maniptrans_sr": 10,
-      "mppe_cm": 10
+      "add_auc": 8,
+      "spider_sr": 8,
+      "maniptrans_sr": 8,
+      "mppe_cm": 8
      },
-     "rank": 10
-    },
-    {
-     "team": "Kelly To the H",
-     "members": [
-      "kellytotheh"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.266,
-      "spider_sr": 0.0,
-      "maniptrans_sr": 0.0,
-      "mppe_cm": 49.13657
-     },
-     "submission_count": {
-      "add_auc": 3,
-      "spider_sr": 3,
-      "maniptrans_sr": 3,
-      "mppe_cm": 3
-     },
-     "last_submission": "2026-10-21 17:36:17",
-     "kaggle_rank": {
-      "add_auc": 11,
-      "spider_sr": 12,
-      "maniptrans_sr": 12,
-      "mppe_cm": 11
-     },
-     "rank": 11
+     "rank": 8
     },
     {
      "team": "TheTensorGeek",
@@ -2243,12 +2023,12 @@
      },
      "last_submission": "2026-10-15 16:05:36",
      "kaggle_rank": {
-      "add_auc": 12,
-      "spider_sr": 11,
-      "maniptrans_sr": 11,
-      "mppe_cm": 12
+      "add_auc": 9,
+      "spider_sr": 9,
+      "maniptrans_sr": 9,
+      "mppe_cm": 9
      },
-     "rank": 12
+     "rank": 9
     }
    ],
    "incomplete": [],
