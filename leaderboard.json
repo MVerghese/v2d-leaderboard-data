@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T10:38:50+00:00",
+ "generated_at": "2026-10-22T15:40:08+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -90,18 +90,18 @@
      "scores": {
       "cd_h_cm": 13.06336,
       "cd_o_cm": 17.07108,
-      "acc_h_cm": 0.13718,
+      "acc_h_cm": 0.13711,
       "acc_o_cm": 0.07048,
       "interpenetration_cm": 5e-05
      },
      "submission_count": {
-      "cd_h_cm": 17,
-      "cd_o_cm": 17,
-      "acc_h_cm": 17,
-      "acc_o_cm": 17,
-      "interpenetration_cm": 17
+      "cd_h_cm": 18,
+      "cd_o_cm": 18,
+      "acc_h_cm": 18,
+      "acc_o_cm": 18,
+      "interpenetration_cm": 18
      },
-     "last_submission": "2026-10-22 01:39:52",
+     "last_submission": "2026-10-22 12:30:49",
      "kaggle_rank": {
       "cd_h_cm": 2,
       "cd_o_cm": 1,
@@ -225,8 +225,8 @@
      "kaggle_rank": {
       "cd_h_cm": 6,
       "cd_o_cm": 8,
-      "acc_h_cm": 7,
-      "acc_o_cm": 13,
+      "acc_h_cm": 8,
+      "acc_o_cm": 14,
       "interpenetration_cm": 6
      },
      "rank": 6
@@ -256,7 +256,7 @@
       "cd_h_cm": 7,
       "cd_o_cm": 21,
       "acc_h_cm": 6,
-      "acc_o_cm": 14,
+      "acc_o_cm": 15,
       "interpenetration_cm": 18
      },
      "rank": 7
@@ -268,20 +268,20 @@
      ],
      "is_baseline": false,
      "scores": {
-      "cd_h_cm": 14.5172,
+      "cd_h_cm": 14.50562,
       "cd_o_cm": 18.3983,
-      "acc_h_cm": 0.13935,
+      "acc_h_cm": 0.13895,
       "acc_o_cm": 0.07073,
       "interpenetration_cm": 0.0
      },
      "submission_count": {
-      "cd_h_cm": 25,
-      "cd_o_cm": 26,
-      "acc_h_cm": 23,
-      "acc_o_cm": 28,
-      "interpenetration_cm": 23
+      "cd_h_cm": 26,
+      "cd_o_cm": 27,
+      "acc_h_cm": 24,
+      "acc_o_cm": 29,
+      "interpenetration_cm": 24
      },
-     "last_submission": "2026-10-21 23:27:23",
+     "last_submission": "2026-10-22 12:29:33",
      "kaggle_rank": {
       "cd_h_cm": 8,
       "cd_o_cm": 5,
@@ -302,23 +302,23 @@
      "is_baseline": false,
      "scores": {
       "cd_h_cm": 14.58038,
-      "cd_o_cm": 115.62275,
+      "cd_o_cm": 108.79711,
       "acc_h_cm": 1.53662,
       "acc_o_cm": 0.31586,
       "interpenetration_cm": 0.00544
      },
      "submission_count": {
       "cd_h_cm": 5,
-      "cd_o_cm": 4,
+      "cd_o_cm": 5,
       "acc_h_cm": 5,
-      "acc_o_cm": 4,
+      "acc_o_cm": 5,
       "interpenetration_cm": 5
      },
-     "last_submission": "2026-10-22 08:55:46",
+     "last_submission": "2026-10-22 14:51:42",
      "kaggle_rank": {
       "cd_h_cm": 9,
-      "cd_o_cm": 38,
-      "acc_h_cm": 38,
+      "cd_o_cm": 39,
+      "acc_h_cm": 39,
       "acc_o_cm": 32,
       "interpenetration_cm": 33
      },
@@ -348,8 +348,8 @@
      "kaggle_rank": {
       "cd_h_cm": 10,
       "cd_o_cm": 25,
-      "acc_h_cm": 27,
-      "acc_o_cm": 28,
+      "acc_h_cm": 28,
+      "acc_o_cm": 29,
       "interpenetration_cm": 24
      },
      "rank": 10
@@ -378,8 +378,8 @@
      "kaggle_rank": {
       "cd_h_cm": 11,
       "cd_o_cm": 10,
-      "acc_h_cm": 12,
-      "acc_o_cm": 19,
+      "acc_h_cm": 13,
+      "acc_o_cm": 20,
       "interpenetration_cm": 20
      },
      "rank": 11
@@ -408,8 +408,8 @@
      "kaggle_rank": {
       "cd_h_cm": 12,
       "cd_o_cm": 24,
-      "acc_h_cm": 26,
-      "acc_o_cm": 25,
+      "acc_h_cm": 27,
+      "acc_o_cm": 26,
       "interpenetration_cm": 38
      },
      "rank": 12
@@ -422,24 +422,24 @@
      "is_baseline": false,
      "scores": {
       "cd_h_cm": 14.84251,
-      "cd_o_cm": 26.36575,
+      "cd_o_cm": 26.24369,
       "acc_h_cm": 0.17835,
       "acc_o_cm": 0.11288,
       "interpenetration_cm": 2e-05
      },
      "submission_count": {
-      "cd_h_cm": 10,
-      "cd_o_cm": 10,
-      "acc_h_cm": 10,
-      "acc_o_cm": 10,
-      "interpenetration_cm": 10
+      "cd_h_cm": 11,
+      "cd_o_cm": 11,
+      "acc_h_cm": 11,
+      "acc_o_cm": 11,
+      "interpenetration_cm": 11
      },
-     "last_submission": "2026-10-22 04:56:12",
+     "last_submission": "2026-10-22 10:51:12",
      "kaggle_rank": {
       "cd_h_cm": 13,
       "cd_o_cm": 20,
-      "acc_h_cm": 24,
-      "acc_o_cm": 23,
+      "acc_h_cm": 25,
+      "acc_o_cm": 24,
       "interpenetration_cm": 10
      },
      "rank": 13
@@ -455,24 +455,24 @@
      "scores": {
       "cd_h_cm": 14.85663,
       "cd_o_cm": 18.8501,
-      "acc_h_cm": 0.14072,
-      "acc_o_cm": 0.07825,
-      "interpenetration_cm": 0.00033
+      "acc_h_cm": 0.13785,
+      "acc_o_cm": 0.07386,
+      "interpenetration_cm": 0.00018
      },
      "submission_count": {
-      "cd_h_cm": 4,
-      "cd_o_cm": 4,
-      "acc_h_cm": 4,
-      "acc_o_cm": 4,
-      "interpenetration_cm": 4
+      "cd_h_cm": 5,
+      "cd_o_cm": 5,
+      "acc_h_cm": 5,
+      "acc_o_cm": 5,
+      "interpenetration_cm": 5
      },
-     "last_submission": "2026-10-22 07:37:35",
+     "last_submission": "2026-10-22 12:05:35",
      "kaggle_rank": {
       "cd_h_cm": 14,
       "cd_o_cm": 6,
-      "acc_h_cm": 14,
-      "acc_o_cm": 17,
-      "interpenetration_cm": 15
+      "acc_h_cm": 7,
+      "acc_o_cm": 9,
+      "interpenetration_cm": 13
      },
      "rank": 14
     },
@@ -499,8 +499,8 @@
      "last_submission": "2026-10-08 14:25:44",
      "kaggle_rank": {
       "cd_h_cm": 15,
-      "cd_o_cm": 37,
-      "acc_h_cm": 32,
+      "cd_o_cm": 38,
+      "acc_h_cm": 33,
       "acc_o_cm": 39,
       "interpenetration_cm": 40
      },
@@ -560,7 +560,7 @@
      "kaggle_rank": {
       "cd_h_cm": 17,
       "cd_o_cm": 11,
-      "acc_h_cm": 36,
+      "acc_h_cm": 37,
       "acc_o_cm": 36,
       "interpenetration_cm": 28
      },
@@ -590,8 +590,8 @@
      "kaggle_rank": {
       "cd_h_cm": 18,
       "cd_o_cm": 19,
-      "acc_h_cm": 20,
-      "acc_o_cm": 24,
+      "acc_h_cm": 21,
+      "acc_o_cm": 25,
       "interpenetration_cm": 1
      },
      "rank": 18
@@ -622,8 +622,8 @@
      "kaggle_rank": {
       "cd_h_cm": 19,
       "cd_o_cm": 14,
-      "acc_h_cm": 9,
-      "acc_o_cm": 15,
+      "acc_h_cm": 10,
+      "acc_o_cm": 16,
       "interpenetration_cm": 19
      },
      "rank": 19
@@ -652,8 +652,8 @@
      "kaggle_rank": {
       "cd_h_cm": 20,
       "cd_o_cm": 22,
-      "acc_h_cm": 31,
-      "acc_o_cm": 30,
+      "acc_h_cm": 32,
+      "acc_o_cm": 31,
       "interpenetration_cm": 35
      },
      "rank": 20
@@ -683,7 +683,7 @@
      "kaggle_rank": {
       "cd_h_cm": 21,
       "cd_o_cm": 12,
-      "acc_h_cm": 10,
+      "acc_h_cm": 12,
       "acc_o_cm": 8,
       "interpenetration_cm": 29
      },
@@ -713,9 +713,9 @@
      "kaggle_rank": {
       "cd_h_cm": 22,
       "cd_o_cm": 2,
-      "acc_h_cm": 29,
+      "acc_h_cm": 30,
       "acc_o_cm": 35,
-      "interpenetration_cm": 13
+      "interpenetration_cm": 14
      },
      "rank": 22
     },
@@ -743,7 +743,7 @@
      "kaggle_rank": {
       "cd_h_cm": 23,
       "cd_o_cm": 15,
-      "acc_h_cm": 33,
+      "acc_h_cm": 34,
       "acc_o_cm": 37,
       "interpenetration_cm": 27
      },
@@ -758,23 +758,23 @@
      "scores": {
       "cd_h_cm": 15.30113,
       "cd_o_cm": 24.92238,
-      "acc_h_cm": 0.14226,
-      "acc_o_cm": 0.07668,
-      "interpenetration_cm": 0.00039
+      "acc_h_cm": 0.14224,
+      "acc_o_cm": 0.07666,
+      "interpenetration_cm": 0.00037
      },
      "submission_count": {
-      "cd_h_cm": 8,
-      "cd_o_cm": 8,
-      "acc_h_cm": 8,
-      "acc_o_cm": 8,
-      "interpenetration_cm": 8
+      "cd_h_cm": 9,
+      "cd_o_cm": 9,
+      "acc_h_cm": 9,
+      "acc_o_cm": 9,
+      "interpenetration_cm": 9
      },
-     "last_submission": "2026-10-21 18:26:49",
+     "last_submission": "2026-10-22 15:22:11",
      "kaggle_rank": {
       "cd_h_cm": 24,
       "cd_o_cm": 17,
       "acc_h_cm": 16,
-      "acc_o_cm": 16,
+      "acc_o_cm": 17,
       "interpenetration_cm": 16
      },
      "rank": 24
@@ -802,8 +802,8 @@
      "last_submission": "2026-10-20 13:24:08",
      "kaggle_rank": {
       "cd_h_cm": 25,
-      "cd_o_cm": 31,
-      "acc_h_cm": 37,
+      "cd_o_cm": 32,
+      "acc_h_cm": 38,
       "acc_o_cm": 40,
       "interpenetration_cm": 22
      },
@@ -833,8 +833,8 @@
      "kaggle_rank": {
       "cd_h_cm": 26,
       "cd_o_cm": 9,
-      "acc_h_cm": 8,
-      "acc_o_cm": 29,
+      "acc_h_cm": 9,
+      "acc_o_cm": 30,
       "interpenetration_cm": 36
      },
      "rank": 26
@@ -862,10 +862,10 @@
      "last_submission": "2026-10-15 09:17:00",
      "kaggle_rank": {
       "cd_h_cm": 27,
-      "cd_o_cm": 35,
-      "acc_h_cm": 35,
+      "cd_o_cm": 36,
+      "acc_h_cm": 36,
       "acc_o_cm": 38,
-      "interpenetration_cm": 14
+      "interpenetration_cm": 15
      },
      "rank": 27
     },
@@ -893,8 +893,8 @@
      "kaggle_rank": {
       "cd_h_cm": 28,
       "cd_o_cm": 13,
-      "acc_h_cm": 28,
-      "acc_o_cm": 27,
+      "acc_h_cm": 29,
+      "acc_o_cm": 28,
       "interpenetration_cm": 30
      },
      "rank": 28
@@ -923,8 +923,8 @@
      "kaggle_rank": {
       "cd_h_cm": 29,
       "cd_o_cm": 27,
-      "acc_h_cm": 13,
-      "acc_o_cm": 11,
+      "acc_h_cm": 14,
+      "acc_o_cm": 12,
       "interpenetration_cm": 2
      },
      "rank": 29
@@ -953,8 +953,8 @@
      "kaggle_rank": {
       "cd_h_cm": 30,
       "cd_o_cm": 28,
-      "acc_h_cm": 21,
-      "acc_o_cm": 10,
+      "acc_h_cm": 22,
+      "acc_o_cm": 11,
       "interpenetration_cm": 17
      },
      "rank": 30
@@ -1011,8 +1011,8 @@
      "kaggle_rank": {
       "cd_h_cm": 31,
       "cd_o_cm": 26,
-      "acc_h_cm": 34,
-      "acc_o_cm": 22,
+      "acc_h_cm": 35,
+      "acc_o_cm": 23,
       "interpenetration_cm": 23
      },
      "rank": 31
@@ -1041,8 +1041,8 @@
      "kaggle_rank": {
       "cd_h_cm": 32,
       "cd_o_cm": 23,
-      "acc_h_cm": 23,
-      "acc_o_cm": 26,
+      "acc_h_cm": 24,
+      "acc_o_cm": 27,
       "interpenetration_cm": 39
      },
      "rank": 32
@@ -1070,8 +1070,8 @@
      "last_submission": "2026-10-19 16:03:10",
      "kaggle_rank": {
       "cd_h_cm": 33,
-      "cd_o_cm": 29,
-      "acc_h_cm": 30,
+      "cd_o_cm": 30,
+      "acc_h_cm": 31,
       "acc_o_cm": 34,
       "interpenetration_cm": 21
      },
@@ -1100,12 +1100,45 @@
      "last_submission": "2026-10-17 17:01:31",
      "kaggle_rank": {
       "cd_h_cm": 34,
-      "cd_o_cm": 30,
-      "acc_h_cm": 22,
-      "acc_o_cm": 20,
+      "cd_o_cm": 31,
+      "acc_h_cm": 23,
+      "acc_o_cm": 21,
       "interpenetration_cm": 37
      },
      "rank": 34
+    },
+    {
+     "team": "qingqian lang",
+     "members": [
+      "qingqianlang"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 19.51223,
+      "cd_o_cm": 45.88251,
+      "acc_h_cm": 0.1441,
+      "acc_o_cm": 0.08798,
+      "interpenetration_cm": 0.00941
+     },
+     "submission_count": {
+      "cd_h_cm": 5,
+      "cd_o_cm": 5,
+      "acc_h_cm": 5,
+      "acc_o_cm": 5,
+      "interpenetration_cm": 5
+     },
+     "last_submission": "2026-10-22 14:16:25",
+     "kaggle_rank": {
+      "cd_h_cm": 35,
+      "cd_o_cm": 29,
+      "acc_h_cm": 17,
+      "acc_o_cm": 19,
+      "interpenetration_cm": 34
+     },
+     "other_names": [
+      "langsky"
+     ],
+     "rank": 35
     },
     {
      "team": "World Reward",
@@ -1129,41 +1162,11 @@
      },
      "last_submission": "2026-10-19 12:06:03",
      "kaggle_rank": {
-      "cd_h_cm": 35,
-      "cd_o_cm": 32,
-      "acc_h_cm": 39,
+      "cd_h_cm": 36,
+      "cd_o_cm": 33,
+      "acc_h_cm": 40,
       "acc_o_cm": 33,
       "interpenetration_cm": 32
-     },
-     "rank": 35
-    },
-    {
-     "team": "qingqian lang",
-     "members": [
-      "qingqianlang"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "cd_h_cm": 33.01325,
-      "cd_o_cm": 121.66494,
-      "acc_h_cm": 2.49748,
-      "acc_o_cm": 0.29662,
-      "interpenetration_cm": 0.00941
-     },
-     "submission_count": {
-      "cd_h_cm": 3,
-      "cd_o_cm": 3,
-      "acc_h_cm": 3,
-      "acc_o_cm": 3,
-      "interpenetration_cm": 3
-     },
-     "last_submission": "2026-10-22 10:35:39",
-     "kaggle_rank": {
-      "cd_h_cm": 36,
-      "cd_o_cm": 39,
-      "acc_h_cm": 40,
-      "acc_o_cm": 31,
-      "interpenetration_cm": 34
      },
      "rank": 36
     },
@@ -1174,24 +1177,24 @@
      ],
      "is_baseline": false,
      "scores": {
-      "cd_h_cm": 41.33827,
-      "cd_o_cm": 100.45979,
+      "cd_h_cm": 40.59809,
+      "cd_o_cm": 95.76267,
       "acc_h_cm": 0.17963,
       "acc_o_cm": 0.08356,
       "interpenetration_cm": 0.0
      },
      "submission_count": {
-      "cd_h_cm": 9,
-      "cd_o_cm": 9,
-      "acc_h_cm": 8,
-      "acc_o_cm": 8,
-      "interpenetration_cm": 8
+      "cd_h_cm": 10,
+      "cd_o_cm": 10,
+      "acc_h_cm": 9,
+      "acc_o_cm": 9,
+      "interpenetration_cm": 9
      },
-     "last_submission": "2026-10-22 03:53:09",
+     "last_submission": "2026-10-22 13:49:01",
      "kaggle_rank": {
       "cd_h_cm": 37,
-      "cd_o_cm": 36,
-      "acc_h_cm": 25,
+      "cd_o_cm": 37,
+      "acc_h_cm": 26,
       "acc_o_cm": 18,
       "interpenetration_cm": 4
      },
@@ -1220,9 +1223,9 @@
      "last_submission": "2026-10-19 11:36:38",
      "kaggle_rank": {
       "cd_h_cm": 38,
-      "cd_o_cm": 34,
-      "acc_h_cm": 19,
-      "acc_o_cm": 21,
+      "cd_o_cm": 35,
+      "acc_h_cm": 20,
+      "acc_o_cm": 22,
       "interpenetration_cm": 25
      },
      "rank": 38
@@ -1250,9 +1253,9 @@
      "last_submission": "2026-10-22 03:34:05",
      "kaggle_rank": {
       "cd_h_cm": 39,
-      "cd_o_cm": 33,
-      "acc_h_cm": 17,
-      "acc_o_cm": 9,
+      "cd_o_cm": 34,
+      "acc_h_cm": 18,
+      "acc_o_cm": 10,
       "interpenetration_cm": 9
      },
      "rank": 39
@@ -1281,8 +1284,8 @@
      "kaggle_rank": {
       "cd_h_cm": 40,
       "cd_o_cm": 40,
-      "acc_h_cm": 18,
-      "acc_o_cm": 12,
+      "acc_h_cm": 19,
+      "acc_o_cm": 13,
       "interpenetration_cm": 3
      },
      "rank": 40
@@ -2366,6 +2369,33 @@
       "mppe_cm": 4
      },
      "rank": 5
+    },
+    {
+     "team": "NVSimranPatil",
+     "members": [
+      "nvsimranpatil"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "add_auc": 0.0,
+      "spider_sr": 0.0,
+      "maniptrans_sr": 0.0,
+      "mppe_cm": 75.06273
+     },
+     "submission_count": {
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "mppe_cm": 1
+     },
+     "last_submission": "2026-10-22 14:41:51",
+     "kaggle_rank": {
+      "add_auc": 6,
+      "spider_sr": 6,
+      "maniptrans_sr": 6,
+      "mppe_cm": 6
+     },
+     "rank": 6
     }
    ],
    "incomplete": [],
@@ -2667,26 +2697,26 @@
      ],
      "is_baseline": false,
      "scores": {
-      "add_auc": 0.43256,
-      "spider_sr": 0.35,
-      "maniptrans_sr": 0.0,
-      "rpe_cm": 9.06962,
-      "mppe_cm": 9.52676,
+      "add_auc": 0.45956,
+      "spider_sr": 0.4,
+      "maniptrans_sr": 0.05,
+      "rpe_cm": 8.94433,
+      "mppe_cm": 9.23614,
       "cd_o_cm": 0.43552
      },
      "submission_count": {
-      "add_auc": 6,
-      "spider_sr": 6,
-      "maniptrans_sr": 6,
-      "rpe_cm": 6,
-      "mppe_cm": 6,
-      "cd_o_cm": 6
+      "add_auc": 7,
+      "spider_sr": 7,
+      "maniptrans_sr": 7,
+      "rpe_cm": 7,
+      "mppe_cm": 7,
+      "cd_o_cm": 7
      },
-     "last_submission": "2026-10-20 04:41:39",
+     "last_submission": "2026-10-22 10:37:40",
      "kaggle_rank": {
       "add_auc": 8,
       "spider_sr": 13,
-      "maniptrans_sr": 18,
+      "maniptrans_sr": 13,
       "rpe_cm": 9,
       "mppe_cm": 9,
       "cd_o_cm": 17
@@ -2821,7 +2851,7 @@
      "kaggle_rank": {
       "add_auc": 12,
       "spider_sr": 15,
-      "maniptrans_sr": 14,
+      "maniptrans_sr": 15,
       "rpe_cm": 16,
       "mppe_cm": 14,
       "cd_o_cm": 20
@@ -2876,14 +2906,14 @@
       "cd_o_cm": 0.1094
      },
      "submission_count": {
-      "add_auc": 18,
-      "spider_sr": 18,
-      "maniptrans_sr": 18,
-      "rpe_cm": 18,
-      "mppe_cm": 18,
-      "cd_o_cm": 18
+      "add_auc": 19,
+      "spider_sr": 19,
+      "maniptrans_sr": 19,
+      "rpe_cm": 19,
+      "mppe_cm": 19,
+      "cd_o_cm": 19
      },
-     "last_submission": "2026-10-20 18:52:23",
+     "last_submission": "2026-10-22 10:51:12",
      "kaggle_rank": {
       "add_auc": 14,
       "spider_sr": 9,
@@ -2953,7 +2983,7 @@
      "kaggle_rank": {
       "add_auc": 16,
       "spider_sr": 16,
-      "maniptrans_sr": 13,
+      "maniptrans_sr": 14,
       "rpe_cm": 13,
       "mppe_cm": 16,
       "cd_o_cm": 5
@@ -3019,7 +3049,7 @@
      "kaggle_rank": {
       "add_auc": 18,
       "spider_sr": 14,
-      "maniptrans_sr": 16,
+      "maniptrans_sr": 17,
       "rpe_cm": 11,
       "mppe_cm": 15,
       "cd_o_cm": 14
@@ -3052,7 +3082,7 @@
      "kaggle_rank": {
       "add_auc": 19,
       "spider_sr": 20,
-      "maniptrans_sr": 15,
+      "maniptrans_sr": 16,
       "rpe_cm": 23,
       "mppe_cm": 22,
       "cd_o_cm": 25
@@ -3121,7 +3151,7 @@
      "kaggle_rank": {
       "add_auc": 21,
       "spider_sr": 24,
-      "maniptrans_sr": 17,
+      "maniptrans_sr": 18,
       "rpe_cm": 19,
       "mppe_cm": 19,
       "cd_o_cm": 22
@@ -3174,19 +3204,19 @@
       "add_auc": 0.20402,
       "spider_sr": 0.05,
       "maniptrans_sr": 0.0,
-      "rpe_cm": 18.09735,
+      "rpe_cm": 17.7624,
       "mppe_cm": 16.77538,
-      "cd_o_cm": 0.42541
+      "cd_o_cm": 0.41167
      },
      "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "rpe_cm": 1,
-      "mppe_cm": 1,
-      "cd_o_cm": 1
+      "add_auc": 3,
+      "spider_sr": 3,
+      "maniptrans_sr": 3,
+      "rpe_cm": 3,
+      "mppe_cm": 3,
+      "cd_o_cm": 3
      },
-     "last_submission": "2026-10-21 16:55:15",
+     "last_submission": "2026-10-22 14:59:17",
      "kaggle_rank": {
       "add_auc": 23,
       "spider_sr": 23,
