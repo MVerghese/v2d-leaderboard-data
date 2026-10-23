@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-23T19:14:28+00:00",
+ "generated_at": "2026-10-23T20:40:04+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -1362,60 +1362,6 @@
    ],
    "rows": [
     {
-     "team": "solidSF.com",
-     "members": [
-      "goatedscripts"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 1.0,
-      "spider_sr": 1.0,
-      "maniptrans_sr": 1.0,
-      "mppe_cm": 4e-05
-     },
-     "submission_count": {
-      "add_auc": 2,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "last_submission": "2026-10-23 18:19:12",
-     "kaggle_rank": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "rank": 1
-    },
-    {
-     "team": "NVSimranPatil",
-     "members": [
-      "nvsimranpatil"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.87916,
-      "spider_sr": 1.0,
-      "maniptrans_sr": 0.93333,
-      "mppe_cm": 0.98418
-     },
-     "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "last_submission": "2026-10-23 16:38:30",
-     "kaggle_rank": {
-      "add_auc": 2,
-      "spider_sr": 2,
-      "maniptrans_sr": 2,
-      "mppe_cm": 2
-     },
-     "rank": 2
-    },
-    {
      "team": "Chivatam",
      "members": [
       "chvsthop"
@@ -1435,12 +1381,12 @@
      },
      "last_submission": "2026-10-22 10:10:35",
      "kaggle_rank": {
-      "add_auc": 3,
-      "spider_sr": 4,
-      "maniptrans_sr": 5,
-      "mppe_cm": 3
+      "add_auc": 1,
+      "spider_sr": 2,
+      "maniptrans_sr": 3,
+      "mppe_cm": 1
      },
-     "rank": 3
+     "rank": 1
     },
     {
      "team": "MBZUAI-RCL Group",
@@ -1466,12 +1412,12 @@
      },
      "last_submission": "2026-10-21 19:17:41",
      "kaggle_rank": {
-      "add_auc": 4,
-      "spider_sr": 3,
-      "maniptrans_sr": 4,
-      "mppe_cm": 6
+      "add_auc": 2,
+      "spider_sr": 1,
+      "maniptrans_sr": 2,
+      "mppe_cm": 4
      },
-     "rank": 4
+     "rank": 2
     },
     {
      "team": "DAP",
@@ -1495,12 +1441,12 @@
      },
      "last_submission": "2026-10-21 01:00:56",
      "kaggle_rank": {
-      "add_auc": 5,
-      "spider_sr": 7,
-      "maniptrans_sr": 6,
-      "mppe_cm": 8
+      "add_auc": 3,
+      "spider_sr": 5,
+      "maniptrans_sr": 4,
+      "mppe_cm": 6
      },
-     "rank": 5
+     "rank": 3
     },
     {
      "team": "nima arki",
@@ -1522,12 +1468,12 @@
      },
      "last_submission": "2026-10-23 18:32:40",
      "kaggle_rank": {
-      "add_auc": 6,
-      "spider_sr": 8,
-      "maniptrans_sr": 7,
-      "mppe_cm": 5
+      "add_auc": 4,
+      "spider_sr": 6,
+      "maniptrans_sr": 5,
+      "mppe_cm": 3
      },
-     "rank": 6
+     "rank": 4
     },
     {
      "team": "Xueyi Wang (FF)",
@@ -1549,12 +1495,12 @@
      },
      "last_submission": "2026-10-19 05:50:38",
      "kaggle_rank": {
-      "add_auc": 7,
-      "spider_sr": 5,
-      "maniptrans_sr": 3,
-      "mppe_cm": 4
+      "add_auc": 5,
+      "spider_sr": 3,
+      "maniptrans_sr": 1,
+      "mppe_cm": 2
      },
-     "rank": 7
+     "rank": 5
     },
     {
      "team": "maniphys.ai",
@@ -1576,12 +1522,12 @@
      },
      "last_submission": "2026-10-18 16:54:58",
      "kaggle_rank": {
-      "add_auc": 8,
-      "spider_sr": 6,
-      "maniptrans_sr": 8,
-      "mppe_cm": 7
+      "add_auc": 6,
+      "spider_sr": 4,
+      "maniptrans_sr": 6,
+      "mppe_cm": 5
      },
-     "rank": 8
+     "rank": 6
     },
     {
      "team": "CHORD Baseline",
@@ -1628,12 +1574,12 @@
      },
      "last_submission": "2026-10-22 16:29:13",
      "kaggle_rank": {
-      "add_auc": 9,
-      "spider_sr": 9,
-      "maniptrans_sr": 9,
-      "mppe_cm": 9
+      "add_auc": 7,
+      "spider_sr": 7,
+      "maniptrans_sr": 7,
+      "mppe_cm": 7
      },
-     "rank": 9
+     "rank": 7
     },
     {
      "team": "Team OPS",
@@ -1655,12 +1601,12 @@
      },
      "last_submission": "2026-10-20 16:27:26",
      "kaggle_rank": {
-      "add_auc": 10,
-      "spider_sr": 11,
-      "maniptrans_sr": 11,
-      "mppe_cm": 10
+      "add_auc": 8,
+      "spider_sr": 9,
+      "maniptrans_sr": 9,
+      "mppe_cm": 8
      },
-     "rank": 10
+     "rank": 8
     },
     {
      "team": "domoarigato",
@@ -1684,12 +1630,12 @@
      },
      "last_submission": "2026-10-14 17:29:42",
      "kaggle_rank": {
-      "add_auc": 11,
-      "spider_sr": 10,
-      "maniptrans_sr": 10,
-      "mppe_cm": 11
+      "add_auc": 9,
+      "spider_sr": 8,
+      "maniptrans_sr": 8,
+      "mppe_cm": 9
      },
-     "rank": 11
+     "rank": 9
     },
     {
      "team": "Open4D",
@@ -1711,12 +1657,12 @@
      },
      "last_submission": "2026-10-23 12:37:21",
      "kaggle_rank": {
-      "add_auc": 12,
-      "spider_sr": 12,
-      "maniptrans_sr": 13,
-      "mppe_cm": 12
+      "add_auc": 10,
+      "spider_sr": 10,
+      "maniptrans_sr": 11,
+      "mppe_cm": 10
      },
-     "rank": 12
+     "rank": 10
     },
     {
      "team": "Null Walker",
@@ -1738,12 +1684,12 @@
      },
      "last_submission": "2026-10-18 02:09:19",
      "kaggle_rank": {
-      "add_auc": 13,
-      "spider_sr": 13,
-      "maniptrans_sr": 12,
-      "mppe_cm": 14
+      "add_auc": 11,
+      "spider_sr": 11,
+      "maniptrans_sr": 10,
+      "mppe_cm": 12
      },
-     "rank": 13
+     "rank": 11
     },
     {
      "team": "Rohit Pardeshi",
@@ -1765,12 +1711,12 @@
      },
      "last_submission": "2026-10-21 10:20:04",
      "kaggle_rank": {
-      "add_auc": 14,
-      "spider_sr": 14,
-      "maniptrans_sr": 14,
-      "mppe_cm": 13
+      "add_auc": 12,
+      "spider_sr": 12,
+      "maniptrans_sr": 12,
+      "mppe_cm": 11
      },
-     "rank": 14
+     "rank": 12
     },
     {
      "team": "longbot",
@@ -1792,12 +1738,12 @@
      },
      "last_submission": "2026-10-23 10:14:03",
      "kaggle_rank": {
-      "add_auc": 15,
-      "spider_sr": 16,
-      "maniptrans_sr": 16,
-      "mppe_cm": 15
+      "add_auc": 13,
+      "spider_sr": 14,
+      "maniptrans_sr": 14,
+      "mppe_cm": 13
      },
-     "rank": 15
+     "rank": 13
     },
     {
      "team": "Javier Medel, MSc.",
@@ -1819,12 +1765,12 @@
      },
      "last_submission": "2026-10-20 15:32:13",
      "kaggle_rank": {
-      "add_auc": 16,
-      "spider_sr": 15,
-      "maniptrans_sr": 15,
-      "mppe_cm": 16
+      "add_auc": 14,
+      "spider_sr": 13,
+      "maniptrans_sr": 13,
+      "mppe_cm": 14
      },
-     "rank": 16
+     "rank": 14
     },
     {
      "team": "Izus_systems",
@@ -1846,12 +1792,12 @@
      },
      "last_submission": "2026-10-23 14:55:13",
      "kaggle_rank": {
-      "add_auc": 17,
-      "spider_sr": 18,
-      "maniptrans_sr": 18,
-      "mppe_cm": 17
+      "add_auc": 15,
+      "spider_sr": 16,
+      "maniptrans_sr": 16,
+      "mppe_cm": 15
      },
-     "rank": 17
+     "rank": 15
     },
     {
      "team": "Kelly To the H",
@@ -1873,12 +1819,12 @@
      },
      "last_submission": "2026-10-22 02:19:03",
      "kaggle_rank": {
-      "add_auc": 18,
-      "spider_sr": 19,
-      "maniptrans_sr": 19,
-      "mppe_cm": 19
+      "add_auc": 16,
+      "spider_sr": 17,
+      "maniptrans_sr": 17,
+      "mppe_cm": 17
      },
-     "rank": 18
+     "rank": 16
     },
     {
      "team": "TheTensorGeek",
@@ -1900,12 +1846,35 @@
      },
      "last_submission": "2026-10-14 17:08:47",
      "kaggle_rank": {
-      "add_auc": 19,
-      "spider_sr": 17,
-      "maniptrans_sr": 17,
-      "mppe_cm": 18
+      "add_auc": 17,
+      "spider_sr": 15,
+      "maniptrans_sr": 15,
+      "mppe_cm": 16
      },
-     "rank": 19
+     "rank": 17
+    },
+    {
+     "team": "solidSF.com",
+     "members": [
+      "goatedscripts"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "add_auc": 0.0
+     },
+     "submission_count": {
+      "add_auc": 1
+     },
+     "last_submission": "2026-10-21 05:22:20",
+     "kaggle_rank": {
+      "add_auc": 19
+     },
+     "missing": [
+      "spider_sr",
+      "maniptrans_sr",
+      "mppe_cm"
+     ],
+     "rank": 18
     },
     {
      "team": "Vi Nguy\u1ec5n V\u0103n",
@@ -1921,19 +1890,27 @@
      },
      "last_submission": "2026-10-18 01:55:02",
      "kaggle_rank": {
-      "add_auc": 20
+      "add_auc": 18
      },
      "missing": [
       "spider_sr",
       "maniptrans_sr",
       "mppe_cm"
      ],
-     "rank": 20
+     "rank": 19
     }
    ],
    "incomplete": [
     {
      "team": "Vi Nguy\u1ec5n V\u0103n",
+     "missing": [
+      "spider_sr",
+      "maniptrans_sr",
+      "mppe_cm"
+     ]
+    },
+    {
+     "team": "solidSF.com",
      "missing": [
       "spider_sr",
       "maniptrans_sr",
@@ -1983,33 +1960,6 @@
    ],
    "rows": [
     {
-     "team": "solidSF.com",
-     "members": [
-      "goatedscripts"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 1.0,
-      "spider_sr": 1.0,
-      "maniptrans_sr": 1.0,
-      "mppe_cm": 4e-05
-     },
-     "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "last_submission": "2026-10-23 02:34:22",
-     "kaggle_rank": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "rank": 1
-    },
-    {
      "team": "Xueyi Wang (FF)",
      "members": [
       "wxy821018"
@@ -2029,12 +1979,12 @@
      },
      "last_submission": "2026-10-18 19:52:02",
      "kaggle_rank": {
-      "add_auc": 2,
-      "spider_sr": 5,
-      "maniptrans_sr": 3,
-      "mppe_cm": 4
+      "add_auc": 1,
+      "spider_sr": 3,
+      "maniptrans_sr": 1,
+      "mppe_cm": 2
      },
-     "rank": 2
+     "rank": 1
     },
     {
      "team": "maniphys.ai",
@@ -2056,39 +2006,12 @@
      },
      "last_submission": "2026-10-20 23:06:05",
      "kaggle_rank": {
-      "add_auc": 3,
-      "spider_sr": 3,
-      "maniptrans_sr": 4,
-      "mppe_cm": 5
-     },
-     "rank": 3
-    },
-    {
-     "team": "NVSimranPatil",
-     "members": [
-      "nvsimranpatil"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.49505,
-      "spider_sr": 0.93333,
-      "maniptrans_sr": 0.76666,
-      "mppe_cm": 2.76526
-     },
-     "submission_count": {
-      "add_auc": 1,
+      "add_auc": 2,
       "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "last_submission": "2026-10-23 16:38:44",
-     "kaggle_rank": {
-      "add_auc": 4,
-      "spider_sr": 2,
       "maniptrans_sr": 2,
-      "mppe_cm": 2
+      "mppe_cm": 3
      },
-     "rank": 4
+     "rank": 2
     },
     {
      "team": "DAP",
@@ -2110,12 +2033,12 @@
      },
      "last_submission": "2026-10-21 13:31:28",
      "kaggle_rank": {
-      "add_auc": 5,
-      "spider_sr": 7,
-      "maniptrans_sr": 6,
-      "mppe_cm": 9
+      "add_auc": 3,
+      "spider_sr": 5,
+      "maniptrans_sr": 4,
+      "mppe_cm": 7
      },
-     "rank": 5
+     "rank": 3
     },
     {
      "team": "domoarigato",
@@ -2139,12 +2062,12 @@
      },
      "last_submission": "2026-10-18 04:48:16",
      "kaggle_rank": {
-      "spider_sr": 6,
-      "mppe_cm": 7,
-      "add_auc": 6,
-      "maniptrans_sr": 5
+      "spider_sr": 4,
+      "mppe_cm": 5,
+      "add_auc": 4,
+      "maniptrans_sr": 3
      },
-     "rank": 6
+     "rank": 4
     },
     {
      "team": "nima arki",
@@ -2166,12 +2089,12 @@
      },
      "last_submission": "2026-10-23 18:33:13",
      "kaggle_rank": {
-      "add_auc": 7,
-      "spider_sr": 4,
-      "maniptrans_sr": 7,
-      "mppe_cm": 3
+      "add_auc": 5,
+      "spider_sr": 2,
+      "maniptrans_sr": 5,
+      "mppe_cm": 1
      },
-     "rank": 7
+     "rank": 5
     },
     {
      "team": "wte09fl",
@@ -2193,12 +2116,12 @@
      },
      "last_submission": "2026-10-22 16:30:15",
      "kaggle_rank": {
-      "add_auc": 8,
-      "spider_sr": 8,
-      "maniptrans_sr": 8,
-      "mppe_cm": 6
+      "add_auc": 6,
+      "spider_sr": 6,
+      "maniptrans_sr": 6,
+      "mppe_cm": 4
      },
-     "rank": 8
+     "rank": 6
     },
     {
      "team": "CHORD Baseline",
@@ -2245,12 +2168,12 @@
      },
      "last_submission": "2026-10-20 17:40:54",
      "kaggle_rank": {
-      "add_auc": 9,
-      "spider_sr": 9,
-      "maniptrans_sr": 10,
-      "mppe_cm": 8
+      "add_auc": 7,
+      "spider_sr": 7,
+      "maniptrans_sr": 8,
+      "mppe_cm": 6
      },
-     "rank": 9
+     "rank": 7
     },
     {
      "team": "Chivatam",
@@ -2272,12 +2195,12 @@
      },
      "last_submission": "2026-10-23 00:47:48",
      "kaggle_rank": {
-      "add_auc": 10,
-      "spider_sr": 10,
-      "maniptrans_sr": 9,
-      "mppe_cm": 10
+      "add_auc": 8,
+      "spider_sr": 8,
+      "maniptrans_sr": 7,
+      "mppe_cm": 8
      },
-     "rank": 10
+     "rank": 8
     },
     {
      "team": "Open4D",
@@ -2299,12 +2222,12 @@
      },
      "last_submission": "2026-10-23 13:22:22",
      "kaggle_rank": {
-      "add_auc": 11,
-      "spider_sr": 11,
-      "maniptrans_sr": 11,
-      "mppe_cm": 11
+      "add_auc": 9,
+      "spider_sr": 9,
+      "maniptrans_sr": 9,
+      "mppe_cm": 9
      },
-     "rank": 11
+     "rank": 9
     },
     {
      "team": "Rohit Pardeshi",
@@ -2326,12 +2249,12 @@
      },
      "last_submission": "2026-10-22 03:39:09",
      "kaggle_rank": {
-      "add_auc": 12,
-      "spider_sr": 12,
-      "maniptrans_sr": 12,
-      "mppe_cm": 12
+      "add_auc": 10,
+      "spider_sr": 10,
+      "maniptrans_sr": 10,
+      "mppe_cm": 10
      },
-     "rank": 12
+     "rank": 10
     },
     {
      "team": "Javier Medel, MSc.",
@@ -2353,12 +2276,12 @@
      },
      "last_submission": "2026-10-22 23:50:05",
      "kaggle_rank": {
-      "add_auc": 13,
-      "spider_sr": 13,
-      "maniptrans_sr": 15,
-      "mppe_cm": 13
+      "add_auc": 11,
+      "spider_sr": 11,
+      "maniptrans_sr": 13,
+      "mppe_cm": 11
      },
-     "rank": 13
+     "rank": 11
     },
     {
      "team": "Kelly To the H",
@@ -2380,12 +2303,12 @@
      },
      "last_submission": "2026-10-22 01:47:22",
      "kaggle_rank": {
-      "add_auc": 14,
-      "spider_sr": 15,
-      "maniptrans_sr": 14,
-      "mppe_cm": 14
+      "add_auc": 12,
+      "spider_sr": 13,
+      "maniptrans_sr": 12,
+      "mppe_cm": 12
      },
-     "rank": 14
+     "rank": 12
     },
     {
      "team": "TheTensorGeek",
@@ -2407,12 +2330,12 @@
      },
      "last_submission": "2026-10-15 16:05:36",
      "kaggle_rank": {
-      "add_auc": 15,
-      "spider_sr": 14,
-      "maniptrans_sr": 13,
-      "mppe_cm": 15
+      "add_auc": 13,
+      "spider_sr": 12,
+      "maniptrans_sr": 11,
+      "mppe_cm": 13
      },
-     "rank": 15
+     "rank": 13
     }
    ],
    "incomplete": [],
@@ -2458,33 +2381,6 @@
    ],
    "rows": [
     {
-     "team": "solidSF.com",
-     "members": [
-      "goatedscripts"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 1.0,
-      "spider_sr": 1.0,
-      "maniptrans_sr": 1.0,
-      "mppe_cm": 4e-05
-     },
-     "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "last_submission": "2026-10-23 02:34:33",
-     "kaggle_rank": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "rank": 1
-    },
-    {
      "team": "nima arki",
      "members": [
       "nimaarki"
@@ -2504,12 +2400,12 @@
      },
      "last_submission": "2026-10-23 03:23:21",
      "kaggle_rank": {
-      "add_auc": 2,
-      "spider_sr": 2,
-      "maniptrans_sr": 2,
-      "mppe_cm": 2
+      "add_auc": 1,
+      "spider_sr": 1,
+      "maniptrans_sr": 1,
+      "mppe_cm": 1
      },
-     "rank": 2
+     "rank": 1
     },
     {
      "team": "Xueyi Wang (FF)",
@@ -2531,12 +2427,12 @@
      },
      "last_submission": "2026-10-21 04:49:19",
      "kaggle_rank": {
-      "add_auc": 3,
-      "spider_sr": 5,
-      "maniptrans_sr": 4,
-      "mppe_cm": 3
+      "add_auc": 2,
+      "spider_sr": 4,
+      "maniptrans_sr": 3,
+      "mppe_cm": 2
      },
-     "rank": 3
+     "rank": 2
     },
     {
      "team": "maniphys.ai",
@@ -2558,12 +2454,12 @@
      },
      "last_submission": "2026-10-18 16:47:11",
      "kaggle_rank": {
-      "add_auc": 4,
-      "spider_sr": 3,
-      "maniptrans_sr": 5,
-      "mppe_cm": 4
+      "add_auc": 3,
+      "spider_sr": 2,
+      "maniptrans_sr": 4,
+      "mppe_cm": 3
      },
-     "rank": 4
+     "rank": 3
     },
     {
      "team": "Team OPS",
@@ -2585,12 +2481,12 @@
      },
      "last_submission": "2026-10-20 17:39:44",
      "kaggle_rank": {
-      "add_auc": 5,
-      "spider_sr": 4,
-      "maniptrans_sr": 7,
-      "mppe_cm": 5
+      "add_auc": 4,
+      "spider_sr": 3,
+      "maniptrans_sr": 6,
+      "mppe_cm": 4
      },
-     "rank": 5
+     "rank": 4
     },
     {
      "team": "Open4D",
@@ -2612,12 +2508,12 @@
      },
      "last_submission": "2026-10-21 18:35:03",
      "kaggle_rank": {
-      "add_auc": 6,
-      "spider_sr": 6,
-      "maniptrans_sr": 3,
-      "mppe_cm": 8
+      "add_auc": 5,
+      "spider_sr": 5,
+      "maniptrans_sr": 2,
+      "mppe_cm": 6
      },
-     "rank": 6
+     "rank": 5
     },
     {
      "team": "CHORD Baseline (CARI4D Reconstruction)",
@@ -2666,39 +2562,12 @@
      },
      "last_submission": "2026-10-18 22:13:39",
      "kaggle_rank": {
-      "add_auc": 7,
-      "spider_sr": 7,
-      "maniptrans_sr": 6,
-      "mppe_cm": 6
+      "add_auc": 6,
+      "spider_sr": 6,
+      "maniptrans_sr": 5,
+      "mppe_cm": 5
      },
-     "rank": 7
-    },
-    {
-     "team": "NVSimranPatil",
-     "members": [
-      "nvsimranpatil"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.0,
-      "spider_sr": 0.0,
-      "maniptrans_sr": 0.0,
-      "mppe_cm": 68.63194
-     },
-     "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "mppe_cm": 1
-     },
-     "last_submission": "2026-10-23 16:38:58",
-     "kaggle_rank": {
-      "add_auc": 8,
-      "spider_sr": 8,
-      "maniptrans_sr": 8,
-      "mppe_cm": 7
-     },
-     "rank": 8
+     "rank": 6
     }
    ],
    "incomplete": [],
