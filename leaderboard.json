@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T15:35:35+00:00",
+ "generated_at": "2026-10-26T20:47:00+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -75,11 +75,41 @@
      "kaggle_rank": {
       "cd_h_cm": 1,
       "cd_o_cm": 3,
-      "acc_h_cm": 2,
+      "acc_h_cm": 3,
       "acc_o_cm": 2,
       "interpenetration_cm": 16
      },
      "rank": 1
+    },
+    {
+     "team": "BarcelonaHoneyCod",
+     "members": [
+      "barcelonahoneycod"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 12.92763,
+      "cd_o_cm": 18.61465,
+      "acc_h_cm": 0.13534,
+      "acc_o_cm": 0.06876,
+      "interpenetration_cm": 0.0
+     },
+     "submission_count": {
+      "cd_h_cm": 9,
+      "cd_o_cm": 9,
+      "acc_h_cm": 9,
+      "acc_o_cm": 9,
+      "interpenetration_cm": 9
+     },
+     "last_submission": "2026-10-26 16:16:23",
+     "kaggle_rank": {
+      "cd_h_cm": 2,
+      "cd_o_cm": 6,
+      "acc_h_cm": 2,
+      "acc_o_cm": 1,
+      "interpenetration_cm": 7
+     },
+     "rank": 2
     },
     {
      "team": "EviisKitson",
@@ -103,13 +133,13 @@
      },
      "last_submission": "2026-10-26 13:35:16",
      "kaggle_rank": {
-      "cd_h_cm": 2,
+      "cd_h_cm": 3,
       "cd_o_cm": 1,
-      "acc_h_cm": 4,
+      "acc_h_cm": 5,
       "acc_o_cm": 4,
       "interpenetration_cm": 11
      },
-     "rank": 2
+     "rank": 3
     },
     {
      "team": "Lodestar",
@@ -133,13 +163,13 @@
      },
      "last_submission": "2026-10-20 23:04:10",
      "kaggle_rank": {
-      "cd_h_cm": 3,
+      "cd_h_cm": 4,
       "cd_o_cm": 4,
-      "acc_h_cm": 7,
+      "acc_h_cm": 8,
       "acc_o_cm": 6,
       "interpenetration_cm": 8
      },
-     "rank": 3
+     "rank": 4
     },
     {
      "team": "Lattice Studios",
@@ -163,13 +193,13 @@
      },
      "last_submission": "2026-10-26 10:10:44",
      "kaggle_rank": {
-      "cd_h_cm": 4,
+      "cd_h_cm": 5,
       "cd_o_cm": 13,
       "acc_h_cm": 1,
       "acc_o_cm": 3,
       "interpenetration_cm": 31
      },
-     "rank": 4
+     "rank": 5
     },
     {
      "team": "namul2hand",
@@ -193,41 +223,11 @@
      },
      "last_submission": "2026-10-23 01:27:12",
      "kaggle_rank": {
-      "cd_h_cm": 5,
+      "cd_h_cm": 6,
       "cd_o_cm": 21,
-      "acc_h_cm": 3,
+      "acc_h_cm": 4,
       "acc_o_cm": 9,
       "interpenetration_cm": 26
-     },
-     "rank": 5
-    },
-    {
-     "team": "BarcelonaHoneyCod",
-     "members": [
-      "barcelonahoneycod"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "cd_h_cm": 13.56507,
-      "cd_o_cm": 19.66181,
-      "acc_h_cm": 0.1364,
-      "acc_o_cm": 0.06876,
-      "interpenetration_cm": 0.0
-     },
-     "submission_count": {
-      "cd_h_cm": 8,
-      "cd_o_cm": 8,
-      "acc_h_cm": 8,
-      "acc_o_cm": 8,
-      "interpenetration_cm": 8
-     },
-     "last_submission": "2026-10-25 05:50:27",
-     "kaggle_rank": {
-      "cd_h_cm": 6,
-      "cd_o_cm": 8,
-      "acc_h_cm": 8,
-      "acc_o_cm": 1,
-      "interpenetration_cm": 7
      },
      "rank": 6
     },
@@ -255,7 +255,7 @@
      "kaggle_rank": {
       "cd_h_cm": 7,
       "cd_o_cm": 9,
-      "acc_h_cm": 5,
+      "acc_h_cm": 6,
       "acc_o_cm": 8,
       "interpenetration_cm": 6
      },
@@ -316,7 +316,7 @@
      "last_submission": "2026-10-26 15:23:14",
      "kaggle_rank": {
       "cd_h_cm": 9,
-      "cd_o_cm": 6,
+      "cd_o_cm": 7,
       "acc_h_cm": 11,
       "acc_o_cm": 10,
       "interpenetration_cm": 9
@@ -324,8 +324,9 @@
      "rank": 9
     },
     {
-     "team": "Swithinraj ",
+     "team": "Izus_systems",
      "members": [
+      "ibrahimmemon1811",
       "swithinraj"
      ],
      "is_baseline": false,
@@ -347,14 +348,44 @@
      "kaggle_rank": {
       "cd_h_cm": 10,
       "cd_o_cm": 5,
-      "acc_h_cm": 6,
+      "acc_h_cm": 7,
       "acc_o_cm": 5,
       "interpenetration_cm": 5
      },
-     "other_names": [
-      "Swithinraj"
-     ],
      "rank": 10
+    },
+    {
+     "team": "Shubham ",
+     "members": [
+      "shubhamtyagi542"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 14.36812,
+      "cd_o_cm": 22.13843,
+      "acc_h_cm": 0.13976,
+      "acc_o_cm": 0.07694,
+      "interpenetration_cm": 2e-05
+     },
+     "submission_count": {
+      "cd_h_cm": 7,
+      "cd_o_cm": 7,
+      "acc_h_cm": 7,
+      "acc_o_cm": 7,
+      "interpenetration_cm": 7
+     },
+     "last_submission": "2026-10-26 16:15:15",
+     "kaggle_rank": {
+      "cd_h_cm": 11,
+      "cd_o_cm": 12,
+      "acc_h_cm": 17,
+      "acc_o_cm": 22,
+      "interpenetration_cm": 15
+     },
+     "other_names": [
+      "Shubham"
+     ],
+     "rank": 11
     },
     {
      "team": "Chivatam",
@@ -379,13 +410,43 @@
      },
      "last_submission": "2026-10-23 21:13:56",
      "kaggle_rank": {
-      "cd_h_cm": 11,
+      "cd_h_cm": 12,
       "cd_o_cm": 17,
       "acc_h_cm": 14,
       "acc_o_cm": 14,
       "interpenetration_cm": 12
      },
-     "rank": 11
+     "rank": 12
+    },
+    {
+     "team": "SNU CVLAB",
+     "members": [
+      "hyeongjinnam"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "cd_h_cm": 14.4999,
+      "cd_o_cm": 20.42068,
+      "acc_h_cm": 0.13826,
+      "acc_o_cm": 0.0769,
+      "interpenetration_cm": 0.00949
+     },
+     "submission_count": {
+      "cd_h_cm": 13,
+      "cd_o_cm": 13,
+      "acc_h_cm": 13,
+      "acc_o_cm": 13,
+      "interpenetration_cm": 13
+     },
+     "last_submission": "2026-10-26 16:44:45",
+     "kaggle_rank": {
+      "cd_h_cm": 13,
+      "cd_o_cm": 10,
+      "acc_h_cm": 12,
+      "acc_o_cm": 21,
+      "interpenetration_cm": 39
+     },
+     "rank": 13
     },
     {
      "team": "NVSimranPatil",
@@ -402,20 +463,20 @@
      },
      "submission_count": {
       "cd_h_cm": 5,
-      "cd_o_cm": 11,
+      "cd_o_cm": 13,
       "acc_h_cm": 15,
       "acc_o_cm": 15,
       "interpenetration_cm": 9
      },
-     "last_submission": "2026-10-26 10:37:41",
+     "last_submission": "2026-10-26 20:02:42",
      "kaggle_rank": {
-      "cd_h_cm": 12,
+      "cd_h_cm": 14,
       "cd_o_cm": 43,
       "acc_h_cm": 23,
       "acc_o_cm": 18,
       "interpenetration_cm": 10
      },
-     "rank": 12
+     "rank": 14
     },
     {
      "team": "mparrrk",
@@ -439,13 +500,13 @@
      },
      "last_submission": "2026-10-23 16:03:35",
      "kaggle_rank": {
-      "cd_h_cm": 13,
+      "cd_h_cm": 15,
       "cd_o_cm": 37,
       "acc_h_cm": 35,
       "acc_o_cm": 39,
       "interpenetration_cm": 36
      },
-     "rank": 13
+     "rank": 15
     },
     {
      "team": "sv1105",
@@ -469,13 +530,13 @@
      },
      "last_submission": "2026-10-25 20:51:31",
      "kaggle_rank": {
-      "cd_h_cm": 14,
-      "cd_o_cm": 7,
+      "cd_h_cm": 16,
+      "cd_o_cm": 8,
       "acc_h_cm": 13,
       "acc_o_cm": 7,
       "interpenetration_cm": 13
      },
-     "rank": 14
+     "rank": 16
     },
     {
      "team": "Pragun Sharma",
@@ -499,13 +560,13 @@
      },
      "last_submission": "2026-10-22 07:15:19",
      "kaggle_rank": {
-      "cd_h_cm": 15,
+      "cd_h_cm": 17,
       "cd_o_cm": 30,
       "acc_h_cm": 32,
       "acc_o_cm": 31,
       "interpenetration_cm": 42
      },
-     "rank": 15
+     "rank": 17
     },
     {
      "team": "Ankita Bajaj",
@@ -529,13 +590,13 @@
      },
      "last_submission": "2026-10-25 07:40:38",
      "kaggle_rank": {
-      "cd_h_cm": 16,
+      "cd_h_cm": 18,
       "cd_o_cm": 25,
       "acc_h_cm": 30,
       "acc_o_cm": 29,
       "interpenetration_cm": 14
      },
-     "rank": 16
+     "rank": 18
     },
     {
      "team": "DAInamite",
@@ -559,13 +620,13 @@
      },
      "last_submission": "2026-10-23 10:09:08",
      "kaggle_rank": {
-      "cd_h_cm": 17,
+      "cd_h_cm": 19,
       "cd_o_cm": 23,
       "acc_h_cm": 44,
       "acc_o_cm": 43,
       "interpenetration_cm": 28
      },
-     "rank": 17
+     "rank": 19
     },
     {
      "team": "um",
@@ -589,13 +650,13 @@
      },
      "last_submission": "2026-10-08 14:25:44",
      "kaggle_rank": {
-      "cd_h_cm": 18,
+      "cd_h_cm": 20,
       "cd_o_cm": 42,
       "acc_h_cm": 38,
       "acc_o_cm": 42,
       "interpenetration_cm": 44
      },
-     "rank": 18
+     "rank": 20
     },
     {
      "team": "xpz666",
@@ -619,13 +680,13 @@
      },
      "last_submission": "2026-10-23 14:11:17",
      "kaggle_rank": {
-      "cd_h_cm": 19,
+      "cd_h_cm": 21,
       "cd_o_cm": 2,
       "acc_h_cm": 22,
       "acc_o_cm": 27,
       "interpenetration_cm": 19
      },
-     "rank": 19
+     "rank": 21
     },
     {
      "team": "Javier Medel, MSc.",
@@ -649,13 +710,13 @@
      },
      "last_submission": "2026-10-15 16:21:37",
      "kaggle_rank": {
-      "cd_h_cm": 20,
+      "cd_h_cm": 22,
       "cd_o_cm": 14,
       "acc_h_cm": 43,
       "acc_o_cm": 38,
       "interpenetration_cm": 33
      },
-     "rank": 20
+     "rank": 22
     },
     {
      "team": "Mochii",
@@ -681,13 +742,13 @@
      },
      "last_submission": "2026-10-26 00:33:33",
      "kaggle_rank": {
-      "cd_h_cm": 21,
+      "cd_h_cm": 23,
       "cd_o_cm": 15,
       "acc_h_cm": 9,
       "acc_o_cm": 19,
       "interpenetration_cm": 25
      },
-     "rank": 21
+     "rank": 23
     },
     {
      "team": "Rock Paper Grippers",
@@ -711,46 +772,13 @@
      },
      "last_submission": "2026-10-26 08:10:24",
      "kaggle_rank": {
-      "cd_h_cm": 22,
+      "cd_h_cm": 24,
       "cd_o_cm": 33,
       "acc_h_cm": 27,
       "acc_o_cm": 33,
       "interpenetration_cm": 37
      },
-     "rank": 22
-    },
-    {
-     "team": "Shubham ",
-     "members": [
-      "shubhamtyagi542"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "cd_h_cm": 15.07749,
-      "cd_o_cm": 22.21727,
-      "acc_h_cm": 0.14173,
-      "acc_o_cm": 0.07703,
-      "interpenetration_cm": 2e-05
-     },
-     "submission_count": {
-      "cd_h_cm": 6,
-      "cd_o_cm": 6,
-      "acc_h_cm": 6,
-      "acc_o_cm": 6,
-      "interpenetration_cm": 6
-     },
-     "last_submission": "2026-10-26 11:34:55",
-     "kaggle_rank": {
-      "cd_h_cm": 23,
-      "cd_o_cm": 12,
-      "acc_h_cm": 18,
-      "acc_o_cm": 22,
-      "interpenetration_cm": 15
-     },
-     "other_names": [
-      "Shubham"
-     ],
-     "rank": 23
+     "rank": 24
     },
     {
      "team": "QY Lin",
@@ -774,13 +802,13 @@
      },
      "last_submission": "2026-10-19 00:42:19",
      "kaggle_rank": {
-      "cd_h_cm": 24,
+      "cd_h_cm": 25,
       "cd_o_cm": 24,
       "acc_h_cm": 25,
       "acc_o_cm": 30,
       "interpenetration_cm": 1
      },
-     "rank": 24
+     "rank": 25
     },
     {
      "team": "deecod",
@@ -804,13 +832,13 @@
      },
      "last_submission": "2026-10-24 09:30:21",
      "kaggle_rank": {
-      "cd_h_cm": 25,
+      "cd_h_cm": 26,
       "cd_o_cm": 40,
       "acc_h_cm": 39,
       "acc_o_cm": 44,
       "interpenetration_cm": 21
      },
-     "rank": 25
+     "rank": 26
     },
     {
      "team": "Null Walker",
@@ -834,13 +862,13 @@
      },
      "last_submission": "2026-10-25 12:11:57",
      "kaggle_rank": {
-      "cd_h_cm": 26,
+      "cd_h_cm": 27,
       "cd_o_cm": 26,
       "acc_h_cm": 37,
       "acc_o_cm": 35,
       "interpenetration_cm": 40
      },
-     "rank": 26
+     "rank": 27
     },
     {
      "team": "Open4D",
@@ -865,13 +893,13 @@
      },
      "last_submission": "2026-10-25 23:21:29",
      "kaggle_rank": {
-      "cd_h_cm": 27,
+      "cd_h_cm": 28,
       "cd_o_cm": 16,
       "acc_h_cm": 15,
       "acc_o_cm": 13,
       "interpenetration_cm": 35
      },
-     "rank": 27
+     "rank": 28
     },
     {
      "team": "sean2413",
@@ -895,13 +923,13 @@
      },
      "last_submission": "2026-10-20 20:10:30",
      "kaggle_rank": {
-      "cd_h_cm": 28,
+      "cd_h_cm": 29,
       "cd_o_cm": 19,
       "acc_h_cm": 40,
       "acc_o_cm": 40,
       "interpenetration_cm": 32
      },
-     "rank": 28
+     "rank": 29
     },
     {
      "team": "avinsingh",
@@ -925,13 +953,13 @@
      },
      "last_submission": "2026-10-26 10:32:42",
      "kaggle_rank": {
-      "cd_h_cm": 29,
+      "cd_h_cm": 30,
       "cd_o_cm": 11,
       "acc_h_cm": 19,
       "acc_o_cm": 20,
       "interpenetration_cm": 24
      },
-     "rank": 29
+     "rank": 30
     },
     {
      "team": "World Reward",
@@ -955,41 +983,11 @@
      },
      "last_submission": "2026-10-26 15:23:18",
      "kaggle_rank": {
-      "cd_h_cm": 30,
+      "cd_h_cm": 31,
       "cd_o_cm": 20,
       "acc_h_cm": 21,
       "acc_o_cm": 23,
       "interpenetration_cm": 17
-     },
-     "rank": 30
-    },
-    {
-     "team": "SNU CVLAB",
-     "members": [
-      "hyeongjinnam"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "cd_h_cm": 15.35574,
-      "cd_o_cm": 20.42068,
-      "acc_h_cm": 0.13826,
-      "acc_o_cm": 0.0769,
-      "interpenetration_cm": 0.00949
-     },
-     "submission_count": {
-      "cd_h_cm": 11,
-      "cd_o_cm": 11,
-      "acc_h_cm": 11,
-      "acc_o_cm": 11,
-      "interpenetration_cm": 11
-     },
-     "last_submission": "2026-10-25 14:34:58",
-     "kaggle_rank": {
-      "cd_h_cm": 31,
-      "cd_o_cm": 10,
-      "acc_h_cm": 12,
-      "acc_o_cm": 21,
-      "interpenetration_cm": 39
      },
      "rank": 31
     },
@@ -1077,7 +1075,7 @@
      "kaggle_rank": {
       "cd_h_cm": 34,
       "cd_o_cm": 31,
-      "acc_h_cm": 17,
+      "acc_h_cm": 18,
       "acc_o_cm": 16,
       "interpenetration_cm": 2
      },
@@ -1603,27 +1601,28 @@
     {
      "team": "Izus_systems",
      "members": [
-      "ibrahimmemon1811"
+      "ibrahimmemon1811",
+      "swithinraj"
      ],
      "is_baseline": false,
      "scores": {
       "add_auc": 0.77919,
+      "mppe_cm": 10.45054,
       "spider_sr": 0.86666,
-      "maniptrans_sr": 0.8,
-      "mppe_cm": 10.45054
+      "maniptrans_sr": 0.8
      },
      "submission_count": {
       "add_auc": 4,
+      "mppe_cm": 4,
       "spider_sr": 4,
-      "maniptrans_sr": 4,
-      "mppe_cm": 4
+      "maniptrans_sr": 4
      },
      "last_submission": "2026-10-26 11:18:31",
      "kaggle_rank": {
       "add_auc": 5,
+      "mppe_cm": 7,
       "spider_sr": 6,
-      "maniptrans_sr": 6,
-      "mppe_cm": 7
+      "maniptrans_sr": 6
      },
      "rank": 5
     },
@@ -1771,18 +1770,18 @@
      ],
      "is_baseline": false,
      "scores": {
-      "add_auc": 0.54029,
+      "add_auc": 0.54183,
       "spider_sr": 0.7,
       "maniptrans_sr": 0.53333,
-      "mppe_cm": 14.18362
+      "mppe_cm": 14.16593
      },
      "submission_count": {
-      "add_auc": 5,
-      "spider_sr": 5,
-      "maniptrans_sr": 5,
-      "mppe_cm": 5
+      "add_auc": 6,
+      "spider_sr": 6,
+      "maniptrans_sr": 6,
+      "mppe_cm": 6
      },
-     "last_submission": "2026-10-26 10:48:54",
+     "last_submission": "2026-10-26 16:42:37",
      "kaggle_rank": {
       "add_auc": 11,
       "spider_sr": 10,
@@ -2335,9 +2334,10 @@
      "rank": 6
     },
     {
-     "team": "ibrahim memon",
+     "team": "Izus_systems",
      "members": [
-      "ibrahimmemon1811"
+      "ibrahimmemon1811",
+      "swithinraj"
      ],
      "is_baseline": false,
      "scores": {
@@ -2727,6 +2727,33 @@
      "rank": 1
     },
     {
+     "team": "maniphys.ai",
+     "members": [
+      "rongxuanzhou"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "add_auc": 0.2259,
+      "spider_sr": 0.33333,
+      "maniptrans_sr": 0.1,
+      "mppe_cm": 49.93762
+     },
+     "submission_count": {
+      "add_auc": 6,
+      "spider_sr": 6,
+      "maniptrans_sr": 6,
+      "mppe_cm": 6
+     },
+     "last_submission": "2026-10-26 19:33:26",
+     "kaggle_rank": {
+      "add_auc": 2,
+      "spider_sr": 2,
+      "maniptrans_sr": 2,
+      "mppe_cm": 3
+     },
+     "rank": 2
+    },
+    {
      "team": "Xueyi Wang (FF)",
      "members": [
       "wxy821018"
@@ -2746,37 +2773,10 @@
      },
      "last_submission": "2026-10-21 04:49:19",
      "kaggle_rank": {
-      "add_auc": 2,
-      "spider_sr": 4,
-      "maniptrans_sr": 3,
-      "mppe_cm": 2
-     },
-     "rank": 2
-    },
-    {
-     "team": "maniphys.ai",
-     "members": [
-      "rongxuanzhou"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.10649,
-      "spider_sr": 0.26666,
-      "maniptrans_sr": 0.0,
-      "mppe_cm": 54.98984
-     },
-     "submission_count": {
-      "add_auc": 5,
-      "spider_sr": 5,
-      "maniptrans_sr": 5,
-      "mppe_cm": 5
-     },
-     "last_submission": "2026-10-18 16:47:11",
-     "kaggle_rank": {
       "add_auc": 3,
-      "spider_sr": 2,
+      "spider_sr": 4,
       "maniptrans_sr": 4,
-      "mppe_cm": 3
+      "mppe_cm": 2
      },
      "rank": 3
     },
@@ -2829,7 +2829,7 @@
      "kaggle_rank": {
       "add_auc": 5,
       "spider_sr": 5,
-      "maniptrans_sr": 2,
+      "maniptrans_sr": 3,
       "mppe_cm": 7
      },
      "rank": 5
@@ -2981,29 +2981,29 @@
      ],
      "is_baseline": false,
      "scores": {
-      "add_auc": 0.93158,
+      "add_auc": 0.93208,
       "spider_sr": 1.0,
       "maniptrans_sr": 1.0,
       "rpe_cm": 1.31963,
-      "mppe_cm": 1.23658,
+      "mppe_cm": 1.21121,
       "cd_o_cm": 0.15435
      },
      "submission_count": {
-      "add_auc": 12,
-      "spider_sr": 12,
-      "maniptrans_sr": 12,
-      "rpe_cm": 12,
-      "mppe_cm": 12,
-      "cd_o_cm": 12
+      "add_auc": 13,
+      "spider_sr": 13,
+      "maniptrans_sr": 13,
+      "rpe_cm": 13,
+      "mppe_cm": 13,
+      "cd_o_cm": 13
      },
-     "last_submission": "2026-10-26 06:35:52",
+     "last_submission": "2026-10-26 16:47:17",
      "kaggle_rank": {
       "add_auc": 1,
       "spider_sr": 1,
       "maniptrans_sr": 1,
       "rpe_cm": 1,
       "mppe_cm": 1,
-      "cd_o_cm": 2
+      "cd_o_cm": 1
      },
      "rank": 1
     },
@@ -3037,7 +3037,7 @@
       "maniptrans_sr": 2,
       "rpe_cm": 2,
       "mppe_cm": 2,
-      "cd_o_cm": 6
+      "cd_o_cm": 5
      },
      "rank": 2
     },
@@ -3070,7 +3070,7 @@
       "maniptrans_sr": 3,
       "rpe_cm": 3,
       "mppe_cm": 3,
-      "cd_o_cm": 7
+      "cd_o_cm": 6
      },
      "rank": 3
     },
@@ -3103,7 +3103,7 @@
       "maniptrans_sr": 4,
       "rpe_cm": 4,
       "mppe_cm": 4,
-      "cd_o_cm": 8
+      "cd_o_cm": 7
      },
      "rank": 4
     },
@@ -3114,22 +3114,22 @@
      ],
      "is_baseline": false,
      "scores": {
-      "add_auc": 0.81056,
+      "add_auc": 0.81391,
       "spider_sr": 0.85,
       "maniptrans_sr": 0.65,
-      "rpe_cm": 4.03314,
-      "mppe_cm": 2.9359,
+      "rpe_cm": 3.94176,
+      "mppe_cm": 2.92493,
       "cd_o_cm": 0.40188
      },
      "submission_count": {
-      "add_auc": 4,
-      "spider_sr": 4,
-      "maniptrans_sr": 4,
-      "rpe_cm": 4,
-      "mppe_cm": 4,
+      "add_auc": 6,
+      "spider_sr": 6,
+      "maniptrans_sr": 6,
+      "rpe_cm": 6,
+      "mppe_cm": 6,
       "cd_o_cm": 2
      },
-     "last_submission": "2026-10-26 10:55:32",
+     "last_submission": "2026-10-26 17:15:25",
      "kaggle_rank": {
       "add_auc": 5,
       "spider_sr": 4,
@@ -3169,7 +3169,7 @@
       "maniptrans_sr": 6,
       "rpe_cm": 8,
       "mppe_cm": 6,
-      "cd_o_cm": 5
+      "cd_o_cm": 4
      },
      "rank": 6
     },
@@ -3202,7 +3202,7 @@
       "maniptrans_sr": 7,
       "rpe_cm": 7,
       "mppe_cm": 8,
-      "cd_o_cm": 10
+      "cd_o_cm": 9
      },
      "rank": 7
     },
@@ -3401,7 +3401,7 @@
      "last_submission": "2026-10-26 04:14:40",
      "kaggle_rank": {
       "add_auc": 13,
-      "spider_sr": 14,
+      "spider_sr": 15,
       "maniptrans_sr": 12,
       "rpe_cm": 11,
       "mppe_cm": 11,
@@ -3440,10 +3440,43 @@
       "spider_sr": 11,
       "maniptrans_sr": 11,
       "rpe_cm": 15,
-      "mppe_cm": 13,
+      "mppe_cm": 14,
       "cd_o_cm": 22
      },
      "rank": 14
+    },
+    {
+     "team": "The Simsons",
+     "members": [
+      "rborahcmu"
+     ],
+     "is_baseline": false,
+     "scores": {
+      "add_auc": 0.41769,
+      "spider_sr": 0.5,
+      "maniptrans_sr": 0.05,
+      "rpe_cm": 10.35286,
+      "mppe_cm": 9.35498,
+      "cd_o_cm": 0.32016
+     },
+     "submission_count": {
+      "add_auc": 2,
+      "spider_sr": 2,
+      "maniptrans_sr": 2,
+      "rpe_cm": 2,
+      "mppe_cm": 2,
+      "cd_o_cm": 2
+     },
+     "last_submission": "2026-10-26 19:04:42",
+     "kaggle_rank": {
+      "add_auc": 15,
+      "spider_sr": 13,
+      "maniptrans_sr": 16,
+      "rpe_cm": 14,
+      "mppe_cm": 13,
+      "cd_o_cm": 8
+     },
+     "rank": 15
     },
     {
      "team": "Open4D",
@@ -3456,27 +3489,27 @@
       "spider_sr": 0.45,
       "maniptrans_sr": 0.1,
       "rpe_cm": 12.60429,
-      "mppe_cm": 10.43215
+      "mppe_cm": 10.43215,
+      "cd_o_cm": 0.56872
      },
      "submission_count": {
-      "add_auc": 4,
-      "spider_sr": 3,
-      "maniptrans_sr": 3,
-      "rpe_cm": 5,
-      "mppe_cm": 5
+      "add_auc": 5,
+      "spider_sr": 4,
+      "maniptrans_sr": 4,
+      "rpe_cm": 6,
+      "mppe_cm": 6,
+      "cd_o_cm": 1
      },
-     "last_submission": "2026-10-23 00:41:46",
+     "last_submission": "2026-10-26 17:12:59",
      "kaggle_rank": {
-      "add_auc": 15,
-      "spider_sr": 13,
+      "add_auc": 16,
+      "spider_sr": 14,
       "maniptrans_sr": 13,
       "rpe_cm": 16,
-      "mppe_cm": 16
+      "mppe_cm": 16,
+      "cd_o_cm": 27
      },
-     "missing": [
-      "cd_o_cm"
-     ],
-     "rank": 15
+     "rank": 16
     },
     {
      "team": "Xueyi Wang (FF)",
@@ -3502,14 +3535,14 @@
      },
      "last_submission": "2026-10-25 19:58:49",
      "kaggle_rank": {
-      "add_auc": 16,
+      "add_auc": 17,
       "spider_sr": 18,
       "maniptrans_sr": 20,
       "rpe_cm": 13,
       "mppe_cm": 15,
       "cd_o_cm": 23
      },
-     "rank": 16
+     "rank": 17
     },
     {
      "team": "SNU Robotics Lab 1",
@@ -3535,14 +3568,14 @@
      },
      "last_submission": "2026-10-26 01:35:44",
      "kaggle_rank": {
-      "add_auc": 17,
+      "add_auc": 18,
       "spider_sr": 22,
       "maniptrans_sr": 17,
       "rpe_cm": 18,
       "mppe_cm": 19,
       "cd_o_cm": 18
      },
-     "rank": 17
+     "rank": 18
     },
     {
      "team": "NVSimranPatil",
@@ -3568,45 +3601,12 @@
      },
      "last_submission": "2026-10-26 04:59:35",
      "kaggle_rank": {
-      "add_auc": 18,
+      "add_auc": 19,
       "spider_sr": 16,
       "maniptrans_sr": 18,
       "rpe_cm": 19,
       "mppe_cm": 17,
-      "cd_o_cm": 3
-     },
-     "rank": 18
-    },
-    {
-     "team": "Rian Borah",
-     "members": [
-      "rborahcmu"
-     ],
-     "is_baseline": false,
-     "scores": {
-      "add_auc": 0.34891,
-      "spider_sr": 0.4,
-      "maniptrans_sr": 0.05,
-      "rpe_cm": 11.29717,
-      "mppe_cm": 10.23335,
-      "cd_o_cm": 0.32017
-     },
-     "submission_count": {
-      "add_auc": 1,
-      "spider_sr": 1,
-      "maniptrans_sr": 1,
-      "rpe_cm": 1,
-      "mppe_cm": 1,
-      "cd_o_cm": 1
-     },
-     "last_submission": "2026-10-17 11:49:13",
-     "kaggle_rank": {
-      "add_auc": 19,
-      "spider_sr": 15,
-      "maniptrans_sr": 16,
-      "rpe_cm": 14,
-      "mppe_cm": 14,
-      "cd_o_cm": 9
+      "cd_o_cm": 2
      },
      "rank": 19
     },
@@ -3622,7 +3622,7 @@
       "maniptrans_sr": 0.0,
       "rpe_cm": 12.61755,
       "mppe_cm": 11.37357,
-      "cd_o_cm": 0.11218
+      "cd_o_cm": 0.37042
      },
      "submission_count": {
       "add_auc": 17,
@@ -3630,7 +3630,7 @@
       "maniptrans_sr": 17,
       "rpe_cm": 17,
       "mppe_cm": 17,
-      "cd_o_cm": 19
+      "cd_o_cm": 18
      },
      "last_submission": "2026-10-26 01:31:27",
      "kaggle_rank": {
@@ -3639,7 +3639,7 @@
       "maniptrans_sr": 19,
       "rpe_cm": 17,
       "mppe_cm": 18,
-      "cd_o_cm": 1
+      "cd_o_cm": 10
      },
      "rank": 20
     },
@@ -3672,7 +3672,7 @@
       "maniptrans_sr": 25,
       "rpe_cm": 28,
       "mppe_cm": 28,
-      "cd_o_cm": 28
+      "cd_o_cm": 29
      },
      "rank": 21
     },
@@ -3705,7 +3705,7 @@
       "maniptrans_sr": 28,
       "rpe_cm": 21,
       "mppe_cm": 20,
-      "cd_o_cm": 29
+      "cd_o_cm": 30
      },
      "rank": 22
     },
@@ -3795,7 +3795,7 @@
      "kaggle_rank": {
       "add_auc": 25,
       "mppe_cm": 23,
-      "cd_o_cm": 4
+      "cd_o_cm": 3
      },
      "missing": [
       "spider_sr",
@@ -3935,7 +3935,7 @@
       "maniptrans_sr": 23,
       "rpe_cm": 26,
       "mppe_cm": 27,
-      "cd_o_cm": 27
+      "cd_o_cm": 28
      },
      "rank": 29
     },
@@ -3999,12 +3999,6 @@
     }
    ],
    "incomplete": [
-    {
-     "team": "Open4D",
-     "missing": [
-      "cd_o_cm"
-     ]
-    },
     {
      "team": "Ujjwal Patil",
      "missing": [
