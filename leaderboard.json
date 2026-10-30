@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30T01:14:25+00:00",
+ "generated_at": "2026-10-30T02:24:43+00:00",
  "source": "kaggle",
  "tracks": [
   {
@@ -3281,7 +3281,7 @@
       "spider_sr": 2,
       "maniptrans_sr": 3,
       "rpe_cm": 4,
-      "mppe_cm": 3,
+      "mppe_cm": 4,
       "cd_o_cm": 3
      },
      "rank": 3
@@ -3314,7 +3314,7 @@
       "spider_sr": 8,
       "maniptrans_sr": 6,
       "rpe_cm": 3,
-      "mppe_cm": 5,
+      "mppe_cm": 6,
       "cd_o_cm": 10
      },
      "rank": 4
@@ -3347,7 +3347,7 @@
       "spider_sr": 3,
       "maniptrans_sr": 5,
       "rpe_cm": 6,
-      "mppe_cm": 4,
+      "mppe_cm": 5,
       "cd_o_cm": 5
      },
      "rank": 5
@@ -3380,7 +3380,7 @@
       "spider_sr": 5,
       "maniptrans_sr": 4,
       "rpe_cm": 5,
-      "mppe_cm": 6,
+      "mppe_cm": 7,
       "cd_o_cm": 2
      },
      "rank": 6
@@ -3413,7 +3413,7 @@
       "spider_sr": 6,
       "maniptrans_sr": 7,
       "rpe_cm": 8,
-      "mppe_cm": 7,
+      "mppe_cm": 8,
       "cd_o_cm": 16
      },
      "rank": 7
@@ -3463,7 +3463,7 @@
       "spider_sr": 0.8,
       "maniptrans_sr": 0.5,
       "rpe_cm": 3.85312,
-      "mppe_cm": 3.00212,
+      "mppe_cm": 1.64486,
       "cd_o_cm": 0.25339
      },
      "submission_count": {
@@ -3471,7 +3471,7 @@
       "spider_sr": 2,
       "maniptrans_sr": 2,
       "rpe_cm": 2,
-      "mppe_cm": 2,
+      "mppe_cm": 3,
       "cd_o_cm": 5
      },
      "last_submission": "2026-10-23 04:37:21",
@@ -3480,7 +3480,7 @@
       "spider_sr": 7,
       "maniptrans_sr": 9,
       "rpe_cm": 7,
-      "mppe_cm": 8,
+      "mppe_cm": 3,
       "cd_o_cm": 4
      },
      "rank": 9
