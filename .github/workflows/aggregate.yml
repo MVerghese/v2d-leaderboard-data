@@ -31,8 +31,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      # kaggle imports six without declaring it. It used to arrive through python-dateutil,
+      # which dropped it in 4.0.0 (2026-11-01).
       - name: Install the Kaggle client
-        run: pip install --disable-pip-version-check --quiet "kaggle==2.2.4"
+        run: pip install --disable-pip-version-check --quiet "kaggle==2.2.4" six
 
       # A competition that does not exist yet, or has no submissions, is not an error: the
       # aggregator logs it, marks its metric available=false, and lists it in the track's
